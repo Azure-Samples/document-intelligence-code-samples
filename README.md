@@ -65,7 +65,7 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Layout model]()**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_layout.py]() and [sample_analyze_layout_async.py]()|Extract text, selection marks, and table structures in a document|
+|[sample_analyze_layout.py](Python/Samples(v4.0_preview)/Layout model/sample_analyze_layout.py) and [sample_analyze_layout_async.py]()|Extract text, selection marks, and table structures in a document|
 - ####  **[Prebuilt model]()**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
