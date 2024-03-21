@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 
 
-- The contents of this repo default latest version：**v4.0(Preview)** .
+- The contents of this repo default latest version：**v4.0 (Preview)** .
   You can click  **[v3.1 (GA)]()**  to view earlier versions.
 
 ## **Table of Contents**
