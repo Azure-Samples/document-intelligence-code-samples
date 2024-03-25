@@ -74,7 +74,7 @@ pip install azure-ai-documentintelligence --pre
 |[sample_analyze_identity_documents.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_identity_cards.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
 |[sample_analyze_receipts.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_receipts.py)|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
 |[sample_analyze_tax_us_w2.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_tax_us_w2.py) |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
-- ####  **[Add-on capabilities](Python(v4.0_Preview)/Layout_model/README.md)**
+- ####  **[Add-on capabilities](Python(v4.0_Preview)/Add-on_capabilities/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_addon_barcodes.py]()and [sample_analyze_addon_barcodes async.py]()|Extract barcode|
@@ -87,7 +87,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 
-- ####  **[Custom model]()**
+- ####  **[Custom model](Python(v4.0_Preview)/Custom_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_custom template.py]()and [sample_custom template async.py]()| Extract data from static layouts.|
@@ -97,7 +97,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
->- Click  **[v3.1 (GA)]()** to view earlier versions.
+>- Click  **[v3.1 (GA)](../v3.1(GA)/README.md/)** to view earlier versions.
 
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.
