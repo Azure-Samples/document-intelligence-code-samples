@@ -6,13 +6,13 @@
 
 
 
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one（default **Python**）.
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one(default **Python**).
 
-|Python| [.NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence)|[Java](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/documentintelligence/azure-ai-documentintelligence)| [JavaScript](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest)|
+|Python| [.NET](.NET(v4.0_Preview)/README.md)|[Java](Java(v4.0_Preview)/README.md)| [JavaScript](JavaScript(v4.0_Preview)/README.md)|
 | --- | --- | --- | --- |
 
 
-- The contents of this repo default latest version：**v4.0 (Preview)** .
+- The contents of this repo default latest version: **v4.0 (Preview)** .
   You can click  **[v3.1 (GA)]()**  to view earlier versions.
 
 ## **Table of Contents**
