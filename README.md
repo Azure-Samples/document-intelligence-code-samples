@@ -13,7 +13,7 @@
 
 
 - The contents of this repo default latest version: **v4.0 (Preview)** .
-  You can click  **[v3.1 (GA)](subdirectory/v3.1(GA)/README.md/)**  to view earlier versions.
+  You can click  **[v3.1 (GA)](..y/v3.1(GA)/README.md/)**  to view earlier versions.
 
 ## **Table of Contents**
 
