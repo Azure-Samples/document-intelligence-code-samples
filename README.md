@@ -69,11 +69,11 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Prebuilt model](Python(v4.0_Preview)/Prebuilt_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_invoices.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_business_cards.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_business_cards.py) |Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
-|[sample_analyze_identity_documents.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_identity_cards.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_receipts.py)|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_tax_us_w2.py) |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_invoices.py](Python(v4.0_Preview)/Prebuilt_model/sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
+|[sample_analyze_business_cards.py](Python(v4.0_Preview)/Prebuilt_model/sample_analyze_business_cards.py) |Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
+|[sample_analyze_identity_documents.py](Python(v4.0_Preview)/Prebuilt_model/sample_analyze_identity_cards.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
+|[sample_analyze_receipts.py](Python(v4.0_Preview)/Prebuilt_model/sample_analyze_receipts.py)|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
+|[sample_analyze_tax_us_w2.py](Python(v4.0_Preview)/Prebuilt_model/sample_analyze_tax_us_w2.py) |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 - ####  **[Add-on capabilities](Python(v4.0_Preview)/Add-on_capabilities/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
