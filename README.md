@@ -137,8 +137,4 @@ what you can do with the Azure Document Intelligence client library.
 [changelog]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/CHANGELOG.md
 
 
-<<<<<<< HEAD
-[sample_path]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples
-=======
-[sample_path]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples
->>>>>>> 7a291ef2d10dc4255723e93f3ae730f52e70b0da
+
