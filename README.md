@@ -57,16 +57,16 @@ pip install azure-ai-documentintelligence --pre
 
 ### **Common samples**
 
-- ####  **[Read model]()**
+- ####  **[Read model](Python(v4.0_Preview)/Read_model/README.md)**
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_read.py](Python(v4.0_Preview)/Read_model/sample_analyze_read.py/)|Read document elements, such as pages and detected languages|
-- ####  **[Layout model]()**
+- ####  **[Layout model](Python(v4.0_Preview)/Layout_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_layout.py](Python(v4.0_Preview)/Layout_model/sample_analyze_layout.py) |Extract text, selection marks, and table structures in a document|
-- ####  **[Prebuilt model]()**
+- ####  **[Prebuilt model](Python(v4.0_Preview)/Prebuilt_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_invoices.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
@@ -74,7 +74,7 @@ pip install azure-ai-documentintelligence --pre
 |[sample_analyze_identity_documents.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_identity_cards.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
 |[sample_analyze_receipts.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_receipts.py)|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
 |[sample_analyze_tax_us_w2.py](Python(v4.0_Preview)/Prebuilt/sample_analyze_tax_us_w2.py) |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
-- ####  **[Add-on capabilities]()**
+- ####  **[Add-on capabilities](Python(v4.0_Preview)/Layout_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_addon_barcodes.py]()and [sample_analyze_addon_barcodes async.py]()|Extract barcode|
