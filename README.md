@@ -34,7 +34,7 @@ Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn
 
 ## **Prerequisites**
 * Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription]  and an [Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
+* You must have an [Azure subscription][azure_subscription] and an [Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
 * All of these samples need the endpoint to your Document Intelligence resource ([instructions on how to get endpoint][get-endpoint-instructions]), and your Document Intelligence API key ([instructions on how to get key][get-key-instructions]).
 
 ## **Setup**
@@ -61,19 +61,19 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_read.py](Python/Samples(v4.0_preview)/Read_model/sample_analyze_read.py/) and [sample_analyze_read_async.py]()|Read document elements, such as pages and detected languages|
+|[sample_analyze_read.py](Python/Samples(v4.0_preview)/Read_model/sample_analyze_read.py/)|Read document elements, such as pages and detected languages|
 - ####  **[Layout model]()**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_layout.py](Python/Samples(v4.0_preview)/Layout_model/sample_analyze_layout.py) and [sample_analyze_layout_async.py]()|Extract text, selection marks, and table structures in a document|
+|[sample_analyze_layout.py](Python/Samples(v4.0_preview)/Layout_model/sample_analyze_layout.py) |Extract text, selection marks, and table structures in a document|
 - ####  **[Prebuilt model]()**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_invoices.py]() and [sample_analyze_invoices_async.py]()|Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_business_cards.py]() and [sample_analyze_business_cards_async.py]()|Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
-|[sample_analyze_identity_documents.py]() and [sample_analyze_identity_documents_async.py]()|Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py]() and [sample_analyze_receipts_async.py]()|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py]() and [sample_analyze_tax_us_w2_async.py]()|Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_invoices.py](Python/Samples(v4.0_preview)/Prebuilt/sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
+|[sample_analyze_business_cards.py](Python/Samples(v4.0_preview)/Prebuilt/sample_analyze_business_cards.py) |Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
+|[sample_analyze_identity_documents.py](Python/Samples(v4.0_preview)/Prebuilt/sample_analyze_identity_cards.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
+|[sample_analyze_receipts.py](Python/Samples(v4.0_preview)/Prebuilt/sample_analyze_receipts.py)|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
+|[sample_analyze_tax_us_w2.py](Python/Samples(v4.0_preview)/Prebuilt/sample_analyze_tax_us_w2.py) |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 - ####  **[Add-on capabilities]()**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
