@@ -122,8 +122,9 @@ There are usually some pre/post processing steps that are needed to get the best
 
 |File Name|**Usage scenarios**|
 | --- | --- |
-| [sample_disambiguate_similar_characters.ipynb](Python/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Python/sample_disambiguate_similar_characters.py) | Sample postprocessing script to disambiguate similar characters based on business rules. |
-| [sample_identify_cross_page_tables.ipynb](Python/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Python/sample_identify_cross_page_tables.py) | Sample postprocessing script to identify cross-page tables based on business rules. |
+| [sample_disambiguate_similar_characters.ipynb](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py) | Sample postprocessing script to disambiguate similar characters based on business rules. |
+| [sample_identify_cross_page_tables.ipynb](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.py) | Sample postprocessing script to identify cross-page tables based on business rules. |
+| [sample_identify_and_merge_cross_page_tales.ipynb](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tales.py](Python(v4.0_Preview)/Pre_or_post_processing_samples/sample_identify_and_merge_cross_page_tales.py) | Sample postprocessing script to identify and merge cross-page tables based on business rules. |
 > Applies to all versions.
 
 
