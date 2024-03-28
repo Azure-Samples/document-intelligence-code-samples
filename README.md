@@ -100,10 +100,10 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Custom model](Python(v4.0_Preview)/Custom_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_custom_documents.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents_async.py)| Extract data from static layouts.|
-|[sample_classify_document.py](Python(v4.0_Preview)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0_Preview)/Custom_model/sample_classify_document_async.py)|Extract data from mixed-type documents.|
-|[sample_compose_model.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py)|Extract data using a collection of models.|
-|[sample_copy_model_to.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to_async.py)|Identify designated document types (classes) before invoking an extraction model.|
+|[sample_analyze_custom_documents.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
+|[sample_classify_document.py](Python(v4.0_Preview)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0_Preview)/Custom_model/sample_classify_document_async.py)| Classify a document using a trained document classifier.|
+|[sample_compose_model.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
+|[sample_copy_model_to.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
