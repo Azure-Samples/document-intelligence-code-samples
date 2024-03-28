@@ -87,12 +87,12 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Add-on capabilities](Python(v4.0_Preview)/Add-on_capabilities/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_addon_barcodes.py]()and [sample_analyze_addon_barcodes async.py]()|Extract barcode|
-|[sample_analyze_addon_fonts.py]() and [sample_analyze_addon_fonts_async.py]()|Extract font property|
-|[sample_analyze_addon_formulas.py]() and [sample_analyze_addon_formulas_async.py]()|Extract formula|
-|[sample_analyze_addon_highres.py]() and [sample_analyze_addon_highres_async.py]()|Extract high resolution|
-|[sample_analyze_addon_languages.py]() and [sample_analyze_addon_languages_async.py]()|Detact language|
-|[sample_analyze_addon_query_fields.py]() and [sample_analyze_addon_query_fields_async.py]()|Query fields|
+|[sample_analyze_addon_barcodes.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode|
+|[sample_analyze_addon_fonts.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property|
+|[sample_analyze_addon_formulas.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula|
+|[sample_analyze_addon_highres.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution|
+|[sample_analyze_addon_languages.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language|
+|[sample_analyze_addon_query_fields.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Python(v4.0_Preview)/Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields|
 
 
 
@@ -100,10 +100,10 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Custom model](Python(v4.0_Preview)/Custom_model/README.md)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_custom template.py]()and [sample_custom template async.py]()| Extract data from static layouts.|
-|[sample_custom neural.py]() and [sample_custom neural_async.py]()|Extract data from mixed-type documents.|
-|[sample_custom composed .py]() and [sample_custom composed _async.py]()|Extract data using a collection of models.|
-|[sample_custom classifier.py]() and [sample_custom classifier_async.py]()|Identify designated document types (classes) before invoking an extraction model.|
+|[sample_analyze_custom_documents.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0_Preview)/Custom_model/sample_analyze_custom_documents_async.py)| Extract data from static layouts.|
+|[sample_classify_document.py](Python(v4.0_Preview)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0_Preview)/Custom_model/sample_classify_document_async.py)|Extract data from mixed-type documents.|
+|[sample_compose_model.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0_Preview)/Custom_model/sample_compose_model.py)|Extract data using a collection of models.|
+|[sample_copy_model_to.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0_Preview)/Custom_model/sample_copy_model_to_async.py)|Identify designated document types (classes) before invoking an extraction model.|
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
@@ -113,7 +113,7 @@ pip install azure-ai-documentintelligence --pre
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.
 |File Name|**Usage scenarios**|
 | --- | --- |
-| [sample_rag_langchain.ipynb](Python/sample_rag_langchain.ipynb) | Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain |
+| [sample_rag_langchain.ipynb](Python(v4.0_Preview)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb) | Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain |
 > Only available for v4.0 (Preview) .
 ### **Pre/post processing samples**
 
