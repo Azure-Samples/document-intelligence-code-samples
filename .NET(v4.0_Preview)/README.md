@@ -12,7 +12,9 @@ description: Samples for the Azure.AI.DocumentIntelligence client library
 
 # Azure Document Intelligence client SDK Samples
 
-> Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
+>- Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
+>- The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
+You can click  **[v3.1 (GA)](../v3.1(GA)/.NET(v3.1_GA)/README.md/)**  to view earlier versions.
 
 Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
 
@@ -23,16 +25,16 @@ Azure AI Document Intelligence is a cloud service that uses machine learning to 
 - Custom classification - Build custom classifier models that combine layout and language features to accurately detect and identify documents you process within your application.
 
 ## Common scenarios samples
-- [Extract the layout of a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ExtractLayout.md)
-- [Analyze a document with a prebuilt model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_AnalyzeWithPrebuiltModel.md)
-- [Build a custom model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_BuildCustomModel.md)
-- [Manage models](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ManageModels.md)
-- [Classify a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ClassifyDocument.md)
-- [Build a document classifier](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_BuildDocumentClassifier.md)
+- [Extract the layout of a document](Sample_ExtractLayout.md)
+- [Analyze a document with a prebuilt model](Sample_AnalyzeWithPrebuiltModel.md)
+- [Build a custom model](Sample_BuildCustomModel.md)
+- [Manage models](Sample_ManageModels.md)
+- [Classify a document](Sample_ClassifyDocument.md)
+- [Build a document classifier](Sample_BuildDocumentClassifier.md)
 
 ## Advanced samples
-- [Compose a model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ModelCompose.md)
-- [Get and List document model operations](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_GetAndListOperations.md)
-- [Copy a custom model between Document Intelligence resources](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_CopyCustomModel.md)
-- [Analyze a document with add-on capabilities](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_AddOnCapabilities.md)
-- [Extract the layout of a document as Markdown](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ExtractLayoutAsMarkdown.md)
+- [Compose a model](Sample_ModelCompose.md)
+- [Get and List document model operations](Sample_GetAndListOperations.md)
+- [Copy a custom model between Document Intelligence resources](Sample_CopyCustomModel.md)
+- [Analyze a document with add-on capabilities](Sample_AddOnCapabilities.md)
+- [Extract the layout of a document as Markdown](Sample_ExtractLayoutAsMarkdown.md)
