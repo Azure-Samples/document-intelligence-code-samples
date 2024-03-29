@@ -1,6 +1,6 @@
 # Azure DocumentIntelligence client library for Java
 >- The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
-You can click  **[v3.1 (GA)](../v3.1(GA)/Java(v3.1_GA)/README.md/)**  to view earlier versions.
+You can click  **[v3.1 (GA)](../v3.1(GA)/Java(v3.1_GA))**  to view earlier versions.
 
 Azure Document Intelligence ([previously known as Form Recognizer][service-rename]) is a cloud service that uses machine
 learning to analyze text and structured data from your documents.
