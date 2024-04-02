@@ -13,7 +13,7 @@ urlFragment: formrecognizer-samples
 
 > Note: Starting with version 2022-08-31, a new set of clients were introduced to leverage the newest features
 > of the Document Intelligence service. Please see the [Migration Guide][migration-guide] for detailed instructions on how to update application
-> code from client library version 3.1.X or lower to the latest version. Additionally, see the [Changelog][changelog] for more detailed information.
+> code from client library version 3.1.X or lower to the latest version. Additionally, see the [Changelog](CHANGELOG.md) for more detailed information.
 
 These code samples show common scenario operations with the Azure Form Recognizer client library.
 
@@ -126,7 +126,7 @@ what you can do with the Azure Form Recognizer client library.
 [sample_auth_async]: v3.2_and_later/async_samples/sample_authentication_async.py
 [sample_analyze_layout]: v3.2_and_later/sample_analyze_layout.py
 [sample_analyze_layout_async]: v3.2_and_later/async_samples/sample_analyze_layout_async.py
-[sample_analyze_general_documents]: samples/v3.2_and_later/sample_analyze_general_documents.py
+[sample_analyze_general_documents]: v3.2_and_later/sample_analyze_general_documents.py
 [sample_analyze_general_documents_async]: v3.2_and_later/async_samples/sample_analyze_general_documents_async.py
 [sample_analyze_invoices]: v3.2_and_later/sample_analyze_invoices.py
 [sample_analyze_invoices_async]: v3.2_and_later/async_samples/sample_analyze_invoices_async.py
@@ -156,8 +156,8 @@ what you can do with the Azure Form Recognizer client library.
 [sample_analyze_read_async]: v3.2_and_later/async_samples/sample_analyze_read_async.py
 [sample_analyze_tax_us_w2]: v3.2_and_later/sample_analyze_tax_us_w2.py
 [sample_analyze_tax_us_w2_async]: v3.2_and_later/async_samples/sample_analyze_tax_us_w2_async.py
-[sample_get_elements_with_spans]: https://aka.ms/azsdk/python/formrecognizer/spansamplesync
-[sample_get_elements_with_spans_async]: https://aka.ms/azsdk/python/formrecognizer/spansampleasync
+[sample_get_elements_with_spans]: v3.2_and_later/sample_get_elements_with_spans.py
+[sample_get_elements_with_spans_async]: v3.2_and_later/async_samples/sample_get_elements_with_spans_async.py
 [sample_classify_document]: v3.2_and_later/sample_classify_document.py
 [sample_classify_document_async]: v3.2_and_later/async_samples/sample_classify_document_async.py
 [sample_classify_document_from_url]: v3.2_and_later/sample_classify_document_from_url.py
