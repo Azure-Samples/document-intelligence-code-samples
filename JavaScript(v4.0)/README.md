@@ -4,6 +4,7 @@ Extracts content, layout, and structured data from documents.
 
 **Please rely heavily on our [REST client docs](https://github.com/Azure/azure-sdk-for-js/blob/main/documentation/rest-clients.md) to use this library**
 
+<<<<<<< Updated upstream
 
 >- Form Recognizer has been rebranded to Document Intelligence. Please check the [Migration Guide from `@azure/ai-form-recognizer` to `@azure-rest/ai-document-intelligence`](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest/MIGRATION-FR_v4-DI_v1.md).
 >- The contents of this folder apply to the latest version: **v4.0** . 
@@ -12,6 +13,16 @@ You can click  **[v3.1 (GA)](../../v3.1(GA)/JavaScript(v3.1))**  to view earlier
 Key links:
 
 - [Source code](README.md)
+=======
+> NOTE:
+> - Form Recognizer has been rebranded to Document Intelligence. Please check the [Migration Guide from `@azure/ai-form-recognizer` to `@azure-rest/ai-document-intelligence`](MIGRATION-FR_v4-DI_v1.md).
+> - The contents of this floder default the latest version: **v4.0** .
+  You can click  **[v3.1 (GA)](../v3.1(GA)/JavaScript)**  to view earlier versions.
+
+Key links:
+
+- [Source code](ai-document-intelligence-rest)
+>>>>>>> Stashed changes
 - [Package (NPM)](https://www.npmjs.com/package/@azure-rest/ai-document-intelligence)
 - [API reference documentation](https://docs.microsoft.com/javascript/api/@azure-rest/ai-document-intelligence?view=azure-node-preview)
 - [Samples](samples)

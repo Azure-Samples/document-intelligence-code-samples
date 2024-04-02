@@ -9,7 +9,7 @@ products:
 urlFragment: documentintelligence-samples
 ---
 
-# Samples for Azure Document Intelligence client library for Python
+# Samples for Azure Document Intelligence client library for Python（Add-on capabilities）
 
 These code samples show common scenario operations with the Azure Document Intelligence client library.
 
@@ -37,16 +37,17 @@ pip install azure-ai-documentintelligence --pre
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
-3. Follow the usage described in the file, e.g. `python sample_analyze_receipts.py`
+3. Follow the usage described in the file, e.g. `python sample_analyze_addon_barcodes.py`
 
-####  **Read model**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[s.py]() and [s_async.py]()|Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[s.py]() and [s_async.py]()|Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
-|[s.py]() and [c.py]()|Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[s.py]() and [s_async.py]()|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[2.py]() and [2_async.py]()|Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode|
+|[sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property|
+|[sample_analyze_addon_formulas.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula|
+|[sample_analyze_addon_highres.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution|
+|[sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language|
+|[sample_analyze_addon_query_fields.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields|
+
 
 ## Next steps
 
