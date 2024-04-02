@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 # **Azure AI Document Intelligence Code Samples**
 
 
