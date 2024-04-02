@@ -70,12 +70,12 @@ pip install azure-ai-documentintelligence --pre
 - ####  **[Add-on capabilities](Add-on_capabilities)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode|
-|[sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property|
-|[sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula|
-|[sample_analyze_addon_highres.py](Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution|
-|[sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language|
-|[sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields|
+|[sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode from a document using this add-on capability.|
+|[sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property from a document using this add-on capability.|
+|[sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula from a document using this add-on capability.|
+|[sample_analyze_addon_highres.py](Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution from a document using this add-on capability.|
+|[sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language from a document using this add-on capability.|
+|[sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields from a document using this add-on capability.|
 
 
 
