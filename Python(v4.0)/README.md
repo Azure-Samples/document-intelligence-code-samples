@@ -38,11 +38,73 @@ pip install azure-ai-documentintelligence --pre
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
 3. Follow the usage described in the file, e.g. `python sample_analyze_receipts.py`
+### **Common samples**
+
+- ####  **[Read model](Python(v4.0)/Read_model)**
+
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) and [sample_analyze_read async.py](Python(v4.0)/Read_model/sample_analyze_read_async.py/)|Read document elements, such as pages and detected languages|
+
+
+- ####  **[Layout model](Python(v4.0)/Layout_model)**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) and [sample_analyze_layout async.py](Python(v4.0)/Layout_model/sample_analyze_layout_async.py/) |Extract text, selection marks, and table structures in a document|
+|[sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) and [sample_analyze_general_documents_async.py](Python(v4.0)/Layout_model/ssample_analyze_general_documents_async.py/) |Extract key-value pairs, selection marks, text, tables, and structure from documents|
+|[sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) and [sample_analyze_documents_output_in_markdown_async.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown_async.py/) |Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.|
+
+
+
+
+- ####  **[Prebuilt model](Python(v4.0)/Prebuilt_model)**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) and [sample_analyze_invoices_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices_async.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
+|[sample_analyze_business_cards.py](Python(v4.0)/Prebuilt_model/sample_analyze_business_cards.py) and [sample_analyze_business_cards_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_business_cards_async.py)  |Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
+|[sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) and [sample_analyze_identity_documents_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents_async.py)  |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
+|[sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) and [sample_analyze_receipts_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts_async.py) |Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
+|[sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py) and [sample_analyze_tax_us_w2_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2_async.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+
+
+- ####  **[Add-on capabilities](Python(v4.0)/Add-on_capabilities)**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode|
+|[sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property|
+|[sample_analyze_addon_formulas.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula|
+|[sample_analyze_addon_highres.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution|
+|[sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language|
+|[sample_analyze_addon_query_fields.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields|
+
+
+
+
+- ####  **[Custom model](Python(v4.0)/Custom_model)**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_analyze_custom_documents.py](Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Custom_model/sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
+|[sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0)/Custom_model/sample_classify_document_async.py)| Classify a document using a trained document classifier.|
+|[sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0)/Custom_model/sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
+|[sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Custom_model/sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
+
+
+- ####  **[Others](Python(v4.0))**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_convert_to_dict.py](Others/sample_convert_to_dict.py) and [sample_convert_to_dict_async.py](Others/sample_convert_to_dict_async.py)| Convert a model returned from an analyze operation to a JSON serializable dictionary.|
+|[sample_copy_model_to.py](Others/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Others/sample_copy_model_to_async.py)| copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.|
+|[sample_manage_classifiers.py](Others/sample_manage_classifiers.py) and [sample_manage_classifiers_async.py](Others/sample_manage_classifiers_async.py)|  Manage the classifiers on your account.|
+|[sample_manage_models.py](Others/sample_manage_models.py) and [sample_manage_models_async.py](Others/sample_manage_models_async.py)| Manage the models on your account.|
+
+
+
 
 ## Next steps
 
 Check out the [API reference documentation][python-di-ref-docs] to learn more about
 what you can do with the Azure Document Intelligence client library.
+
 
 
 [azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
