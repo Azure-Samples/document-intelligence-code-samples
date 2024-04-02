@@ -69,19 +69,19 @@ npx cross-env FORM_RECOGNIZER_ENDPOINT="<form recognizer endpoint>" FORM_RECOGNI
 
 Take a look at our [API Documentation][apiref] for more information about the APIs that are available in the clients.
 
-[composemodel]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/composeModel.js
-[analyzedocumentbymodelid]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/analyzeDocumentByModelId.js
-[analyzereceiptbymodelid]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/analyzeReceiptByModelId.js
-[buildclassifier]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/buildClassifier.js
-[buildmodel]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/buildModel.js
-[classifydocument]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/classifyDocument.js
-[copymodel]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/copyModel.js
-[getclassifier]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/getClassifier.js
-[getinfo]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/getInfo.js
-[getmodel]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/getModel.js
-[listclassifiers]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/listClassifiers.js
-[listmodels]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/listModels.js
-[readdocument]: https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/formrecognizer/ai-form-recognizer/samples/v5/javascript/readDocument.js
+[composemodel]: composeModel.js
+[analyzedocumentbymodelid]: analyzeDocumentByModelId.js
+[analyzereceiptbymodelid]: analyzeReceiptByModelId.js
+[buildclassifier]: buildClassifier.js
+[buildmodel]: buildModel.js
+[classifydocument]: classifyDocument.js
+[copymodel]: copyModel.js
+[getclassifier]: getClassifier.js
+[getinfo]: getInfo.js
+[getmodel]: getModel.js
+[listclassifiers]: listClassifiers.js
+[listmodels]: listModels.js
+[readdocument]: readDocument.js
 [apiref]: https://docs.microsoft.com/javascript/api/@azure/ai-form-recognizer
 [freesub]: https://azure.microsoft.com/free/
 [createinstance_azurecognitiveservicesaccount]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account

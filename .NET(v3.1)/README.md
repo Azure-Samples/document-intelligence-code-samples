@@ -26,25 +26,25 @@ Azure AI Document Intelligence is a cloud service that uses machine learning to 
 - Custom classification - Build custom classifier models that combine layout and language features to accurately detect and identify documents you process within your application.
 
 ## Common scenarios samples for client library version 4.0.0 and higher
-- [Extract the layout of a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_ExtractLayout.md)
-- [Analyze with the prebuilt general document model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_AnalyzePrebuiltDocument.md)
-- [Analyze with the prebuilt read model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_AnalyzePrebuiltRead.md)
-- [Analyze a document with a custom model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_AnalyzeWithCustomModel.md)
-- [Analyze a document with a prebuilt model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_AnalyzeWithPrebuiltModel.md)
-- [Build a custom model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_BuildCustomModel.md)
-- [Manage models](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_ManageModels.md)
-- [Classify a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_ClassifyDocument.md)
-- [Build a document classifier](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_BuildDocumentClassifier.md)
+- [Extract the layout of a document](Sample_ExtractLayout.md)
+- [Analyze with the prebuilt general document model](Sample_AnalyzePrebuiltDocument.md)
+- [Analyze with the prebuilt read model](Sample_AnalyzePrebuiltRead.md)
+- [Analyze a document with a custom model](Sample_AnalyzeWithCustomModel.md)
+- [Analyze a document with a prebuilt model](Sample_AnalyzeWithPrebuiltModel.md)
+- [Build a custom model](Sample_BuildCustomModel.md)
+- [Manage models](Sample_ManageModels.md)
+- [Classify a document](Sample_ClassifyDocument.md)
+- [Build a document classifier](Sample_BuildDocumentClassifier.md)
 
 ## Advanced samples for client library version 4.0.0 and higher
-- [Compose a model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_ModelCompose.md)
-- [Get and List document model operations](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_GetAndListOperations.md)
-- [Copy a custom model between Form Recognizer resources](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_CopyCustomModel.md)
-- [Mock a client for testing using the Moq library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_MockClient.md)
+- [Compose a model](Sample_ModelCompose.md)
+- [Get and List document model operations](Sample_GetAndListOperations.md)
+- [Copy a custom model between Form Recognizer resources](Sample_CopyCustomModel.md)
+- [Mock a client for testing using the Moq library](Sample_MockClient.md)
 
 ## Samples for client library versions 3.1.1 and lower
 Please see the samples [here][v31samples].
 
 [changelog]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/CHANGELOG.md
-[v31samples]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/README.md
+[v31samples]: V3.1/README.md
 [migration_guide]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/MigrationGuide.md
