@@ -105,6 +105,13 @@ pip install azure-ai-documentintelligence --pre
 |[sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0)/Custom_model/sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
 |[sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Custom_model/sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
 
+- ####  **[Others](Python(v4.0)/Others)**
+|File Name|**Usage scenarios**|
+|----------------|-------------|
+|[sample_convert_to_dict.py](Python(v4.0)/Others/sample_convert_to_dict.py) and [sample_convert_to_dict_async.py](Python(v4.0)/Others/sample_convert_to_dict_async.py)| Convert a model returned from an analyze operation to a JSON serializable dictionary.|
+|[sample_copy_model_to.py](Python(v4.0)/Others/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Others/sample_copy_model_to_async.py)| copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.|
+|[sample_manage_classifiers.py](Python(v4.0)/Others/sample_manage_classifiers.py) and [sample_manage_classifiers_async.py](Python(v4.0)/Others/sample_manage_classifiers_async.py)|  Manage the classifiers on your account.|
+|[sample_manage_models.py](Python(v4.0)/Others/sample_manage_models.py) and [sample_manage_models_async.py](Python(v4.0)/Others/sample_manage_models_async.py)| Manage the models on your account.|
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
 >- Click  **[v3.1 (GA)](../v3.1(GA))** to view earlier versions.
@@ -114,10 +121,10 @@ The Layout model provides various building blocks like tables, paragraphs, secti
 |File Name|**Usage scenarios**|
 | --- | --- |
 | [sample_rag_langchain.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb) | Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain |
-> Only available for v4.0 (Preview) .
+> Only available for **v4.0** .
+
+
 ### **Pre/post processing samples**
-
-
 There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.
 
 |File Name|**Usage scenarios**|
