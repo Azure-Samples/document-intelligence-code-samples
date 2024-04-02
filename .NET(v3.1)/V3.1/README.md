@@ -22,20 +22,20 @@ Azure Cognitive Services Form Recognizer is a cloud service that uses machine le
   - Identity Documents - Recognize and extract common fields from identity documents like passports or driver's licenses, using a pre-trained identity documents model.
 
 ## Common scenarios samples for SDK v3.1
-- [Recognize form content](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample1_RecognizeFormContent.md)
-- [Recognize custom forms](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample2_RecognizeCustomForms.md)
-- [Recognize receipts](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample3_RecognizeReceipts.md)
-- [Recognize business cards](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample9_RecognizeBusinessCards.md)
-- [Recognize invoices](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample10_RecognizeInvoices.md)
-- [Recognize identity documents](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample11_RecognizeIdentityDocuments.md)
-- [Train a model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample5_TrainModel.md)
-- [Manage custom models](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample6_ManageCustomModels.md)
+- [Recognize form content](Sample1_RecognizeFormContent.md)
+- [Recognize custom forms](Sample2_RecognizeCustomForms.md)
+- [Recognize receipts](Sample3_RecognizeReceipts.md)
+- [Recognize business cards](Sample9_RecognizeBusinessCards.md)
+- [Recognize invoices](Sample10_RecognizeInvoices.md)
+- [Recognize identity documents](Sample11_RecognizeIdentityDocuments.md)
+- [Train a model](Sample5_TrainModel.md)
+- [Manage custom models](Sample6_ManageCustomModels.md)
 
 ## Advanced samples for SDK v3.1
-- [Strongly-typing a recognized form](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample4_StronglyTypingARecognizedForm.md)
-- [Create a composed model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample8_ModelCompose.md)
+- [Strongly-typing a recognized form](Sample4_StronglyTypingARecognizedForm.md)
+- [Create a composed model](V3.1/Sample8_ModelCompose.md)
 - [Differentiate output models trained with and without labels](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample10_DifferentiateOutputModelsTrainedWithAndWithoutLabels.cs)
 - [Differentiate output labeled tables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample15_DifferentiateOutputLabeledTables.cs)
-- [Copy a custom model between Form Recognizer resources](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample7_CopyCustomModel.md)
+- [Copy a custom model between Form Recognizer resources](Sample7_CopyCustomModel.md)
 - [Field Bounding Box](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample9_FieldBoundingBox.cs)
 - [Mock a client for testing using the Moq library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample_MockClient.md)
