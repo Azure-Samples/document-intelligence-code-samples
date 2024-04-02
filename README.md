@@ -57,14 +57,14 @@ pip install azure-ai-documentintelligence --pre
 
 ### **Common samples**
 
-- ####  **[Read model](Python(v4.0)/Read_model/README.md)**
+- ####  **[Read model](Python(v4.0)/Read_model)**
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) and [sample_analyze_read async.py](Python(v4.0)/Read_model/sample_analyze_read_async.py/)|Read document elements, such as pages and detected languages|
 
 
-- ####  **[Layout model](Python(v4.0)/Layout_model/README.md)**
+- ####  **[Layout model](Python(v4.0)/Layout_model)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) and [sample_analyze_layout async.py](Python(v4.0)/Layout_model/sample_analyze_layout_async.py/) |Extract text, selection marks, and table structures in a document|
@@ -74,7 +74,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 
-- ####  **[Prebuilt model](Python(v4.0)/Prebuilt_model/README.md)**
+- ####  **[Prebuilt model](Python(v4.0)/Prebuilt_model)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) and [sample_analyze_invoices_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices_async.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
@@ -84,7 +84,7 @@ pip install azure-ai-documentintelligence --pre
 |[sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py) and [sample_analyze_tax_us_w2_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2_async.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 
 
-- ####  **[Add-on capabilities](Python(v4.0)/Add-on_capabilities/README.md)**
+- ####  **[Add-on capabilities](Python(v4.0)/Add-on_capabilities)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode|
@@ -97,7 +97,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 
-- ####  **[Custom model](Python(v4.0)/Custom_model/README.md)**
+- ####  **[Custom model](Python(v4.0)/Custom_model)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
 |[sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
@@ -107,7 +107,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
->- Click  **[v3.1 (GA)](../v3.1(GA)/README.md/)** to view earlier versions.
+>- Click  **[v3.1 (GA)](../v3.1(GA))** to view earlier versions.
 
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.
