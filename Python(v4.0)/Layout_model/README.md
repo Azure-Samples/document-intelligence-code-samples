@@ -1,15 +1,5 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-document-intelligence
-urlFragment: documentintelligence-samples
----
 
-# Samples for Azure Document Intelligence client library for Python
+# Samples for Azure Document Intelligence client library for Python（Layout model）
 
 These code samples show common scenario operations with the Azure Document Intelligence client library.
 
@@ -37,16 +27,13 @@ pip install azure-ai-documentintelligence --pre
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
-3. Follow the usage described in the file, e.g. `python sample_analyze_receipts.py`
+3. Follow the usage described in the file, e.g. `python sample_analyze_layout.py`
 
-####  **Read model**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[s.py]() and [s_async.py]()|Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[s.py]() and [s_async.py]()|Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
-|[s.py]() and [c.py]()|Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[s.py]() and [s_async.py]()|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[2.py]() and [2_async.py]()|Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_layout.py](sample_analyze_layout.py) and [sample_analyze_layout async.py](sample_analyze_layout_async.py) |Extract text, selection marks, and table structures in a document|
+|[sample_analyze_general_documents.py](sample_analyze_general_documents.py) and [sample_analyze_general_documents_async.py](sample_analyze_general_documents_async.py) |Extract key-value pairs, selection marks, text, tables, and structure from documents|
+|[sample_analyze_documents_output_in_markdown.py](sample_analyze_documents_output_in_markdown.py) and [sample_analyze_documents_output_in_markdown_async.py](sample_analyze_documents_output_in_markdown_async.py) |Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.|
 
 ## Next steps
 

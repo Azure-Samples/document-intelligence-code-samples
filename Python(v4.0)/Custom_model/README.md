@@ -1,15 +1,5 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-document-intelligence
-urlFragment: documentintelligence-samples
----
 
-# Samples for Azure Document Intelligence client library for Python
+# Samples for Azure Document Intelligence client library for Python（Custom model）
 
 These code samples show common scenario operations with the Azure Document Intelligence client library.
 
@@ -41,10 +31,10 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
-|[sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0)/Custom_model/sample_classify_document_async.py)| Classify a document using a trained document classifier.|
-|[sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0)/Custom_model/sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
-|[sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Custom_model/sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
+|[sample_analyze_custom_documents.py](sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
+|[sample_classify_document.py](sample_classify_document.py) and [sample_classify_document_async.py](sample_classify_document_async.py)| Classify a document using a trained document classifier.|
+|[sample_compose_model.py](sample_compose_model.py) and [sample_compose_model_async.py](sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
+|[sample_copy_model_to.py](sample_copy_model_to.py) and [sample_copy_model_to_async.py](sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
 
 ## Next steps
 

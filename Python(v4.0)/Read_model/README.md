@@ -1,14 +1,3 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-document-intelligence
-urlFragment: documentintelligence-samples
----
-
 # Samples for Azure Document Intelligence client library for Python（Read model）
 
 These code samples show common scenario operations with the Azure Document Intelligence client library.
@@ -42,7 +31,7 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) and [sample_analyze_read async.py](Python(v4.0)/Read_model/sample_analyze_read_async.py/)|Read document elements, such as pages and detected languages|
+|[sample_analyze_read.py](sample_analyze_read.py/) and [sample_analyze_read async.py](sample_analyze_read_async.py/)|Read document elements, such as pages and detected languages|
 
 ## Next steps
 
