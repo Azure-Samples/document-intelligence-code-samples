@@ -77,7 +77,7 @@ pip install azure-ai-documentintelligence --pre
 
 #### **[【 Add-on capabilities 】](Python(v4.0)/Add-on_capabilities)**
 * [sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
-* [sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property from a document using this add-on capability.
+* [sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) - Extract font property from a document using this add-on capability.
 * [sample_analyze_addon_formulas.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.
 * [sample_analyze_addon_highres.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres.py) - Extract high resolution from a document using this add-on capability.
 * [sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.
