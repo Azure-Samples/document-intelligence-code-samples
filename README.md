@@ -60,18 +60,15 @@ pip install azure-ai-documentintelligence --pre
 
 ### **Common samples**
 
-|**Usage scenarios**|
-|----------------|
-|**[【 Read model 】](Python(v4.0)/Read_model)** |
-|• [sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages|
-|**[【 Layout mode 】](Python(v4.0)/Layout_model)**| 
-|• [sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document|
-|• [sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) - Extract key-value pairs, selection marks, text, tables, and structure from documents|
-|• [sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) - Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.|
+#### **[【 Read model 】](Python(v4.0)/Read_model)** 
+* [sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
 
+#### **[【 Layout mode 】](Python(v4.0)/Layout_model)**
+* [sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
+* [sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) - Extract key-value pairs, selection marks, text, tables, and structure from documents.
+* [sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) - Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.
 
-
-
+#### **[【 Layout mode 】](Python(v4.0)/Layout_model)**
 - ####  **[Prebuilt model](Python(v4.0)/Prebuilt_model)**
 |File Name|**Usage scenarios**|
 |----------------|-------------|
