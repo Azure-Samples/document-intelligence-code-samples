@@ -75,35 +75,26 @@ pip install azure-ai-documentintelligence --pre
 * [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
 * [sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 
+#### **[【 Add-on capabilities 】](Python(v4.0)/Add-on_capabilities)**
+* [sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
+* [sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property from a document using this add-on capability.
+* [sample_analyze_addon_formulas.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.
+* [sample_analyze_addon_highres.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres.py) - Extract high resolution from a document using this add-on capability.
+* [sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.
+* [sample_analyze_addon_query_fields.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields.py) - Query fields from a document using this add-on capability.
 
-- ####  **[Add-on capabilities](Python(v4.0)/Add-on_capabilities)**
-|File Name|**Usage scenarios**|
-|----------------|-------------|
-|[sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes_async.py)|Extract barcode from a document using this add-on capability.|
-|[sample_analyze_addon_fonts.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_fonts_async.py)|Extract font property from a document using this add-on capability.|
-|[sample_analyze_addon_formulas.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_formulas_async.py)|Extract formula from a document using this add-on capability.|
-|[sample_analyze_addon_highres.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_highres_async.py)|Extract high resolution from a document using this add-on capability.|
-|[sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages_async.py)|Detact language from a document using this add-on capability.|
-|[sample_analyze_addon_query_fields.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields_async.py)|Query fields from a document using this add-on capability.|
+#### **[【 Custom model 】](Python(v4.0)/Custom_model)**
+* [sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.
+* [sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.
+* [sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.
+* [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.
+* [sample_copy_model_to.py](Python(v4.0)/Others/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.
+* [sample_manage_classifiers.py](Python(v4.0)/Others/sample_manage_classifiers.py) - Manage the classifiers on your account.
+* [sample_manage_models.py](Python(v4.0)/Others/sample_manage_models.py) - Manage the models on your account.
 
+#### **[【 Others 】](Python(v4.0)/Others)**
+* [sample_convert_to_dict.py](Python(v4.0)/Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
 
-
-
-- ####  **[Custom model](Python(v4.0)/Custom_model)**
-|File Name|**Usage scenarios**|
-|----------------|-------------|
-|[sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
-|[sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) and [sample_classify_document_async.py](Python(v4.0)/Custom_model/sample_classify_document_async.py)| Classify a document using a trained document classifier.|
-|[sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) and [sample_compose_model_async.py](Python(v4.0)/Custom_model/sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
-|[sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Custom_model/sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
-
-- ####  **[Others](Python(v4.0)/Others)**
-|File Name|**Usage scenarios**|
-|----------------|-------------|
-|[sample_convert_to_dict.py](Python(v4.0)/Others/sample_convert_to_dict.py) and [sample_convert_to_dict_async.py](Python(v4.0)/Others/sample_convert_to_dict_async.py)| Convert a model returned from an analyze operation to a JSON serializable dictionary.|
-|[sample_copy_model_to.py](Python(v4.0)/Others/sample_copy_model_to.py) and [sample_copy_model_to_async.py](Python(v4.0)/Others/sample_copy_model_to_async.py)| copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.|
-|[sample_manage_classifiers.py](Python(v4.0)/Others/sample_manage_classifiers.py) and [sample_manage_classifiers_async.py](Python(v4.0)/Others/sample_manage_classifiers_async.py)|  Manage the classifiers on your account.|
-|[sample_manage_models.py](Python(v4.0)/Others/sample_manage_models.py) and [sample_manage_models_async.py](Python(v4.0)/Others/sample_manage_models_async.py)| Manage the models on your account.|
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
 >- Click  **[v3.1 (GA)](../v3.1(GA))** to view earlier versions.
