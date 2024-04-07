@@ -7,7 +7,7 @@
 # --------------------------------------------------------------------------
 
 """
-FILE: sample_disambiguate_similar_characters.py
+FILE: sample_identify_cross_page_tables.py
 
 DESCRIPTION:
 

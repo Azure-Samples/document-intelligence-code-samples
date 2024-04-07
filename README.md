@@ -12,8 +12,8 @@
 | --- | --- | --- | --- |
 
 
-- The contents of this floder default the latest version: **v4.0** .
-  You can click  **[v3.1 (GA)](../v3.1(GA))**  to view earlier versions.
+- The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
+  You can click  **[v3.1 (2023-07-31-GA)](../v3.1(GA))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -21,9 +21,6 @@
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Running the samples](#running-the-samples)
-  - [Common samples](#common-samples)
-  - [Retrieval Augmented Generation (RAG) samples](#retrieval-augmented-generation-rag-samples)
-  - [Pre/post processing samples](#prepost-processing-samples)
 - [Next steps](#next-steps)
 
 
@@ -33,13 +30,16 @@
 Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
 ## **Prerequisites**
-* Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription] and an [Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
-* All of these samples need the endpoint to your Document Intelligence resource ([instructions on how to get endpoint][get-endpoint-instructions]), and your Document Intelligence API key ([instructions on how to get key][get-key-instructions]).
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## **Setup**
 
-1. Install the Azure Document Intelligence client library for Python with [pip][pip]:
+1. Open a terminal window in your local environment and install the Azure AI Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
 pip install azure-ai-documentintelligence --pre
@@ -54,19 +54,18 @@ pip install azure-ai-documentintelligence --pre
 2. Set the environment variables specified in the sample file you wish to run.
 3. If necessary, click [Example Document](https://github.com/Azure-Samples/cognitive-services-REST-api-samples/tree/master/curl/form-recognizer) to get your document URL.
 4. Below are some sample code guidelines so that you can choose the sample according to your needs.
+  - [Common samples](#common-samples)
+  - [Retrieval Augmented Generation (RAG) samples](#retrieval-augmented-generation-rag-samples)
+  - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
 
-- ####  **[Read model](Python(v4.0)/Read_model)**
 
-|File Name|**Usage scenarios**|
+
+|[`Read model` ](Python(v4.0)/Read_model)| |
 |----------------|-------------|
 |[sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) and [sample_analyze_read async.py](Python(v4.0)/Read_model/sample_analyze_read_async.py/)|Read document elements, such as pages and detected languages|
-
-
-- ####  **[Layout model](Python(v4.0)/Layout_model)**
-|File Name|**Usage scenarios**|
-|----------------|-------------|
+|[`Layout model` ](Python(v4.0)/Layout_model)| |
 |[sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) and [sample_analyze_layout async.py](Python(v4.0)/Layout_model/sample_analyze_layout_async.py/) |Extract text, selection marks, and table structures in a document|
 |[sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) and [sample_analyze_general_documents_async.py](Python(v4.0)/Layout_model/sample_analyze_general_documents_async.py/) |Extract key-value pairs, selection marks, text, tables, and structure from documents|
 |[sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) and [sample_analyze_documents_output_in_markdown_async.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown_async.py/) |Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.|
@@ -145,8 +144,7 @@ what you can do with the Azure Document Intelligence client library.
 [azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
 
 [pip]: https://pypi.org/project/pip/
-[azure_subscription]: https://azure.microsoft.com/free/
-[azure_document_intelligence_account]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account?tabs=singleservice%2Cwindows
+
 [azure_identity_pip]: https://pypi.org/project/azure-identity/
 [python-di-ref-docs]: https://aka.ms/azsdk/python/documentintelligence/docs
 [get-endpoint-instructions]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/README.md#get-the-endpoint
