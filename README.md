@@ -68,14 +68,12 @@ pip install azure-ai-documentintelligence --pre
 * [sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) - Extract key-value pairs, selection marks, text, tables, and structure from documents.
 * [sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) - Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.
 
-#### **[【 Layout mode 】](Python(v4.0)/Layout_model)**
-- ####  **[Prebuilt model](Python(v4.0)/Prebuilt_model)**
-|File Name|**Usage scenarios**|
-|----------------|-------------|
-|[sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) and [sample_analyze_invoices_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices_async.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) and [sample_analyze_identity_documents_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents_async.py)  |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) and [sample_analyze_receipts_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts_async.py) |Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py) and [sample_analyze_tax_us_w2_async.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2_async.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+#### **[【 Prebuilt model 】](Python(v4.0)/Prebuilt_model)**
+* [sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
+* [sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
+
+* [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
+* [sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 
 
 - ####  **[Add-on capabilities](Python(v4.0)/Add-on_capabilities)**
