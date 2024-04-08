@@ -6,14 +6,14 @@
 
 
 
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one(default **Python**).
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **Python** ).
 
 |Python| [.NET](.NET(v4.0))|[Java](Java(v4.0))| [JavaScript](JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
 
 - The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
-  You can click  **[v3.1 (2023-07-31-GA)](../v3.1(GA))**  to view earlier versions.
+  You can click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -52,8 +52,8 @@ pip install azure-ai-documentintelligence --pre
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
-3. If necessary, click [Example Document](https://github.com/Azure-Samples/cognitive-services-REST-api-samples/tree/master/curl/form-recognizer) to get your document URL.
-4. Below are some sample code guidelines so that you can choose the sample according to your needs.
+3. If necessary, click [Example Document](https://github.com/Azure-Samples/cognitive-services-REST-api-samples/tree/master/curl/form-recognizer) to get your document.
+4. Below are some sample code guidelines so that you can choose the sample according to your needs. For more samples, see [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples).
   - [Common samples](#common-samples)
   - [Retrieval Augmented Generation (RAG) samples](#retrieval-augmented-generation-rag-samples)
   - [Pre/post processing samples](#prepost-processing-samples)
@@ -65,15 +65,12 @@ pip install azure-ai-documentintelligence --pre
 
 #### **[【 Layout mode 】](Python(v4.0)/Layout_model)**
 * [sample_analyze_layout.py](Python(v4.0)/Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
-* [sample_analyze_general_documents.py](Python(v4.0)/Layout_model/sample_analyze_general_documents.py) - Extract key-value pairs, selection marks, text, tables, and structure from documents.
-* [sample_analyze_documents_output_in_markdown.py](Python(v4.0)/Layout_model/sample_analyze_documents_output_in_markdown.py) - Use markdown output to enhance the capabilities of Azure Document Intelligence Layout model and subsequently feed this refined data into Azure OpenAI service for comprehensive information extraction.
 
 #### **[【 Prebuilt model 】](Python(v4.0)/Prebuilt_model)**
 * [sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
 * [sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
-
-* [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-* [sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+* [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.
+* [sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
 
 #### **[【 Add-on capabilities 】](Python(v4.0)/Add-on_capabilities)**
 * [sample_analyze_addon_barcodes.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
@@ -88,23 +85,25 @@ pip install azure-ai-documentintelligence --pre
 * [sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.
 * [sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.
 * [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.
-* [sample_copy_model_to.py](Python(v4.0)/Others/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.
-* [sample_manage_classifiers.py](Python(v4.0)/Others/sample_manage_classifiers.py) - Manage the classifiers on your account.
-* [sample_manage_models.py](Python(v4.0)/Others/sample_manage_models.py) - Manage the models on your account.
+* [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.
+* [sample_manage_classifiers.py](Python(v4.0)/Custom_model/sample_manage_classifiers.py) - Manage the classifiers on your account.
+* [sample_manage_models.py](Python(v4.0)/Custom_model/sample_manage_models.py) - Manage the models on your account.
 
 #### **[【 Others 】](Python(v4.0)/Others)**
 * [sample_convert_to_dict.py](Python(v4.0)/Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
->- Click  **[v3.1 (GA)](../v3.1(GA))** to view earlier versions.
+>- Click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))** to view earlier versions.
 
 ### **Retrieval Augmented Generation (RAG) samples**
-The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.
+The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   
 |File Name|**Usage scenarios**|
 | --- | --- |
 | [sample_rag_langchain.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb) | Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain |
-> Only available for **v4.0** .
+| [sample_figure_understanding.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb) | Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai). |
+| [sample_identify_and_merge_cross_page_tables.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py) | Sample postprocessing script to identify and merge cross-page tables based on business rules. |
+> Only available for **v4.0 (2024-02-29-preview)** .
 
 
 ### **Pre/post processing samples**
@@ -114,7 +113,7 @@ There are usually some pre/post processing steps that are needed to get the best
 | --- | --- |
 | [sample_disambiguate_similar_characters.ipynb](Python(v4.0)/Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Python(v4.0)/Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py) | Sample postprocessing script to disambiguate similar characters based on business rules. |
 | [sample_identify_cross_page_tables.ipynb](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.py) | Sample postprocessing script to identify cross-page tables based on business rules. |
-| [sample_identify_and_merge_cross_page_tables.ipynb](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_and_merge_cross_page_tales.py) | Sample postprocessing script to identify and merge cross-page tables based on business rules. |
+
 > Applies to all versions.
 
 
