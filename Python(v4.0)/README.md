@@ -53,9 +53,9 @@ pip install azure-ai-documentintelligence --pre
   - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
- Click the link of the model name to reach the corresponding topic page for more details. Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
+ [!NOTE] Click the link of the model name to reach the corresponding topic page for more details. Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
 
- **[ Read model ](Read_model)** 
+**[ Read model ](Read_model)** 
 > [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
 
  **[ Layout mode ](Layout_model)**
@@ -92,7 +92,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 ### **Retrieval Augmented Generation (RAG) samples**
-The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   [!NOTE] Only available for **v4.0-Preview(2024-02-29)** .
+The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   [!NOTE]Only available for **v4.0-Preview(2024-02-29)** .
 
 >**[sample_rag_langchain.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)**  
 Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
