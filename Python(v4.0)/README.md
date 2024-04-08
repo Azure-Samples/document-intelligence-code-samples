@@ -55,25 +55,33 @@ pip install azure-ai-documentintelligence --pre
 ### **Common samples**
  Click the link of the model name to reach the corresponding topic page for more details. Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
 
-> **[ Read model ](Read_model)** 
-- [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
+ **[ Read model ](Read_model)** 
+> [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
 
->  **[ Layout mode ](Layout_model)**
-- [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
+ **[ Layout mode ](Layout_model)**
+> [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
 
->  **[ Prebuilt model ](Prebuilt_model)**
--  [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py) - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
--  [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py) - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
-- [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.
-- [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
+ **[ Prebuilt model ](Prebuilt_model)**
+>  [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py)  - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
 
-> **[ Add-on capabilities ](Add-on_capabilities)**
-- [sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
-- [sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) - Extract font property from a document using this add-on capability.
--[sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.
-- [sample_analyze_addon_highres.py](Add-on_capabilities/sample_analyze_addon_highres.py) - Extract high resolution from a document using this add-on capability.
--[sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.
-- [sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) - Query fields from a document using this add-on capability.
+>  [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py)  - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
+
+> [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.
+
+>  [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
+
+**[ Add-on capabilities ](Add-on_capabilities)**
+>  [sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
+
+>  [sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) - Extract font property from a document using this add-on capability.
+
+> [sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.
+
+>  [sample_analyze_addon_highres.py](Add-on_capabilities/sample_analyze_addon_highres.py) - Extract high resolution from a document using this add-on capability.
+
+> [sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.
+
+>  [sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) - Query fields from a document using this add-on capability.
 
 > **[Custom model ](Custom_model)**
 - [sample_analyze_custom_documents.py](Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.
@@ -112,7 +120,7 @@ There are usually some pre/post processing steps that are needed to get the best
 
 >- [sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py)  
 Sample postprocessing script to disambiguate similar characters based on business rules.
- 
+
 >-  [sample_identify_cross_page_tables.ipynb](Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Pre_or_post_processing_samples/sample_identify_cross_page_tables.py)  
 Sample postprocessing script to identify cross-page tables based on business rules. 
 
