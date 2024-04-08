@@ -1,27 +1,35 @@
 # Azure DocumentIntelligence client library for Java
->- The contents of this folder apply to the latest version: **v4.0** . 
-You can click  **[v3.1 (GA)](../../v3.1(GA)/Java(v3.1))**  to view earlier versions.
+> [!NOTE]
+> Form Recognizer is now **Azure AI Document Intelligence**!
 
+
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **Python** ).
+
+|[Python](../Python(v4.0))| [.NET](../.NET(v4.0))|Java| [JavaScript](../JavaScript(v4.0))|
+| --- | --- | --- | --- |
+- The contents of this folder apply to the latest version: **v4.0-GA(2024-02-29)** . 
+You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31)/Java(v3.1))**  to view earlier versions.
+
+## **Table of Contents**
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running the samples](#running-the-samples)
+- [Next steps](#next-steps)
+
+## **Features**
 Azure Document Intelligence ([previously known as Form Recognizer][service-rename]) is a cloud service that uses machine
 learning to analyze text and structured data from your documents.
 It includes the following main features:
 
-* Layout - Analyze text, table structures, and selection marks, along with their bounding region coordinates, from documents.
-* Prebuilt - Analyze data from certain types of common documents (such as receipts, invoices, identity documents or US W2 tax forms) using prebuilt models.
-* Custom - Build custom models to extract text, field values, selection marks, and table data from documents. Custom models are built with your own data, so they're tailored to your documents.
-* Read - Read information about textual elements, such as page words and lines in addition to text language information.
-* Classifiers - Build custom classifiers to categorize documents into predefined classes.
-
-[Source code][source_code] | [Package (Maven)][package] | [API reference documentation][api_reference_doc] | [Product Documentation][product_documentation] | [Samples][sample_readme]
-
-## Getting started
-
-### Prerequisites
+## **Prerequisites**
 
 - [Java Development Kit (JDK)][jdk_link] with version 8 or above
 - [Azure Subscription][azure_subscription]
 - [AI Services or Document Intelligence account][form_recognizer_account] to use this package.
 
+## **Setup**
 ### Adding the package to your product
 
 [//]: # ({x-version-update-start;com.azure:azure-ai-documentintelligence;current})
@@ -113,41 +121,7 @@ DocumentIntelligenceAsyncClient documentIntelligenceAsyncClient = new DocumentIn
     .buildAsyncClient();
 ```
 
-## Key concepts
-### DocumentAnalysisClient
-The [DocumentAnalysisClient][document_analysis_sync_client] and [DocumentAnalysisAsyncClient][document_analysis_async_client]
-provide both synchronous and asynchronous operations for analyzing input documents using custom and prebuilt models
-through the `beginAnalyzeDocument` API.
-See a full list of supported models [here][fr_models].
-
-Sample code snippets to illustrate using a DocumentAnalysisClient [here][sample_readme].
-More information about analyzing documents, including supported features, locales, and document types can be found
-[here][fr_models].
-
-### DocumentModelAdministrationClient
-The [DocumentModelAdministrationClient][document_model_admin_sync_client] and
-[DocumentModelAdministrationAsyncClient][document_model_admin_async_client] provide both synchronous and asynchronous operations
-- Build custom document analysis models to analyze text content, fields, and values found in your custom documents. See example [Build a document model](#build-a-document-model).
-  A `DocumentModelDetails` is returned indicating the document types that the model can analyze, along with the fields and schemas it will extract.
-- Managing models created in your account by building, listing, deleting, and see the limit of custom models your account. See example [Manage models](#manage-your-models).
-- Copying a custom model from one Document Intelligence resource to another.
-- Creating a composed model from a collection of existing built models.
-- Listing document model operations associated with the Document Intelligence resource.
-
-Sample code snippets are provided to illustrate using a DocumentModelAdministrationClient [here](#examples "Examples").
-
-### Long-running operations
-Long-running operations are operations that consist of an initial request sent to the service to start an operation,
-followed by polling the service at intervals to determine whether the operation has completed or failed, and if it has
-succeeded, to get the result.
-
-Methods that build models, analyze values from documents, or copy and compose models are modeled as long-running operations.
-The client exposes a `begin<MethodName>` method that returns a `SyncPoller` or `PollerFlux` instance.
-Callers should wait for the operation to be completed by calling `getFinalResult()` on the returned operation from the
-`begin<MethodName>` method. Sample code snippets are provided to illustrate using long-running operations
-[below](#examples).
-
-## Examples
+## **Running the samples**
 
 The following section provides several code snippets covering some of the most common Document Intelligence tasks, including:
 
@@ -412,35 +386,27 @@ customDocumentModels.forEach(documentModelInfo -> {
 
 For more detailed examples, refer to [samples][sample_examples].
 
-## Troubleshooting
-### Enable client logging
+### Troubleshooting
+#### Enable client logging
 You can set the `AZURE_LOG_LEVEL` environment variable to view logging statements made in the client library. For
 example, setting `AZURE_LOG_LEVEL=2` would show all informational, warning, and error log messages. The log levels can
 be found here: [log levels][logLevels].
 
-### Default HTTP Client
+#### Default HTTP Client
 All client libraries by default use the Netty HTTP client. Adding the above dependency will automatically configure
 the client library to use the Netty HTTP client. Configuring or changing the HTTP client is detailed in the
 [HTTP clients wiki](https://github.com/Azure/azure-sdk-for-java/wiki/HTTP-clients).
 
-### Default SSL library
+#### Default SSL library
 All client libraries, by default, use the Tomcat-native Boring SSL library to enable native-level performance for SSL
 operations. The Boring SSL library is an uber jar containing native libraries for Linux / macOS / Windows, and provides
 better performance compared to the default SSL implementation within the JDK. For more information, including how to
 reduce the dependency size, refer to the [performance tuning][performance_tuning] section of the wiki.
 
 ## Next steps
-- Samples are explained in detail [here][samples_readme].
+- Samples are explained in detail [here](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/src/samples#readme).
 
-## Contributing
 
-For details on contributing to this repository, see the [contributing guide](https://github.com/Azure/azure-sdk-for-java/blob/main/CONTRIBUTING.md).
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
 
 <!-- LINKS -->
 [aad_authorization]: https://docs.microsoft.com/azure/cognitive-services/authentication#authenticate-with-azure-active-directory

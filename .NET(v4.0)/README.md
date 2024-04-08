@@ -3,7 +3,7 @@
 > Form Recognizer is now **Azure AI Document Intelligence**!
 - Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **.NET** ).
 
-|[Python](.NET(v4.0))| .NET|[Java](Java(v4.0))| [JavaScript](JavaScript(v4.0))|
+|[Python](../.NET(v4.0))| .NET|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
 -  The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
@@ -43,7 +43,7 @@ dotnet add package Azure.AI.DocumentIntelligence --prerelease
 
 
 ## **Running the samples**
-Below are some sample code guidelines so that you can choose the sample according to your needs. For more samples, see [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence).
+Below are some sample code guidelines so that you can choose the sample according to your needs.
 
 
 ### Common scenarios samples
@@ -62,5 +62,10 @@ Below are some sample code guidelines so that you can choose the sample accordin
 - [Extract the layout of a document as Markdown](Sample_ExtractLayoutAsMarkdown.md)
 
 
+## **Next steps**
+ For more samples, see [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence).
+
+
 
 [cognitive_resource_cli]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account-cli
+[nuget]: https://www.nuget.org/

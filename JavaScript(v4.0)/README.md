@@ -1,54 +1,38 @@
-# Azure DocumentIntelligence (formerly FormRecognizer) REST client library for JavaScript
+# Azure DocumentIntelligence client library for JavaScript
 
-Extracts content, layout, and structured data from documents.
-
-**Please rely heavily on our [REST client docs](https://github.com/Azure/azure-sdk-for-js/blob/main/documentation/rest-clients.md) to use this library**
-
+> [!NOTE]
+> Form Recognizer is now **Azure AI Document Intelligence**!
 
 
->- Form Recognizer has been rebranded to Document Intelligence. Please check the [Migration Guide from `@azure/ai-form-recognizer` to `@azure-rest/ai-document-intelligence`](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest/MIGRATION-FR_v4-DI_v1.md).
->- The contents of this folder apply to the latest version: **v4.0** . 
-You can click  **[v3.1 (GA)](../../v3.1(GA)/JavaScript(v3.1))**  to view earlier versions.
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **Python** ).
 
-Key links:
+|[Python](../Python(v4.0))| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| JavaScript|
+| --- | --- | --- | --- |
+- The contents of this folder apply to the latest version: **v4.0-GA(2024-02-29)** . 
+You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31)/JavaScript(v3.1))**  to view earlier versions.
 
-- [Source code](README.md)
-- [Package (NPM)](https://www.npmjs.com/package/@azure-rest/ai-document-intelligence)
-- [API reference documentation](https://docs.microsoft.com/javascript/api/@azure-rest/ai-document-intelligence?view=azure-node-preview)
-- [Samples](samples)
-- [Changelog](CHANGELOG.md)
-- [Migration Guide from Form Recognizer](MIGRATION-FR_v4-DI_v1.md)
+## **Table of Contents**
 
-> This version of the client library defaults to the `"2024-02-29-preview"` version of the service.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running the samples](#running-the-samples)
+- [Next steps](#next-steps)
 
-This table shows the relationship between SDK versions and supported API versions of the service:
+## **Features**
+Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
-| SDK version  | Supported API version of service |
-| ------------ | -------------------------------- |
-| 1.0.0-beta.2 | 2024-02-29-preview               |
-| 1.0.0-beta.1 | 2023-10-31-preview               |
+## **Prerequisites**
+* Currently supported environments: LTS versions of Node.js
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
-> Please rely on the older `@azure/ai-form-recognizer` library through the older service API versions for retired models, such as `"prebuilt-businessCard"` and `"prebuilt-document"`. For more information, see [Changelog](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest/CHANGELOG.md).
 
-The below table describes the relationship of each client and its supported API version(s):
-
-| Service API version | Supported clients                                            | Package                                                       |
-| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
-| 2024-02-29-preview  | DocumentIntelligenceClient                                   | `@azure-rest/ai-document-intelligence` version `1.0.0-beta.2` |
-| 2023-10-31-preview  | DocumentIntelligenceClient                                   | `@azure-rest/ai-document-intelligence` version `1.0.0-beta.1` |
-| 2023-07-31          | DocumentAnalysisClient and DocumentModelAdministrationClient | `@azure/ai-form-recognizer` version `^5.0.0`                  |
-| 2022-08-01          | DocumentAnalysisClient and DocumentModelAdministrationClient | `@azure/ai-form-recognizer` version `^4.0.0`                  |
-
-## Getting started
-
-### Currently supported environments
-
-- LTS versions of Node.js
-
-### Prerequisites
-
-- You must have an [Azure subscription](https://azure.microsoft.com/free/) to use this package.
-
+## **Setup**
 ### Install the `@azure-rest/ai-document-intelligence` package
 
 Install the Azure DocumentIntelligence(formerlyFormRecognizer) REST client REST client library for JavaScript with `npm`:
@@ -93,8 +77,8 @@ const client = DocumentIntelligence(process.env["DOCUMENT_INTELLIGENCE_ENDPOINT"
 });
 ```
 
-## Document Models
 
+## **Running the samples**
 ### Analyze prebuilt-layout (urlSource)
 
 ```ts
@@ -215,7 +199,10 @@ To enable a wider set of scenarios, service introduces a "split" query parameter
 
   Each page is treated as a separate document. Each empty page is kept as its own document.
 
-## Document Classifiers #Build
+
+## Next steps
+Try more advanced features:
+### Document Classifiers #Build
 
 ```ts
 import {
@@ -269,7 +256,7 @@ console.log(response);
 //  }
 ```
 
-## Get Info
+### Get Info
 
 ```ts
 const response = await client.path("/info").get();
@@ -280,7 +267,7 @@ console.log(response.body.customDocumentModels.limit);
 // 20000
 ```
 
-## List Document Models
+### List Document Models
 
 ```ts
 import { paginate } from "@azure-rest/ai-document-intelligence";
@@ -295,9 +282,9 @@ for await (const model of paginate(client, response)) {
 }
 ```
 
-## Troubleshooting
+### Troubleshooting
 
-### Logging
+#### Logging
 
 Enabling logging may help uncover useful information about failures. In order to see a log of HTTP requests and responses, set the `AZURE_LOG_LEVEL` environment variable to `info`. Alternatively, logging can be enabled at runtime by calling `setLogLevel` in the `@azure/logger`:
 
