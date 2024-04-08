@@ -53,18 +53,19 @@ pip install azure-ai-documentintelligence --pre
   - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
+ Click the link of the model name to reach the corresponding topic page for more details. Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
 
 #### **[ Read model ](Read_model)** 
-* [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
+>- [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
 
 #### **[ Layout mode ](Layout_model)**
-* [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
+>- [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
 
 #### **[ Prebuilt model ](Prebuilt_model)**
-* [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py) - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
-* [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py) - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
-* [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.
-* [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
+>-  [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py) - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.
+>-  [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py) - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.
+>- [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.
+>- [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
 
 #### **[ Add-on capabilities ](Add-on_capabilities)**
 >- [sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.
@@ -84,30 +85,30 @@ pip install azure-ai-documentintelligence --pre
 >- [sample_manage_models.py](Custom_model/sample_manage_models.py) - Manage the models on your account.
 
 #### **[ Others ](Others)**
-* [sample_convert_to_dict.py](Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
+>-  [sample_convert_to_dict.py](Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
 
 
 
->- Click the link of the model name to reach the corresponding topic page for more details.
->- Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
+
 
 ### **Retrieval Augmented Generation (RAG) samples**
-The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   
+The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   [!NOTE] Only available for **v4.0-Preview(2024-02-29)** .
 
 >-  [sample_rag_langchain.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)  - Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
 >-  [sample_figure_understanding.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb) - Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai).
 >-  [sample_identify_and_merge_cross_page_tables.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py)  - Sample postprocessing script to identify and merge cross-page tables based on business rules. |
 
-> Only available for **v4.0-Preview(2024-02-29)** .
+
 
 
 ### **Pre/post processing samples**
-There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.
+There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps. 
+[!NOTE]Applies to all versions.
 
 >- [sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py) - Sample postprocessing script to disambiguate similar characters based on business rules. 
 >-  [sample_identify_cross_page_tables.ipynb](Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Pre_or_post_processing_samples/sample_identify_cross_page_tables.py) - Sample postprocessing script to identify cross-page tables based on business rules. 
 
-> Applies to all versions.
+
 
 ## **Next steps**
 
