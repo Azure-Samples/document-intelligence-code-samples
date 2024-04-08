@@ -12,8 +12,8 @@
 | --- | --- | --- | --- |
 
 
-- The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
-  You can click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))**  to view earlier versions.
+- The contents of this floder default the latest version: **v4.0-Preview(2024-02-29)** .
+  You can click  **[v3.1-GA(2023-07-31)](../v3.1-GA(2023-07-31))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -94,7 +94,7 @@ pip install azure-ai-documentintelligence --pre
 
 
 >- Click the link of the model name to reach the corresponding topic page for more details.
->- Click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))** to view earlier versions.
+>- Click  **[v3.1-GA(2023-07-31)](../v3.1-GA(2023-07-31))** to view earlier versions.
 
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   
@@ -103,7 +103,7 @@ The Layout model provides various building blocks like tables, paragraphs, secti
 | [sample_rag_langchain.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb) | Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain |
 | [sample_figure_understanding.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb) | Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai). |
 | [sample_identify_and_merge_cross_page_tables.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py) | Sample postprocessing script to identify and merge cross-page tables based on business rules. |
-> Only available for **v4.0 (2024-02-29-preview)** .
+> Only available for **v4.0-Preview(2024-02-29)** .
 
 
 ### **Pre/post processing samples**
