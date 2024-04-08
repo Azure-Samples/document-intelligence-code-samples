@@ -9,7 +9,7 @@
 | --- | --- | --- | --- |
 
 - The contents of this floder default the latest version: **v4.0-Preview(2024-02-29)** .
-  You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))**  to view earlier versions.
+- You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))**  to view earlier versions.
 
 ## **Table of Contents**
 

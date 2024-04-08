@@ -13,7 +13,7 @@
 
 
 - The contents of this floder default the latest version: **v4.0-Preview(2024-02-29)** .
-  You can click  **[v3.1-GA(2023-07-31)](../v3.1-GA(2023-07-31))**  to view earlier versions.
+- You can click  **[v3.1-GA(2023-07-31)](../v3.1-GA(2023-07-31))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -25,7 +25,7 @@
 
 
 ## **Features**
-Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
+Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
 ## **Prerequisites**
 * Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
