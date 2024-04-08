@@ -76,17 +76,17 @@ pip install azure-ai-documentintelligence --pre
 * [sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.
 * [sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) - Query fields from a document using this add-on capability.
 
-#### **[【 Custom model 】](Python(v4.0)/Custom_model)**
-* [sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.
-* [sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.
-* [sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.
-* [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.
-* [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.
-* [sample_manage_classifiers.py](Python(v4.0)/Custom_model/sample_manage_classifiers.py) - Manage the classifiers on your account.
-* [sample_manage_models.py](Python(v4.0)/Custom_model/sample_manage_models.py) - Manage the models on your account.
+#### **[【 Custom model 】](Custom_model)**
+* [sample_analyze_custom_documents.py](Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.
+* [sample_classify_document.py](Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.
+* [sample_compose_model.py](Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.
+* [sample_copy_model_to.py](Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.
+* [sample_copy_model_to.py](Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.
+* [sample_manage_classifiers.py](Custom_model/sample_manage_classifiers.py) - Manage the classifiers on your account.
+* [sample_manage_models.py](Custom_model/sample_manage_models.py) - Manage the models on your account.
 
-#### **[【 Others 】](Python(v4.0)/Others)**
-* [sample_convert_to_dict.py](Python(v4.0)/Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
+#### **[【 Others 】](Others)**
+* [sample_convert_to_dict.py](Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
 
 
 
