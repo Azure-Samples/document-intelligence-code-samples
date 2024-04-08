@@ -1,30 +1,52 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- azure
-- azure-cognitive-services
-- azure-form-recognizer
-name: Azure Document Intelligence samples for .NET
-description: Samples for the Azure.AI.DocumentIntelligence client library
----
+# Azure Document Intelligence client SDK Samples for .NET
+> [!NOTE]
+> Form Recognizer is now **Azure AI Document Intelligence**!
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **.NET** ).
 
-# Azure Document Intelligence client SDK Samples
+|[Python](.NET(v4.0))| .NET|[Java](Java(v4.0))| [JavaScript](JavaScript(v4.0))|
+| --- | --- | --- | --- |
 
->- Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
->- The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
-You can click  **[v3.1 (GA)](../v3.1(GA)/.NET(v3.1_GA))**  to view earlier versions.
+-  The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
+You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31)/.NET(v3.1))**  to view earlier versions.
+## **Table of Contents**
 
-Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running the samples](#running-the-samples)
+- [Next steps](#next-steps)
 
-- Layout - Extract text, selection marks, table structures, styles, and paragraphs, along with their bounding region coordinates from documents.
-- Read - Read information about textual elements, such as page words and lines in addition to text language information.
-- Prebuilt - Analyze data from certain types of common documents using prebuilt models. Supported documents include receipts, invoices, business cards, identity documents, vaccination cards, US W2 tax forms, and US health insurance cards.
-- Custom analysis - Build custom document models to analyze text, field values, selection marks, table structures, styles, and paragraphs from documents. Custom models are built with your own data, so they're tailored to your documents.
-- Custom classification - Build custom classifier models that combine layout and language features to accurately detect and identify documents you process within your application.
+## **Features**
+Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
-## Common scenarios samples
+## **Prerequisites**
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* The current version of [Visual Studio IDE](https://visualstudio.microsoft.com/vs/).
+
+* An Azure AI services or Document Intelligence resource. Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource. You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+For more information about creating the resource or how to get the location and sku information see [here][cognitive_resource_cli].
+* [Authenticate the client](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/README.md#authenticate-the-client).
+  * Get endpoint and keys to your Document Intelligence resource.
+  * Create DocumentIntelligenceClient with AzureKeyCredential
+  * Create DocumentIntelligenceClient with Azure Active Directory Credential
+
+
+
+## **Setup**
+
+Install the Azure Document Intelligence client library for .NET with [NuGet][nuget]:
+
+```dotnetcli
+dotnet add package Azure.AI.DocumentIntelligence --prerelease
+```
+> Note: This version of the client library defaults to the `2024-02-29-preview` version of the service.
+
+
+## **Running the samples**
+Below are some sample code guidelines so that you can choose the sample according to your needs. For more samples, see [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence).
+
+
+### Common scenarios samples
 - [Extract the layout of a document](Sample_ExtractLayout.md)
 - [Analyze a document with a prebuilt model](Sample_AnalyzeWithPrebuiltModel.md)
 - [Build a custom model](Sample_BuildCustomModel.md)
@@ -32,9 +54,13 @@ Azure AI Document Intelligence is a cloud service that uses machine learning to 
 - [Classify a document](Sample_ClassifyDocument.md)
 - [Build a document classifier](Sample_BuildDocumentClassifier.md)
 
-## Advanced samples
+### Advanced samples
 - [Compose a model](Sample_ModelCompose.md)
 - [Get and List document model operations](Sample_GetAndListOperations.md)
 - [Copy a custom model between Document Intelligence resources](Sample_CopyCustomModel.md)
 - [Analyze a document with add-on capabilities](Sample_AddOnCapabilities.md)
 - [Extract the layout of a document as Markdown](Sample_ExtractLayoutAsMarkdown.md)
+
+
+
+[cognitive_resource_cli]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account-cli

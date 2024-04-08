@@ -9,7 +9,7 @@
 | --- | --- | --- | --- |
 
 - The contents of this floder default the latest version: **v4.0-Preview(2024-02-29)** .
-  You can click  **[v3.1-GA(2023-07-31)](../v3.1-GA(2023-07-31))**  to view earlier versions.
+  You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -20,16 +20,14 @@
 - [Next steps](#next-steps)
 
 
-
-
 ## **Features**
 Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
 ## **Prerequisites**
 * Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
 * [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
-* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
-* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE. For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
     You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
