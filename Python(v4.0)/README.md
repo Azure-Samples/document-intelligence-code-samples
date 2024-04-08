@@ -94,17 +94,30 @@ pip install azure-ai-documentintelligence --pre
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.   
 
-* [sample_rag_langchain.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)  - Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
-*  [sample_figure_understanding.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb) - Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai).
-*  [sample_identify_and_merge_cross_page_tables.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py)  - Sample postprocessing script to identify and merge cross-page tables based on business rules. |
+| [sample_rag_langchain.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)  |
+| --- |
+|Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.|
+
+| [sample_figure_understanding.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb) |
+| --- |
+Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai).
+
+|[sample_identify_and_merge_cross_page_tables.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb) and [sample_identify_and_merge_cross_page_tables.py](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py) |
+| --- |
+|Sample postprocessing script to identify and merge cross-page tables based on business rules.|
 > Only available for **v4.0-Preview(2024-02-29)** .
 
 
 ### **Pre/post processing samples**
 There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.
 
-*  [sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py) - Sample postprocessing script to disambiguate similar characters based on business rules. 
-*  [sample_identify_cross_page_tables.ipynb](Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Pre_or_post_processing_samples/sample_identify_cross_page_tables.py) - Sample postprocessing script to identify cross-page tables based on business rules. 
+| [sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb) and [sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py)|
+| --- |
+|Sample postprocessing script to disambiguate similar characters based on business rules.|
+
+|[sample_identify_cross_page_tables.ipynb](Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb) and [sample_identify_cross_page_tables.py](Pre_or_post_processing_samples/sample_identify_cross_page_tables.py) 
+| --- |
+| Sample postprocessing script to identify cross-page tables based on business rules. |
 
 > Applies to all versions.
 
