@@ -9,9 +9,12 @@ All of these samples need the endpoint to your Document Intelligence resource ([
 You can check all samples from [here][sample_path].
 
 ## Prerequisites
-* Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription] and an
-[Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Setup
 
@@ -32,12 +35,12 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_addon_barcodes.py](sample_analyze_addon_barcodes.py)and [sample_analyze_addon_barcodes async.py](sample_analyze_addon_barcodes_async.py)|Extract barcode|
-|[sample_analyze_addon_fonts.py](sample_analyze_addon_fonts.py) and [sample_analyze_addon_fonts_async.py](sample_analyze_addon_fonts_async.py)|Extract font property|
-|[sample_analyze_addon_formulas.py](sample_analyze_addon_formulas.py) and [sample_analyze_addon_formulas_async.py](sample_analyze_addon_formulas_async.py)|Extract formula|
-|[sample_analyze_addon_highres.py](sample_analyze_addon_highres.py) and [sample_analyze_addon_highres_async.py](sample_analyze_addon_highres_async.py)|Extract high resolution|
-|[sample_analyze_addon_languages.py](sample_analyze_addon_languages.py) and [sample_analyze_addon_languages_async.py](sample_analyze_addon_languages_async.py)|Detact language|
-|[sample_analyze_addon_query_fields.py](sample_analyze_addon_query_fields.py) and [sample_analyze_addon_query_fields_async.py](sample_analyze_addon_query_fields_async.py)|Query fields|
+|[sample_analyze_addon_barcodes.py](sample_analyze_addon_barcodes.py)|Extract barcode|
+|[sample_analyze_addon_fonts.py](sample_analyze_addon_fonts.py)|Extract font property|
+|[sample_analyze_addon_formulas.py](sample_analyze_addon_formulas.py)|Extract formula|
+|[sample_analyze_addon_highres.py](sample_analyze_addon_highres.py)|Extract high resolution|
+|[sample_analyze_addon_languages.py](sample_analyze_addon_languages.py) |Detact language|
+|[sample_analyze_addon_query_fields.py](sample_analyze_addon_query_fields.py)|Query fields|
 
 
 ## Next steps

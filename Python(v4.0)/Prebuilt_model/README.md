@@ -8,9 +8,12 @@ All of these samples need the endpoint to your Document Intelligence resource ([
 You can check all samples from [here][sample_path].
 
 ## Prerequisites
-* Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription] and an
-[Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Setup
 
@@ -31,10 +34,10 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_invoices.py](sample_analyze_invoices.py) and [sample_analyze_invoices_async.py](sample_analyze_invoices_async.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_identity_documents.py](sample_analyze_identity_documents.py) and [sample_analyze_identity_documents_async.py](sample_analyze_identity_documents_async.py)  |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py](sample_analyze_receipts.py) and [sample_analyze_receipts_async.py](sample_analyze_receipts_async.py) |Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py](sample_analyze_tax_us_w2.py) and [sample_analyze_tax_us_w2_async.py](sample_analyze_tax_us_w2_async.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_invoices.py](sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
+|[sample_analyze_identity_documents.py](sample_analyze_identity_documents.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
+|[sample_analyze_receipts.py](sample_analyze_receipts.py) |Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
+|[sample_analyze_tax_us_w2.py](sample_analyze_tax_us_w2.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
 
 ## Next steps
 

@@ -8,9 +8,12 @@ All of these samples need the endpoint to your Document Intelligence resource ([
 You can check all samples from [here][sample_path].
 
 ## Prerequisites
-* Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription] and an
-[Azure Document Intelligence account][azure_document_intelligence_account] to run these samples.
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.8 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Setup
 
@@ -31,10 +34,10 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
-|[sample_analyze_custom_documents.py](sample_analyze_custom_documents.py) and [sample_analyze_custom_documents_async.py](sample_analyze_custom_documents_async.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
-|[sample_classify_document.py](sample_classify_document.py) and [sample_classify_document_async.py](sample_classify_document_async.py)| Classify a document using a trained document classifier.|
-|[sample_compose_model.py](sample_compose_model.py) and [sample_compose_model_async.py](sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
-|[sample_copy_model_to.py](sample_copy_model_to.py) and [sample_copy_model_to_async.py](sample_copy_model_to_async.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
+|[sample_analyze_custom_documents.py](sample_analyze_custom_documents.py)| Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.|
+|[sample_classify_document.py](sample_classify_document.py)| Classify a document using a trained document classifier.|
+|[sample_compose_model.py](sample_compose_model.py)|This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.|
+|[sample_copy_model_to.py](sample_copy_model_to.py)|Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.|
 
 ## Next steps
 
