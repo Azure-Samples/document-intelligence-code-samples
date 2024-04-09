@@ -195,8 +195,8 @@ To enable a wider set of scenarios, service introduces a "split" query parameter
   Each page is treated as a separate document. Each empty page is kept as its own document.
 
 
-## Next steps
-Try more advanced features:
+
+> Use the following examples to try more advanced features.
 ### Document Classifiers #Build
 
 ```ts
@@ -288,5 +288,6 @@ const { setLogLevel } = require("@azure/logger");
 
 setLogLevel("info");
 ```
-
-For more detailed instructions on how to enable logs, you can look at the [@azure/logger package docs](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/core/logger).
+## Next steps
+- For more detailed instructions on how to enable logs, you can look at the [@azure/logger package docs](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/core/logger).
+- For more examples, refer to: [Azure SDK for JavaScript](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest).

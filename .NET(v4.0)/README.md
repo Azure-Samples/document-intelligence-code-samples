@@ -46,20 +46,20 @@ dotnet add package Azure.AI.DocumentIntelligence --prerelease
 Below are some sample code guidelines so that you can choose the sample according to your needs.
 
 
-### Common scenarios samples
-- [Extract the layout of a document](Sample_ExtractLayout.md)
-- [Analyze a document with a prebuilt model](Sample_AnalyzeWithPrebuiltModel.md)
-- [Build a custom model](Sample_BuildCustomModel.md)
-- [Manage models](Sample_ManageModels.md)
-- [Classify a document](Sample_ClassifyDocument.md)
-- [Build a document classifier](Sample_BuildDocumentClassifier.md)
+## Common scenarios samples
+- [Extract the layout of a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ExtractLayout.md)
+- [Analyze a document with a prebuilt model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_AnalyzeWithPrebuiltModel.md)
+- [Build a custom model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_BuildCustomModel.md)
+- [Manage models](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ManageModels.md)
+- [Classify a document](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ClassifyDocument.md)
+- [Build a document classifier](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_BuildDocumentClassifier.md)
 
-### Advanced samples
-- [Compose a model](Sample_ModelCompose.md)
-- [Get and List document model operations](Sample_GetAndListOperations.md)
-- [Copy a custom model between Document Intelligence resources](Sample_CopyCustomModel.md)
-- [Analyze a document with add-on capabilities](Sample_AddOnCapabilities.md)
-- [Extract the layout of a document as Markdown](Sample_ExtractLayoutAsMarkdown.md)
+## Advanced samples
+- [Compose a model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ModelCompose.md)
+- [Get and List document model operations](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_GetAndListOperations.md)
+- [Copy a custom model between Document Intelligence resources](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_CopyCustomModel.md)
+- [Analyze a document with add-on capabilities](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_AddOnCapabilities.md)
+- [Extract the layout of a document as Markdown](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence/samples/Sample_ExtractLayoutAsMarkdown.md)
 
 
 ## **Next steps**
