@@ -3,7 +3,7 @@
 > Form Recognizer is now **Azure AI Document Intelligence**!
 - Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **.NET** ).
 
-|[Python](../.NET(v4.0))| .NET|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
+|[Python](../Python(v4.0))| .NET|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
 -  The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
