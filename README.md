@@ -12,8 +12,8 @@
 | --- | --- | --- | --- |
 
 
-- The contents of this floder default the latest version: **v4.0(2024-02-29-preview)** .
-- You can click  **[v3.1(2023-07-31-GA)](../v3.1(2023-07-31-GA))**  to view earlier versions.
+- The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
+- You can click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -59,7 +59,7 @@ pip install azure-ai-documentintelligence --pre
   - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
- Click the link of the model name to reach the corresponding topic page for more details.  Click  **[v3.1(2023-07-31-GA)](../v3.1(2023-07-31-GA))** to view earlier versions.
+ Click the link of the model name to reach the corresponding topic page for more details.  Click  **[v3.1 (2023-07-31-GA)](../v3.1(2023-07-31-GA))** to view earlier versions.
 
 **[ Read model ](Python(v4.0)/Read_model)** 
 > [sample_analyze_read.py](Python(v4.0)/Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
@@ -99,7 +99,7 @@ pip install azure-ai-documentintelligence --pre
 
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.  
-**Note**：Only available for **v4.0(2024-02-29-preview)** .
+**Note**：Only available for **v4.0 (2024-02-29-preview)** .
 
 >**[sample_rag_langchain.ipynb](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)**  
 Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
