@@ -3,13 +3,13 @@
 > [!NOTE]
 > Form Recognizer is now **Azure AI Document Intelligence**!
 
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **Python** ).
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **Python**).
 
 |Python| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
-- The contents of this floder default the latest version: **v4.0-Preview(2024-02-29)** .
-- You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))**  to view earlier versions.
+- The contents of this floder default the latest version: **v4.0(2024-02-29-preview)** .
+- You can click  **[v3.1(2023-07-31-GA)](../../v3.1(2023-07-31-GA)/Python(v3.1))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -47,13 +47,14 @@ pip install azure-ai-documentintelligence --pre
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
 3. If necessary, click [Example Document](https://github.com/Azure-Samples/cognitive-services-REST-api-samples/tree/master/curl/form-recognizer) to get your document.
-4. Below are some sample code guidelines so that you can choose the sample according to your needs. For more samples, see [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples).
+4. Below are some sample code guidelines so that you can choose the sample according to your needs.  
+   **Note**: For more samples, see **[Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples)** and **[Async Samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/aio)**.
   - [Common samples](#common-samples)
   - [Retrieval Augmented Generation (RAG) samples](#retrieval-augmented-generation-rag-samples)
   - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
- Click the link of the model name to reach the corresponding topic page for more details.  Click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31))** to view earlier versions.
+ Click the link of the model name to reach the corresponding topic page for more details.  Click  **[v3.1(2023-07-31-GA)](../../v3.1(2023-07-31-GA))** to view earlier versions.
 
 **[ Read model ](Read_model)** 
 > [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
@@ -93,7 +94,7 @@ pip install azure-ai-documentintelligence --pre
 
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.  
-Note：Only available for **v4.0-Preview(2024-02-29)** .
+**Note**：Only available for **v4.0(2024-02-29-preview)** .
 
 >**[sample_rag_langchain.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)**  
 Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
@@ -109,7 +110,7 @@ Sample postprocessing script to identify and merge cross-page tables based on bu
 
 ### **Pre/post processing samples**
 There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.  
-Note：Applies to all versions.
+**Note**：Applies to **all versions**.
 
 >**[sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb)** and **[sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py)**  
 Sample postprocessing script to disambiguate similar characters based on business rules.

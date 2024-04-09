@@ -1,13 +1,13 @@
 # Azure Document Intelligence client SDK Samples for .NET
 > [!NOTE]
 > Form Recognizer is now **Azure AI Document Intelligence**!
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one ( default **.NET** ).
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **.NET**).
 
 |[Python](../Python(v4.0))| .NET|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
--  The contents of this folder apply to the latest version: **v4.0 (Preview)** . 
-You can click  **[v3.1-GA(2023-07-31)](../../v3.1-GA(2023-07-31)/.NET(v3.1))**  to view earlier versions.
+-  The contents of this folder apply to the latest version: **v4.0 (2024-02-29-preview)** . 
+You can click  **[v3.1(2023-07-31-GA)](../../v3.1(2023-07-31-GA)/.NET(v3.1))**  to view earlier versions.
 ## **Table of Contents**
 
 - [Features](#features)
