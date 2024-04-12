@@ -49,6 +49,7 @@ pip install azure-ai-documentintelligence --pre
 3. If necessary, click [Example Document](https://github.com/Azure-Samples/cognitive-services-REST-api-samples/tree/master/curl/form-recognizer) to get your document.
 4. Below are some sample code guidelines so that you can choose the sample according to your needs.  
    **Note**: For more samples, see **[Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples)** and **[Async Samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/aio)**.
+   
   - [Common samples](#common-samples)
   - [Retrieval Augmented Generation (RAG) samples](#retrieval-augmented-generation-rag-samples)
   - [Pre/post processing samples](#prepost-processing-samples)
