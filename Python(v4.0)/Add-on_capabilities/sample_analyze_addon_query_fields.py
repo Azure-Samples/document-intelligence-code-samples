@@ -99,7 +99,7 @@ def analyze_query_fields():
         "prebuilt-layout",
         AnalyzeDocumentRequest(url_source=formUrl),   
         features=[DocumentAnalysisFeature.QUERY_FIELDS],    # Specify which add-on capabilities to enable.
-        query_fields=["Address", "InvoiceNumber"],
+        query_fields=["Address", "InvoiceNumber"],  # Set the features and provide a comma-separated list of field names.
     )       
     
     # # If analyzing a local document, remove the comment markers (#) at the beginning of these 11 lines.
@@ -107,12 +107,13 @@ def analyze_query_fields():
     # # Replace <path to your sample file>  with your actual file path.
     # path_to_sample_document = "<path to your sample file>"
     # with open(path_to_sample_document, "rb") as f:
-    # poller = document_intelligence_client.begin_analyze_document(
-    #     "prebuilt-layout",
-    #     AnalyzeDocumentRequest(url_source=formUrl),   
-    #     features=[DocumentAnalysisFeature.QUERY_FIELDS],    # Specify which add-on capabilities to enable.
-    #     query_fields=["Address", "InvoiceNumber"],
-    # )
+    #   poller = document_intelligence_client.begin_analyze_document(
+    #       "prebuilt-layout",
+    #       analyze_request=f,  
+    #       features=[DocumentAnalysisFeature.QUERY_FIELDS],    # Specify which add-on capabilities to enable.
+    #       query_fields=["Address", "InvoiceNumber"],  # Set the features and provide a comma-separated list of field names.
+    #       content_type="application/octet-stream",
+    #   )
     result: AnalyzeResult = poller.result()
     print("Here are extra fields in result:\n")
     if result.documents:
