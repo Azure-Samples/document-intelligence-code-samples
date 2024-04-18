@@ -90,7 +90,7 @@ def analyze_formulas():
     document_intelligence_client = DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
     # Analyze a document at a URL:
-    formUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/formulas.pdf"
+    formUrl = "https://github.com/851996006/data/blob/main/formulas.png?raw=true"
     # Replace with your actual formUrl:
     # If you use the URL of a public website, to find more URLs, please visit: https://aka.ms/more-URLs 
     # If you analyze a document in Blob Storage, you need to generate Public SAS URL, please visit: https://aka.ms/create-sas-tokens
