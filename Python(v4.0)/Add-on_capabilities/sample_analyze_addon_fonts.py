@@ -99,7 +99,7 @@ def analyze_fonts():
     document_intelligence_client = DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
     # Analyze a document at a URL:
-    formUrl = "https://github.com/851996006/data/blob/main/font.jpg?raw=true"
+    formUrl = "https://github.com/Azure-Samples/cognitive-services-REST-api-samples/blob/master/curl/form-recognizer/contoso-allinone.jpg?raw=true"
     # Replace with your actual formUrl:
     # If you use the URL of a public website, to find more URLs, please visit: https://aka.ms/more-URLs 
     # If you analyze a document in Blob Storage, you need to generate Public SAS URL, please visit: https://aka.ms/create-sas-tokens

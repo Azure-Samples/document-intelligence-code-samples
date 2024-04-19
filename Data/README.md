@@ -13,8 +13,8 @@
 ## Add-on Capability
 |Feature|Document URL|
 | --- | --- |
-| Font property extraction | https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_forms/add_ons/fonts_and_languages.png?raw=true |
-| Formula extraction | https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_forms/add_ons/formulas.pdf |
+| Font property extraction | https://github.com/Azure-Samples/cognitive-services-REST-api-samples/blob/master/curl/form-recognizer/contoso-allinone.jpg?raw=true |
+| Formula extraction | https://github.com/microsoft/Form-Recognizer-Toolkit/blob/main/SampleCode/DotNet/Quickstarts/Assets/layout-formulas.png?raw=true |
 | High resolution extraction| https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_forms/add_ons/highres.png?raw=true |
  |Barcode extraction |https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_forms/add_ons/barcodes.jpg?raw=true |
 | Language detection | https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/sample_forms/add_ons/fonts_and_languages.png?raw=true|

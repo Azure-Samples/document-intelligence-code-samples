@@ -153,7 +153,9 @@ def identify_cross_page_tables(input_file_path):
     None
     """
     document_intelligence_client = DocumentIntelligenceClient(
-        endpoint=endpoint, credential=AzureKeyCredential(key)
+        endpoint=endpoint, 
+        credential=AzureKeyCredential(key),
+        headers={"x-ms-useragent":"sample-code-identify-cross-tables/1.0.0"},
     )
 
     file_path = input_file_path
