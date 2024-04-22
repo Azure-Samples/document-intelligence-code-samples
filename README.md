@@ -1,17 +1,8 @@
----
-page_type: sample
-products:
-- azure
-- azure-ai-document-intelligence
-name: Azure Document Intelligence code samples 
-description: Samples for the Azure.AI.DocumentIntelligence client library
----
-
-# Welcome to Azure Document Intelligence code samples repo
+# Azure Document Intelligence code samples repo
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 
-Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
+Welcome! Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
 
 ### Document analysis models
 
