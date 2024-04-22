@@ -1,57 +1,75 @@
-# Project Name
+# Azure Document Intelligence code samples repo
 
-(short, 1-3 sentenced, description of the project)
+> Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 
-## Features
+Welcome! Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
 
-This project framework provides the following features:
+### Document analysis models
 
-* Feature 1
-* Feature 2
-* ...
+Document analysis models enable text extraction from forms and documents and return structured business-ready content ready for your organization's action, use, or development.
 
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+* **Layout** — Extract text, tables, and document structure.
+  
+* **Read** — Extract printed and handwritten text.
 
 
-## Demo
+### Prebuilt models
 
-A demo app is included to show how to use the project.
+Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
 
-To run the demo, follow these steps:
+* **Invoice** — Extract customer and vendor details.
 
-(Add steps to start up the demo)
+* **Receipt** — Extract sales transaction details.
 
-1.
-2.
-3.
+* **Identity** — Extract identification and verification details.
 
-## Resources
+* **US Mortgage 1003** — Extract mortgage loan application details.
 
-(Any additional resources or related projects)
+* **US Mortgage 1008** — Extract mortgage loan transmittal details.
 
-- Link to supporting information
-- Link to similar sample
-- ...
+* **US Mortgage closing disclosure** — Extract final mortgage loan terms.
+
+* **Health Insurance card** — Extract health insurance and coverage details.
+
+* **Contract** — Extract agreement and party details.
+
+* **Credit/Debit card** — Extract payment card information.
+
+* **Marriage certificate** — Extract information from certified marriage documents.
+
+* **US Tax W-2** — Extract taxable
+compensation details.
+
+* **US Tax 1098** — Extract mortgage interest details.
+
+* **US Tax 1098-E** — Extract student loan interest details.
+
+* **US Tax 1098-T** — Extract qualified tuition details.
+
+* **US Tax 1099** — Extract information from 1099 form variations.
+
+* **US Tax 1040** — Extract information from 1040 form variations.
+
+### Custom models
+
+* **Custom template** — Extract data from static layouts.
+
+* **Custom neural** — Extract data from mixed-type documents.
+
+* **Custom composed** — Extract data using a collection of models.
+
+* **Custom classifier** — Identify designated document types (classes)
+before invoking an extraction model.
+
+### Add-on capabilities
+
+✔️ **ocr.highResolution** 
+
+✔️ **ocr.formula**
+
+✔️ **ocr.font**
+
+✔️ **ocr.barcode**
+
+✔️ **queryFields**
+
