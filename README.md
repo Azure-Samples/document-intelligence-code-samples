@@ -1,10 +1,78 @@
-# **Azure AI Document Intelligence Code Samples**
 
-> [!NOTE]
-> Form Recognizer is now **Azure AI Document Intelligence**!
+# Azure Document Intelligence code samples repo
+
+> Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
+
+Welcome! Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
+
+### Document analysis models
+
+Document analysis models enable text extraction from forms and documents and return structured business-ready content ready for your organization's action, use, or development.
+
+* **Layout** — Extract text, tables, and document structure.
+  
+* **Read** — Extract printed and handwritten text.
 
 
+### Prebuilt models
 
+Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
+
+* **Invoice** — Extract customer and vendor details.
+
+* **Receipt** — Extract sales transaction details.
+
+* **Identity** — Extract identification and verification details.
+
+* **US Mortgage 1003** — Extract mortgage loan application details.
+
+* **US Mortgage 1008** — Extract mortgage loan transmittal details.
+
+* **US Mortgage closing disclosure** — Extract final mortgage loan terms.
+
+* **Health Insurance card** — Extract health insurance and coverage details.
+
+* **Contract** — Extract agreement and party details.
+
+* **Credit/Debit card** — Extract payment card information.
+
+* **Marriage certificate** — Extract information from certified marriage documents.
+
+* **US Tax W-2** — Extract taxable
+compensation details.
+
+* **US Tax 1098** — Extract mortgage interest details.
+
+* **US Tax 1098-E** — Extract student loan interest details.
+
+* **US Tax 1098-T** — Extract qualified tuition details.
+
+* **US Tax 1099** — Extract information from 1099 form variations.
+
+* **US Tax 1040** — Extract information from 1040 form variations.
+
+### Custom models
+
+* **Custom template** — Extract data from static layouts.
+
+* **Custom neural** — Extract data from mixed-type documents.
+
+* **Custom composed** — Extract data using a collection of models.
+
+* **Custom classifier** — Identify designated document types (classes)
+before invoking an extraction model.
+
+### Add-on capabilities
+
+✔️ **ocr.highResolution** 
+
+✔️ **ocr.formula**
+
+✔️ **ocr.font**
+
+✔️ **ocr.barcode**
+
+✔️ **queryFields**
 
 - Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **Python**).
 
@@ -95,8 +163,6 @@ pip install azure-ai-documentintelligence --pre
 
 
 
-
-
 ### **Retrieval Augmented Generation (RAG) samples**
 The Layout model provides various building blocks like tables, paragraphs, section headings, etc. that can enable different semantic chunking strategies of the document. With semantic chunking in Retrieval Augmented Generation (RAG), it will be more efficient in storage and retrieval, together with the benefits of improved relevance and enhanced interpretability. The following samples show how to use the Layout model to do semantic chunking and use the chunks to do RAG.  
 **Note**：Only available for **v4.0 (2024-02-29-preview)** .
@@ -111,8 +177,6 @@ Sample notebook showcasing how to crop the figures and send figure content (with
 Sample postprocessing script to identify and merge cross-page tables based on business rules. 
 
  
-
-
 ### **Pre/post processing samples**
 There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.  
 **Note**：Applies to **all versions**.
@@ -122,9 +186,6 @@ Sample postprocessing script to disambiguate similar characters based on busines
 
 > **[sample_identify_cross_page_tables.ipynb](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb)** and **[sample_identify_cross_page_tables.py](Python(v4.0)/Pre_or_post_processing_samples/sample_identify_cross_page_tables.py)**  
 Sample postprocessing script to identify cross-page tables based on business rules. 
-
-
-
 
 
 ## **Next steps**
