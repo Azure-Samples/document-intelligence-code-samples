@@ -1,13 +1,3 @@
----
-page_type: sample
-languages:
-  - javascript
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-form-recognizer
-urlFragment: ai-form-recognizer-javascript
----
 
 # Azure AI Document Intelligence client library samples for JavaScript
 

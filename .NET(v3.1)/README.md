@@ -1,16 +1,4 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- azure
-- azure-cognitive-services
-- azure-form-recognizer
-name: Azure Form Recognizer samples for .NET
-description: Samples for the Azure.AI.FormRecognizer client library
----
-
-# Azure Form Recognizer client SDK Samples
+# Azure Form Recognizer client SDK Samples for .NET
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions to Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 

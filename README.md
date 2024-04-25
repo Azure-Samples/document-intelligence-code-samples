@@ -5,7 +5,7 @@
 
 
 
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one.
 
 |[Python](Python(v3.1))| [.NET](.NET(v3.1))|[Java](Java(v3.1))| [JavaScript](JavaScript(v3.1))|
 | --- | --- | --- | --- |

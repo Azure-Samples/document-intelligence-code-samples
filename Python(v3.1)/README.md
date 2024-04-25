@@ -1,14 +1,3 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-cognitive-services
-  - azure-form-recognizer
-urlFragment: formrecognizer-samples
----
-
 # Samples for Azure Form Recognizer client library for Python
 
 > Note: Starting with version 2022-08-31, a new set of clients were introduced to leverage the newest features

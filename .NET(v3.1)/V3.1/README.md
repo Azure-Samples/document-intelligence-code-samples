@@ -1,16 +1,4 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- azure
-- azure-cognitive-services
-- azure-form-recognizer
-name: Azure Form Recognizer samples for .NET
-description: Samples for the Azure.AI.FormRecognizer client library
----
-
-# Azure Form Recognizer client SDK V3.1 Samples
+# Azure Form Recognizer client SDK V3.1 Samples for .NET
 Azure Cognitive Services Form Recognizer is a cloud service that uses machine learning to recognize form fields, text, and tables in form documents. It includes the following capabilities:
 
 - Recognize form content - Recognize and extract tables, lines, words, and selection marks like radio buttons and check boxes in forms documents, without the need to train a model.
