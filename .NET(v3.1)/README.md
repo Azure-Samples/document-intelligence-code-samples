@@ -2,37 +2,74 @@
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions to Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 
-> Note: starting with version `4.0.0`, a new set of clients were introduced to leverage the newest features of the Document Intelligence service. Please see the [Migration Guide][migration_guide] for detailed instructions on how to update application code from client library version `3.1.1` or lower to the latest version. Additionally, see the [Changelog][changelog] for more detailed information.
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **.NET**).
 
-Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
+|[Python](../Python(v3.1))| .NET|[Java](../Java(v3.1))| [JavaScript](../JavaScript(v3.1))|
+| --- | --- | --- | --- |
+-  The contents of this folder apply to the version: **v3.1 (2023-07-31-GA)** . 
+- You can select  **[v4.0 (2024-02-29-preview)](../../main/.NET(v4.0))**  to view the latest version.
+## **Table of Contents**
 
-- Layout - Extract text, selection marks, table structures, styles, and paragraphs, along with their bounding region coordinates from documents.
-- General document - Analyze key-value pairs in addition to general layout from documents.
-- Read - Read information about textual elements, such as page words and lines in addition to text language information.
-- Prebuilt - Analyze data from certain types of common documents using prebuilt models. Supported documents include receipts, invoices, business cards, identity documents, vaccination cards, US W2 tax forms, and US health insurance cards.
-- Custom analysis - Build custom document models to analyze text, field values, selection marks, table structures, styles, and paragraphs from documents. Custom models are built with your own data, so they're tailored to your documents.
-- Custom classification - Build custom classifier models that combine layout and language features to accurately detect and identify documents you process within your application.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup programming environment](#setup-programming-environment)
+- [Running the samples](#running-the-samples)
+- [Next steps](#next-steps)
+ 
+## **Features**
+Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/azure/ai-services/) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.  
+This sample program is built based on .Net Console application. It shows common scenario operations with the Azure Document Intelligence client library.
+## **Prerequisites**
+The following prerequisites are necessary to run the sample program. For more details, please visit the [Get started with Document Intelligence SDKs](https://learn.microsoft.com/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-3.1.0&pivots=programming-language-csharp).  
 
-## Common scenarios samples for client library version 4.0.0 and higher
-- [Extract the layout of a document](Sample_ExtractLayout.md)
-- [Analyze with the prebuilt general document model](Sample_AnalyzePrebuiltDocument.md)
-- [Analyze with the prebuilt read model](Sample_AnalyzePrebuiltRead.md)
-- [Analyze a document with a custom model](Sample_AnalyzeWithCustomModel.md)
-- [Analyze a document with a prebuilt model](Sample_AnalyzeWithPrebuiltModel.md)
-- [Build a custom model](Sample_BuildCustomModel.md)
-- [Manage models](Sample_ManageModels.md)
-- [Classify a document](Sample_ClassifyDocument.md)
-- [Build a document classifier](Sample_BuildDocumentClassifier.md)
+* **Azure subscription**  - [Create one for free](https://azure.microsoft.com/free/ai-services/).  
+* **Azure AI services or Document Intelligence resource**  
+Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.  
+* **Get the key and endpoint**    
+1 - After your resource is deployed, select "Go to resource".   
+2 - In the left navigation menu, select "Keys and Endpoint".   
+3 - Copy one of the keys and the Endpoint for use in this sample. 
 
-## Advanced samples for client library version 4.0.0 and higher
-- [Compose a model](Sample_ModelCompose.md)
-- [Get and List document model operations](Sample_GetAndListOperations.md)
-- [Copy a custom model between Form Recognizer resources](Sample_CopyCustomModel.md)
-- [Mock a client for testing using the Moq library](Sample_MockClient.md)
+## **Setup programming environment**
 
-## Samples for client library versions 3.1.1 and lower
-Please see the samples [here][v31samples].
+1. Install the current version of [Visual Studio IDE](https://visualstudio.microsoft.com/vs/).
+2. You can set `endpoint` and `apiKey` based on an environment variable, a configuration setting, or any way that works for your application.
+
+```C# Snippet:CreateFormRecognizerClient
+string endpoint = "<endpoint>";
+string apiKey = "<apiKey>";
+var credential = new AzureKeyCredential(apiKey);
+var client = new FormRecognizerClient(new Uri(endpoint), credential);
+```
+## **Running the samples**
+1. Below are some sample code guidelines so that you can choose the sample according to your needs. 
+2. Execute the "Build" command in [Visual Studio IDE](https://visualstudio.microsoft.com/vs/).
+2. After building successfully, click the "▶"(debug button) or press the F5 keyboard's shortcut to start up. 
+
+### Common scenarios samples
+- [Recognize form content](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample1_RecognizeFormContent.md)
+- [Recognize custom forms](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample2_RecognizeCustomForms.md)
+- [Recognize receipts](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample3_RecognizeReceipts.md)
+- [Recognize business cards](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample9_RecognizeBusinessCards.md)
+- [Recognize invoices](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample10_RecognizeInvoices.md)
+- [Recognize identity documents](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample11_RecognizeIdentityDocuments.md)
+- [Train a model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample5_TrainModel.md)
+- [Manage custom models](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample6_ManageCustomModels.md)
+
+### Advanced samples
+- [Strongly-typing a recognized form](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample4_StronglyTypingARecognizedForm.md)
+- [Create a composed model](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample8_ModelCompose.md)
+- [Differentiate output models trained with and without labels](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample10_DifferentiateOutputModelsTrainedWithAndWithoutLabels.cs)
+- [Differentiate output labeled tables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample15_DifferentiateOutputLabeledTables.cs)
+- [Copy a custom model between Form Recognizer resources](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample7_CopyCustomModel.md)
+- [Field Bounding Box](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/tests/samples/V3.1/Sample9_FieldBoundingBox.cs)
+- [Mock a client for testing using the Moq library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1/Sample_MockClient.md)
 
 [changelog]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/CHANGELOG.md
 [v31samples]: V3.1/README.md
 [migration_guide]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/MigrationGuide.md
+
+## **Next steps**
+For more samples, see [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/V3.1).  
+
