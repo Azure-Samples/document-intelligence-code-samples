@@ -14,13 +14,21 @@ All of these samples need the endpoint to your Document Intelligence resource ([
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Set your environment variables
-* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
-* [Python 3.7 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
-* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.  * For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
-* An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
-    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
-* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
-
+At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+- For Windows:  
+```setx DI_KEY <yourKey>```   
+```setx DI_ENDPOINT <yourEndpoint>```   
+   You need to restart any running programs that read the environment variable.
+- For macOS:  
+```export key=<yourKey>```  
+```export endpoint=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/V3.1-set-environment-variables-for-macOS
+- For Linux:  
+```export DI_KEY=<yourKey>```  
+```export DI_ENDPOINT=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/V3.1-set-environment-variables-for-Linux
 
 ## Setup
 

@@ -13,6 +13,22 @@ All of these samples need the endpoint to your Document Intelligence resource ([
 * An Azure AI services or Document Intelligence resource. * Once you have your Azure subscription,Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
     You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
+## Set your environment variables
+At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+- For Windows:  
+```setx DI_KEY <yourKey>```   
+```setx DI_ENDPOINT <yourEndpoint>```   
+   You need to restart any running programs that read the environment variable.
+- For macOS:  
+```export key=<yourKey>```  
+```export endpoint=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/V3.1-set-environment-variables-for-macOS
+- For Linux:  
+```export DI_KEY=<yourKey>```  
+```export DI_ENDPOINT=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/V3.1-set-environment-variables-for-Linux
 
 ## Setup
 
@@ -24,6 +40,12 @@ pip install azure-ai-formrecognizer==3.3.0
 
 2. Clone or download this sample repository
 3. Open the sample folder in Visual Studio Code or your IDE of choice.
+
+## Create your Python application
+1. Create a new Python file called "sample_analyze_receipts.py" in an editor or IDE.
+2. Open the "sample_analyze_receipts.py" file and insert the provided code sample into your application.
+3. At a command prompt, use the following code to run the Python code: 
+       python sample_analyze_receipts.py
 
 ## Running the samples
 
