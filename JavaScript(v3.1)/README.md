@@ -74,41 +74,7 @@ These sample programs show how to use the JavaScript client libraries for Azure 
 | [listModels.js][listmodels]                             | iterate over the models in a resource                                                      |
 | [readDocument.js][readdocument]                         | use the prebuilt "read" model to extract information about the text content of a document  |
 
-## Prerequisites
 
-The sample programs are compatible with [LTS versions of Node.js](https://github.com/nodejs/release#release-schedule).
-
-You need [an Azure subscription][freesub] and the following Azure resources to run these sample programs:
-
-- [Azure Cognitive Services account][createinstance_azurecognitiveservicesaccount]
-
-Samples retrieve credentials to access the service endpoint from environment variables. Alternatively, edit the source code to include the appropriate credentials. See each individual sample for details on which environment variables/credentials it requires to function.
-
-Adapting the samples to run in the browser may require some additional consideration. For details, please see the [package README][package].
-
-## Setup
-
-To run the samples using the published version of the package:
-
-1. Install the dependencies using `npm`:
-
-```bash
-npm install
-```
-
-2. Edit the file `sample.env`, adding the correct credentials to access the Azure service and run the samples. Then rename the file from `sample.env` to just `.env`. The sample programs will read this file automatically.
-
-3. Run whichever samples you like (note that some samples may require additional setup, see the table above):
-
-```bash
-node composeModel.js
-```
-
-Alternatively, run a single sample with the correct environment variables set (setting up the `.env` file is not required if you do this), for example (cross-platform):
-
-```bash
-npx cross-env FORM_RECOGNIZER_ENDPOINT="<form recognizer endpoint>" FORM_RECOGNIZER_API_KEY="<form recognizer api key>" PURCHASE_ORDER_SUPPLIES_SAS_URL="<purchase order supplies sas url>" PURCHASE_ORDER_EQUIPMENT_SAS_URL="<purchase order equipment sas url>" PURCHASE_ORDER_FURNITURE_SAS_URL="<purchase order furniture sas url>" PURCHASE_ORDER_CLEANING_SUPPLIES_SAS_URL="<purchase order cleaning supplies sas url>" node composeModel.js
-```
 
 ## Next Steps
 
