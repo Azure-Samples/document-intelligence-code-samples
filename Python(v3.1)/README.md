@@ -3,206 +3,103 @@
 > Note: Starting with version 2022-08-31, a new set of clients were introduced to leverage the newest features
 > of the Document Intelligence service. Please see the [Migration Guide][migration-guide] for detailed instructions on how to update application
 > code from client library version 3.1.X or lower to the latest version. Additionally, see the [Changelog](CHANGELOG.md) for more detailed information.
+- Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **Python**).
 
-These code samples show common scenario operations with the Azure Form Recognizer client library.
+|Python| [.NET](../.NET(v3.1))|[Java](../Java(v3.1))| [JavaScript](../JavaScript(v3.1))|
+| --- | --- | --- | --- |
 
-All of these samples need the endpoint to your Form Recognizer resource ([instructions on how to get endpoint][get-endpoint-instructions]), and your Form Recognizer API key ([instructions on how to get key][get-key-instructions]).
+- The contents of this floder default the version: **v3.1 (2023-07-31-GA)** .
+- You can select  **[v4.0 (2024-02-29-preview)](../../main/Python(v4.0))**  to view the latest versions.
 
-## Samples for client library versions 3.2.0 and later
+## **Table of Contents**
 
-|**File Name**|**Description**|
-|----------------|-------------|
-|[sample_authentication.py][sample_auth] and [sample_authentication_async.py][sample_auth_async]|Authenticate the client|
-|[sample_analyze_layout.py][sample_analyze_layout] and [sample_analyze_layout_async.py][sample_analyze_layout_async]|Extract text, selection marks, and table structures in a document|
-|[sample_analyze_general_documents.py][sample_analyze_general_documents] and [sample_analyze_general_documents_async.py][sample_analyze_general_documents_async]|Analyze document key-value pairs, tables, and selection marks using a prebuilt model|
-|[sample_analyze_read.py][sample_analyze_read] and [sample_analyze_read_async.py][sample_analyze_read_async]|Read document elements, such as pages and detected languages|
-|[sample_analyze_invoices.py][sample_analyze_invoices] and [sample_analyze_invoices_async.py][sample_analyze_invoices_async]|Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_business_cards.py][sample_analyze_business_cards] and [sample_analyze_business_cards_async.py][sample_analyze_business_cards_async]|Analyze document text and pre-trained fields and values pertaining to English business cards using a prebuilt model|
-|[sample_analyze_identity_documents.py][sample_analyze_identity_documents] and [sample_analyze_identity_documents_async.py][sample_analyze_identity_documents_async]|Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py][sample_analyze_receipts] and [sample_analyze_receipts_async.py][sample_analyze_receipts_async]|Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py][sample_analyze_tax_us_w2] and [sample_analyze_tax_us_w2_async.py][sample_analyze_tax_us_w2_async]|Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
-|[sample_analyze_custom_documents.py][sample_analyze_custom_documents] and [sample_analyze_custom_documents_async.py][sample_analyze_custom_documents_async]|Analyze custom documents with your custom model to extract text, field values, selection marks, and table data from documents|
-|[sample_build_model.py][sample_build_model] and [sample_build_model_async.py][sample_build_model_async]|Build a custom model|
-|[sample_compose_model.py][sample_composed_model] and [sample_compose_model_async.py][sample_composed_model_async]|Create a composed model from a collection of existing models to be called with a single model ID|
-|[sample_manage_models.py][sample_manage_models] and [sample_manage_models_async.py][sample_manage_models_async]|Manage the models in your account|
-|[sample_get_operations.py][sample_get_operations] and [sample_get_operations_async.py][sample_get_operations_async]|Get and list the document model operations created within the past 24 hours|
-|[sample_copy_model_to.py][sample_copy] and [sample_copy_model_to_async.py][sample_copy_async]|Copy a custom model from one Form Recognizer resource to another|
-|[sample_get_words_on_document_line.py][sample_get_words_on_document_line] and [sample_get_words_on_document_line_async.py][sample_get_words_on_document_line_async]|Get the words in a DocumentLine|
-|[sample_convert_to_and_from_dict.py][sample_convert_to_and_from_dict_v3_2] and [sample_convert_to_and_from_dict_async.py][sample_convert_to_and_from_dict_async_v3_2]|Convert model types to a dictionary that can be used to create JSON content, then convert the same dictionary back to the original model type|
-|[sample_get_elements_with_spans.py][sample_get_elements_with_spans] and [sample_get_elements_with_spans_async.py][sample_get_elements_with_spans_async]|Get elements, such as words, lines, and styles, in the result of an analyze operation by searching with spans|
-|[sample_classify_document.py][sample_classify_document] and [sample_classify_document_async.py][sample_classify_document_async]|Classify documents with a custom classification model.|
-|[sample_classify_document_from_url.py][sample_classify_document_from_url] and [sample_classify_document_from_url_async.py][sample_classify_document_from_url_async]|Classify documents from URL with a custom classification model.|
-|[sample_build_classifier.py][sample_build_classifier] and [sample_build_classifier_async.py][sample_build_classifier_async]|Build a custom document classifier.|
-|[sample_manage_classifiers.py][sample_manage_classifiers] and [sample_manage_classifiers_async.py][sample_manage_classifiers_async]|Manage custom document classification models.|
-|[sample_send_request.py][sample_send_request] and [sample_send_request_async.py][sample_send_request_async]|Use the `send_request` client method.|
-|[sample_analyze_addon_barcodes.py][sample_analyze_addon_barcodes] and [sample_analyze_addon_barcodes_async.py][sample_analyze_addon_barcodes_async]|Extract barcodes using the add-on capability.|
-|[sample_analyze_addon_fonts.py][sample_analyze_addon_fonts] and [sample_analyze_addon_fonts_async.py][sample_analyze_addon_fonts_async]|Extract font information using the add-on capability.|
-|[sample_analyze_addon_formulas.py][sample_analyze_addon_formulas] and [sample_analyze_addon_formulas_async.py][sample_analyze_addon_formulas_async]|Extract formulas using the add-on capability.|
-|[sample_analyze_addon_highres.py][sample_analyze_addon_highres] and [sample_analyze_addon_highres_async.py][sample_analyze_addon_highres_async]|Recognize text with improved quality using the add-on capability.|
-|[sample_analyze_addon_languages.py][sample_analyze_addon_languages] and [sample_analyze_addon_languages_async.py][sample_analyze_addon_languages_async]|Detect languages using the add-on capability.|
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running the samples](#running-the-samples)
+- [Next steps](#next-steps)
+## **Features**
+Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-4.0.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
-## Samples for client library versions 3.1.X
+## **Prerequisites**
+* Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services/).
+* [Python 3.7 or later](https://www.python.org/). Your Python installation should include [pip](https://pip.pypa.io/en/stable/). You can check if you have pip installed by running `pip --version` on the command line. Get pip by installing the latest version of Python.
+* Install the latest version of [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE. For more information, see [Getting Started with Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+* An Azure AI services or Document Intelligence resource. Once you have your Azure subscription, Create a [single-service](https://aka.ms/single-service) or [multi-service](https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+* [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-3.1.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
-|**File Name**|**Description**|
-|----------------|-------------|
-|[sample_authentication.py][sample_authentication] and [sample_authentication_async.py][sample_authentication_async]|Authenticate the client|
-|[sample_recognize_content.py][sample_recognize_content] and [sample_recognize_content_async.py][sample_recognize_content_async]|Recognize text, selection marks, and table structures in a document|
-|[sample_recognize_receipts.py][sample_recognize_receipts] and [sample_recognize_receipts_async.py][sample_recognize_receipts_async]|Recognize data from a file of a sales receipt using a prebuilt model|
-|[sample_recognize_receipts_from_url.py][sample_recognize_receipts_from_url] and [sample_recognize_receipts_from_url_async.py][sample_recognize_receipts_from_url_async]|Recognize data from a URL of a sales receipt using a prebuilt model|
-|[sample_recognize_business_cards.py][sample_recognize_business_cards] and [sample_recognize_business_cards_async.py][sample_recognize_business_cards_async]|Recognize data from a file of a business card using a prebuilt model|
-|[sample_recognize_identity_documents.py][sample_recognize_identity_documents] and [sample_recognize_identity_documents_async.py][sample_recognize_identity_documents_async]|Recognize data from a file of an ID document using a prebuilt model|
-|[sample_recognize_invoices.py][sample_recognize_invoices] and [sample_recognize_invoices_async.py][sample_recognize_invoices_async]|Recognize data from a file of an invoice using a prebuilt model|
-|[sample_recognize_custom_forms.py][sample_recognize_custom_forms] and [sample_recognize_custom_forms_async.py][sample_recognize_custom_forms_async]|Recognize forms with your custom model|
-|[sample_train_model_without_labels.py][sample_train_model_without_labels] and [sample_train_model_without_labels_async.py][sample_train_model_without_labels_async]|Train a custom model with unlabeled data|
-|[sample_train_model_with_labels.py][sample_train_model_with_labels] and [sample_train_model_with_labels_async.py][sample_train_model_with_labels_async]|Train a custom model with labeled data|
-|[sample_manage_custom_models.py][sample_manage_custom_models] and [sample_manage_custom_models_async.py][sample_manage_custom_models_async]|Manage the custom models in your account|
-|[sample_copy_model.py][sample_copy_model] and [sample_copy_model_async.py][sample_copy_model_async]|Copy a custom model from one Form Recognizer resource to another|
-|[sample_create_composed_model.py][sample_create_composed_model] and [sample_create_composed_model_async.py][sample_create_composed_model_async]|Create a composed model from a collection of existing models trained with labels|
-|[sample_strongly_typing_recognized_form.py][sample_strongly_typing_recognized_form] and [sample_strongly_typing_recognized_form_async.py][sample_strongly_typing_recognized_form_async]|Use the fields in your recognized forms to create an object with strongly-typed fields|
-|[sample_get_bounding_boxes.py][sample_get_bounding_boxes] and [sample_get_bounding_boxes_async.py][sample_get_bounding_boxes_async]|Get info to visualize the outlines of form content and fields, which can be used for manual validation|
-|[sample_differentiate_output_models_trained_with_and_without_labels.py][sample_differentiate_output_models_trained_with_and_without_labels] and [sample_differentiate_output_models_trained_with_and_without_labels_async.py][sample_differentiate_output_models_trained_with_and_without_labels_async]|See the differences in output when using a custom model trained with labeled data and one trained with unlabeled data|
-|[sample_differentiate_output_labeled_tables.py][sample_differentiate_output_labeled_tables] and [sample_differentiate_output_labeled_tables_async.py][sample_differentiate_output_labeled_tables_async]|See the differences in output when using a custom model trained with fixed vs. dynamic table tags|
-|[sample_convert_to_and_from_dict.py][sample_convert_to_and_from_dict_v3_1] and [sample_convert_to_and_from_dict_async.py][sample_convert_to_and_from_dict_async_v3_1]|Convert model types to a dictionary that can be used to create JSON content, then convert the same dictionary back to the original model type|
+## **Setup**
 
-## Samples for client library versions 3.0.0 and below
-
-Please see the samples [here][v3.0.0-samples-tag].
-
-## Prerequisites
-* Python 3.8 or later is required to use this package
-* You must have an [Azure subscription][azure_subscription] and an
-[Azure Form Recognizer account][azure_form_recognizer_account] to run these samples.
-
-## Setup
-
-1. Install the Azure Form Recognizer client library for Python with [pip][pip]:
+1. Open a terminal window in your local environment and install the Azure AI Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-formrecognizer --pre
+pip install azure-ai-formrecognizer==3.3.0
 ```
 
 2. Clone or download this sample repository
 3. Open the sample folder in Visual Studio Code or your IDE of choice.
 
 ## Running the samples
-
+  
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
-3. Follow the usage described in the file, e.g. `python sample_analyze_receipts.py`
+3. Below are some sample code guidelines so that you can choose the sample according to your needs.  
+**Note**: For more samples, see **[Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.3.0/sdk/formrecognizer/azure-ai-formrecognizer/samples)** and **[Async Samples](https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.3.0/sdk/formrecognizer/azure-ai-formrecognizer/samples/v3.2_and_later/async_samples)**.
+- [Common samples](#common-samples)
+- [Pre/post processing samples](#prepost-processing-samples)  
+### **Common samples**
+Select the link of the model name to reach the corresponding topic page for more details.  Select **[v4.0 (2024-02-29-preview)](../../main)** to view the latest version.  
 
-## Next steps
+**[ Read model ](Read_model)**: Extract printed and handwritten text.
+> [sample_analyze_read.py](Read_model/sample_analyze_read.py/) 
 
-Check out the [API reference documentation][python-fr-ref-docs] to learn more about
-what you can do with the Azure Form Recognizer client library.
+ **[ Layout mode ](Layout_model)**: Extract and anlayze text, tables, and document structure.
+> [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py)  
 
+ **[ Prebuilt model ](Prebuilt_model)**: Add intelligent document processing to your apps and flows without having to train and build your own models.
+>  [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py)  - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.  
+>  [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py)  - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.  
+> [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.  
+>  [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model. 
 
+**[ Add-on capabilities ](Add-on_capabilities)**: Extend the extracted results from documents with add-on capabilities. 
+>  [sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.  
+>  [sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) - Extract font property from a document using this add-on capability.  
+> [sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.  
+>  [sample_analyze_addon_highres.py](Add-on_capabilities/sample_analyze_addon_highres.py) - Extract high resolution from a document using this add-on capability.  
+> [sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.  
+
+### **Pre/post processing samples**
+There are usually some pre/post processing steps that are needed to get the best results from the Document Intelligence models. These steps are not part of the Document Intelligence service, but are common steps that are needed to get the best results. The following samples show how to do these steps.  
+**Note**：Applies to **all versions**.    
+
+>**[sample_disambiguate_similar_characters.ipynb](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.ipynb)** and **[sample_disambiguate_similar_characters.py](Pre_or_post_processing_samples/sample_disambiguate_similar_characters.py)**  
+Sample postprocessing script to disambiguate similar characters based on business rules.
+
+> **[sample_identify_cross_page_tables.ipynb](Pre_or_post_processing_samples/sample_identify_cross_page_tables.ipynb)** and **[sample_identify_cross_page_tables.py](Pre_or_post_processing_samples/sample_identify_cross_page_tables.py)**  
+Sample postprocessing script to identify cross-page tables based on business rules. 
+
+## **Next steps**
+
+Check out the [API reference documentation][python-di-ref-docs] to learn more about
+what you can do with the Azure Document Intelligence client library.
+
+  
 [azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
 
 [pip]: https://pypi.org/project/pip/
-[azure_subscription]: https://azure.microsoft.com/free/
-[azure_form_recognizer_account]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account?tabs=singleservice%2Cwindows
+
 [azure_identity_pip]: https://pypi.org/project/azure-identity/
-[python-fr-ref-docs]: https://aka.ms/azsdk/python/formrecognizer/docs
-[get-endpoint-instructions]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/formrecognizer/azure-ai-formrecognizer/README.md#get-the-endpoint
-[get-key-instructions]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/formrecognizer/azure-ai-formrecognizer/README.md#get-the-api-key
-[changelog]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/formrecognizer/azure-ai-formrecognizer/CHANGELOG.md
-[v3.0.0-samples-tag]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.0.0/sdk/formrecognizer/azure-ai-formrecognizer/samples
-[migration-guide]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/MIGRATION_GUIDE.md
+[python-di-ref-docs]: https://aka.ms/azsdk/python/documentintelligence/docs
+[get-endpoint-instructions]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/README.md#get-the-endpoint
+[get-key-instructions]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/README.md#get-the-api-key 
+[changelog]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/documentintelligence/azure-ai-documentintelligence/CHANGELOG.md
 
-<!-- V3.2+ links -->
-
-[sample_auth]: v3.2_and_later/sample_authentication.py
-[sample_auth_async]: v3.2_and_later/async_samples/sample_authentication_async.py
-[sample_analyze_layout]: v3.2_and_later/sample_analyze_layout.py
-[sample_analyze_layout_async]: v3.2_and_later/async_samples/sample_analyze_layout_async.py
-[sample_analyze_general_documents]: v3.2_and_later/sample_analyze_general_documents.py
-[sample_analyze_general_documents_async]: v3.2_and_later/async_samples/sample_analyze_general_documents_async.py
-[sample_analyze_invoices]: v3.2_and_later/sample_analyze_invoices.py
-[sample_analyze_invoices_async]: v3.2_and_later/async_samples/sample_analyze_invoices_async.py
-[sample_analyze_business_cards]: v3.2_and_later/sample_analyze_business_cards.py
-[sample_analyze_business_cards_async]: v3.2_and_later/async_samples/sample_analyze_business_cards_async.py
-[sample_analyze_identity_documents]: v3.2_and_later/sample_analyze_identity_documents.py
-[sample_analyze_identity_documents_async]: v3.2_and_later/async_samples/sample_analyze_identity_documents_async.py
-[sample_analyze_receipts]: v3.2_and_later/sample_analyze_receipts.py
-[sample_analyze_receipts_async]: v3.2_and_later/async_samples/sample_analyze_receipts_async.py
-[sample_analyze_custom_documents]: v3.2_and_later/sample_analyze_custom_documents.py
-[sample_analyze_custom_documents_async]: v3.2_and_later/async_samples/sample_analyze_custom_documents_async.py
-[sample_build_model]: v3.2_and_later/sample_build_model.py
-[sample_build_model_async]: v3.2_and_later/async_samples/sample_build_model_async.py
-[sample_composed_model]: v3.2_and_later/sample_compose_model.py
-[sample_composed_model_async]: v3.2_and_later/async_samples/sample_compose_model_async.py
-[sample_manage_models]: v3.2_and_later/sample_manage_models.py
-[sample_manage_models_async]: v3.2_and_later/async_samples/sample_manage_models_async.py
-[sample_get_operations]: v3.2_and_later/sample_get_operations.py
-[sample_get_operations_async]: v3.2_and_later/async_samples/sample_get_operations_async.py
-[sample_copy]: v3.2_and_later/sample_copy_model_to.py
-[sample_copy_async]: v3.2_and_later/async_samples/sample_copy_model_to_async.py
-[sample_get_words_on_document_line]: v3.2_and_later/sample_get_words_on_document_line.py
-[sample_get_words_on_document_line_async]: v3.2_and_later/async_samples/sample_get_words_on_document_line_async.py
-[sample_convert_to_and_from_dict_v3_2]: v3.2_and_later/sample_convert_to_and_from_dict.py
-[sample_convert_to_and_from_dict_async_v3_2]: v3.2_and_later/async_samples/sample_convert_to_and_from_dict_async.py
-[sample_analyze_read]: v3.2_and_later/sample_analyze_read.py
-[sample_analyze_read_async]: v3.2_and_later/async_samples/sample_analyze_read_async.py
-[sample_analyze_tax_us_w2]: v3.2_and_later/sample_analyze_tax_us_w2.py
-[sample_analyze_tax_us_w2_async]: v3.2_and_later/async_samples/sample_analyze_tax_us_w2_async.py
-[sample_get_elements_with_spans]: v3.2_and_later/sample_get_elements_with_spans.py
-[sample_get_elements_with_spans_async]: v3.2_and_later/async_samples/sample_get_elements_with_spans_async.py
-[sample_classify_document]: v3.2_and_later/sample_classify_document.py
-[sample_classify_document_async]: v3.2_and_later/async_samples/sample_classify_document_async.py
-[sample_classify_document_from_url]: v3.2_and_later/sample_classify_document_from_url.py
-[sample_classify_document_from_url_async]: v3.2_and_later/async_samples/sample_classify_document_from_url_async.py
-[sample_build_classifier]: v3.2_and_later/sample_build_classifier.py
-[sample_build_classifier_async]: v3.2_and_later/async_samples/sample_build_classifier_async.py
-[sample_manage_classifiers]: v3.2_and_later/sample_manage_classifiers.py
-[sample_manage_classifiers_async]: v3.2_and_later/async_samples/sample_manage_classifiers_async.py
-[sample_send_request]: v3.2_and_later/sample_send_request.py
-[sample_send_request_async]: v3.2_and_later/async_samples/sample_send_request_async.py
-[sample_analyze_addon_barcodes]: v3.2_and_later/sample_analyze_addon_barcodes.py
-[sample_analyze_addon_barcodes_async]: v3.2_and_later/async_samples/sample_analyze_addon_barcodes_async.py
-[sample_analyze_addon_fonts]: v3.2_and_later/sample_analyze_addon_fonts.py
-[sample_analyze_addon_fonts_async]: v3.2_and_later/async_samples/sample_analyze_addon_fonts_async.py
-[sample_analyze_addon_formulas]: v3.2_and_later/sample_analyze_addon_formulas.py
-[sample_analyze_addon_formulas_async]: v3.2_and_later/async_samples/sample_analyze_addon_formulas_async.py
-[sample_analyze_addon_highres]: v3.2_and_later/sample_analyze_addon_highres.py
-[sample_analyze_addon_highres_async]: v3.2_and_later/async_samples/sample_analyze_addon_highres_async.py
-[sample_analyze_addon_languages]: v3.2_and_later/sample_analyze_addon_languages.py
-[sample_analyze_addon_languages_async]: v3.2_and_later/async_samples/sample_analyze_addon_languages_async.py
+ 
 
 
-<!-- V3.1 links -->
-[sample_authentication]: v3.1/sample_authentication_v3_1.py
-[sample_authentication_async]: v3.1/async_samples/sample_authentication_v3_1_async.py
-[sample_differentiate_output_models_trained_with_and_without_labels]: v3.1/sample_differentiate_output_models_trained_with_and_without_labels.py
-[sample_differentiate_output_models_trained_with_and_without_labels_async]: v3.1/async_samples/sample_differentiate_output_models_trained_with_and_without_labels_async.py
-[sample_get_bounding_boxes]: v3.1/sample_get_bounding_boxes.py
-[sample_get_bounding_boxes_async]: v3.1/async_samples/sample_get_bounding_boxes_async.py
-[sample_manage_custom_models]: v3.1/sample_manage_custom_models.py
-[sample_manage_custom_models_async]: v3.1/async_samples/sample_manage_custom_models_async.py
-[sample_recognize_content]: v3.1/sample_recognize_content.py
-[sample_recognize_content_async]: v3.1/async_samples/sample_recognize_content_async.py
-[sample_recognize_custom_forms]: v3.1/sample_recognize_custom_forms.py
-[sample_recognize_custom_forms_async]: v3.1/async_samples/sample_recognize_custom_forms_async.py
-[sample_recognize_receipts_from_url]: v3.1/sample_recognize_receipts_from_url.py
-[sample_recognize_receipts_from_url_async]: v3.1/async_samples/sample_recognize_receipts_from_url_async.py
-[sample_recognize_receipts]: v3.1/sample_recognize_receipts.py
-[sample_recognize_receipts_async]: v3.1/async_samples/sample_recognize_receipts_async.py
-[sample_recognize_business_cards]: v3.1/sample_recognize_business_cards.py
-[sample_recognize_business_cards_async]: v3.1/async_samples/sample_recognize_business_cards_async.py
-[sample_recognize_identity_documents]: v3.1/sample_recognize_identity_documents.py
-[sample_recognize_identity_documents_async]: v3.1/async_samples/sample_recognize_identity_documents_async.py
-[sample_recognize_invoices]: v3.1/sample_recognize_invoices.py
-[sample_recognize_invoices_async]: v3.1/async_samples/sample_recognize_invoices_async.py
-[sample_train_model_with_labels]: v3.1/sample_train_model_with_labels.py
-[sample_train_model_with_labels_async]: v3.1/async_samples/sample_train_model_with_labels_async.py
-[sample_train_model_without_labels]: v3.1/sample_train_model_without_labels.py
-[sample_train_model_without_labels_async]: v3.1/async_samples/sample_train_model_without_labels_async.py
-[sample_copy_model]: v3.1/sample_copy_model.py
-[sample_copy_model_async]: v3.1/async_samples/sample_copy_model_async.py
-[sample_strongly_typing_recognized_form]: v3.1/sample_strongly_typing_recognized_form.py
-[sample_strongly_typing_recognized_form_async]: v3.1/async_samples/sample_strongly_typing_recognized_form_async.py
-[sample_create_composed_model]: v3.1/sample_create_composed_model.py
-[sample_create_composed_model_async]: v3.1/async_samples/sample_create_composed_model_async.py
-[sample_differentiate_output_labeled_tables]: v3.1/sample_differentiate_output_labeled_tables.py
-[sample_differentiate_output_labeled_tables_async]: v3.1/async_samples/sample_differentiate_output_labeled_tables_async.py
-[sample_convert_to_and_from_dict_v3_1]: v3.1/sample_convert_to_and_from_dict_v3_1.py
-[sample_convert_to_and_from_dict_async_v3_1]: v3.1/async_samples/sample_convert_to_and_from_dict_v3_1_async.py
+ 
+
+
+  
