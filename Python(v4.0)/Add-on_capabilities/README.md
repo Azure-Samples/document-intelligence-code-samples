@@ -17,7 +17,8 @@ You can check all samples from [here][sample_path].
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Set your environment variables
-At a command prompt, run the following commands, replacing ```<yourKey>``` and ```<yourEndpoint>``` with the values from your resource in the Azure portal.
+
+At a command prompt, run the following commands, replacing```<yourKey>```and ```<yourEndpoint>``` with the values from your resource in the Azure portal.
 - For Windows:  
 ```setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>```   
 ```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
