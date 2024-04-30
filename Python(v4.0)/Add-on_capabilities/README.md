@@ -29,7 +29,7 @@ At a command prompt, run the following commands, replacing```<yourKey>```and ```
        • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
 - For Linux:  
- ```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
+```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
 ```export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>```  
        • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-Linux
