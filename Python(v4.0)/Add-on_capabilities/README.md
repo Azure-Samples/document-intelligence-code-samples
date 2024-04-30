@@ -16,6 +16,22 @@ You can check all samples from [here][sample_path].
     You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
+## Set your environment variables
+At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+- For Windows:  
+```setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>```   
+```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
+   You need to restart any running programs that read the environment variable.
+- For macOS:  
+```export key=<yourKey>```  
+```export endpoint=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
+- For Linux:  
+ ```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
+```export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
+       • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-Linux
 ## Setup
 
 1. Install the Azure Document Intelligence client library for Python with [pip][pip]:
@@ -26,7 +42,12 @@ pip install azure-ai-documentintelligence --pre
 
 2. Clone or download this sample repository
 3. Open the sample folder in Visual Studio Code or your IDE of choice.
+## Create your Python application
 
+1. Create a new Python file called "sample_analyze_layout.py" in an editor or IDE.
+2. Open the "sample_analyze_layout.py" file and insert the provided code sample into your application.
+3. At a command prompt, use the following code to run the Python code: 
+       python sample_analyze_layout.py
 ## Running the samples
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
