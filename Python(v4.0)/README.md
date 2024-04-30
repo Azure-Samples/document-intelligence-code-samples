@@ -3,13 +3,13 @@
 > [!NOTE]
 > Form Recognizer is now **Azure AI Document Intelligence**!
 
-- Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **Python**).
+- Code samples for each language's SDK are in the links below. The first step is to select to choose one (default **Python**).
 
 |Python| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
 - The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
-- You can click  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA)/Python(v3.1))**  to view earlier versions.
+- You can select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA)/Python(v3.1))**  to view earlier versions.
 
 ## **Table of Contents**
 
@@ -46,7 +46,7 @@ pip install azure-ai-documentintelligence --pre
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
-3. If necessary, click [Data](../Data) to get your document.
+3. If necessary, select [Data](../Data) to get your document.
 4. Below are some sample code guidelines so that you can choose the sample according to your needs.  
    **Note**: For more samples, see **[Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples)** and **[Async Samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/documentintelligence/azure-ai-documentintelligence/samples/aio)**.
    
@@ -55,7 +55,7 @@ pip install azure-ai-documentintelligence --pre
   - [Pre/post processing samples](#prepost-processing-samples)
 
 ### **Common samples**
- Click the link of the model name to reach the corresponding topic page for more details.  Click  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA))** to view earlier versions.
+ Select the link of the model name to reach the corresponding topic page for more details.  Select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA))** to view earlier versions.
 
 **[ Read model ](Read_model)** 
 > [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
