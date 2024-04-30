@@ -12,6 +12,49 @@ FILE: sample_analyze_layout.py
 DESCRIPTION:
     This sample demonstrates how to extract text, tables, figures, selection marks and document structure (e.g., sections) information from a document
     given through a file.
+    
+PREREQUISITES:
+    The following prerequisites are necessary to run the code. For more details, please visit the "How-to guides" link: https://aka.ms/how-to-guide
+
+    -------Python and IDE------
+    1) Install Python 3.7 or later (https://www.python.org/), which should include pip (https://pip.pypa.io/en/stable/).
+    2) Install the latest version of Visual Studio Code (https://code.visualstudio.com/) or your preferred IDE. 
+    
+    ------Azure AI services or Document Intelligence resource------ 
+    Create a single-service (https://aka.ms/single-service) or multi-service (https://aka.ms/multi-service) resource.
+    You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
+    
+    ------Get the key and endpoint------
+    1) After your resource is deployed, select "Go to resource". 
+    2) In the left navigation menu, select "Keys and Endpoint". 
+    3) Copy one of the keys and the Endpoint for use in this sample. 
+    
+    ------Set your environment variables------
+    At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+    1) For Windows:
+       setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>
+       setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>
+       • You need to restart any running programs that read the environment variable.
+    2) For macOS:
+       export key=<yourKey>
+       export endpoint=<yourEndpoint>
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session. 
+       • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
+    3) For Linux:
+       export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>
+       export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session. 
+       • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-Linux
+       
+    ------Set up your programming environment------
+    At a command prompt,run the following code to install the Azure AI Document Intelligence client library for Python with pip:
+    pip install azure-ai-documentintelligence --pre
+    
+    ------Create your Python application------
+    1) Create a new Python file called "sample_analyze_layout.py" in an editor or IDE.
+    2) Open the "sample_analyze_layout.py" file and insert the provided code sample into your application.
+    3) At a command prompt, use the following code to run the Python code: 
+       python sample_analyze_layout.py
 """
 
 import os
