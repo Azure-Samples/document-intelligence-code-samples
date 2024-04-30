@@ -57,19 +57,19 @@ pip install azure-ai-documentintelligence --pre
 ### **Common samples**
  Select the link of the model name to reach the corresponding topic page for more details.  Select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA))** to view earlier versions.
 
-**[ Read model ](Read_model)** 
-> [sample_analyze_read.py](Read_model/sample_analyze_read.py/) - Read document elements, such as pages and detected languages.
+**[ Read model ](Read_model)** : Extract printed and handwritten text.
+> [sample_analyze_read.py](Read_model/sample_analyze_read.py/) 
 
- **[ Layout mode ](Layout_model)**
-> [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) - Extract text, selection marks, and table structures in a document.
+ **[ Layout mode ](Layout_model)**: Extract and anlayze text, tables, and document structure.
+> [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) 
 
- **[ Prebuilt model ](Prebuilt_model)**
+ **[ Prebuilt model ](Prebuilt_model)**: Add intelligent document processing to your apps and flows without having to train and build your own models.
 >  [sample_analyze_invoices.py](Prebuilt_model/sample_analyze_invoices.py)  - Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model.  
 >  [sample_analyze_identity_documents.py](Prebuilt_model/sample_analyze_identity_documents.py)  - Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model.  
 > [sample_analyze_receipts.py](Prebuilt_model/sample_analyze_receipts.py) - Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model.  
 >  [sample_analyze_tax_us_w2.py](Prebuilt_model/sample_analyze_tax_us_w2.py)  - Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.
 
-**[ Add-on capabilities ](Add-on_capabilities)**
+**[ Add-on capabilities ](Add-on_capabilities)**: Extend the extracted results from documents with add-on capabilities.
 >  [sample_analyze_addon_barcodes.py](Add-on_capabilities/sample_analyze_addon_barcodes.py) - Extract barcode from a document using this add-on capability.  
 >  [sample_analyze_addon_fonts.py](Add-on_capabilities/sample_analyze_addon_fonts.py) - Extract font property from a document using this add-on capability.  
 > [sample_analyze_addon_formulas.py](Add-on_capabilities/sample_analyze_addon_formulas.py) - Extract formula from a document using this add-on capability.  
@@ -77,7 +77,7 @@ pip install azure-ai-documentintelligence --pre
 > [sample_analyze_addon_languages.py](Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from a document using this add-on capability.  
 >  [sample_analyze_addon_query_fields.py](Add-on_capabilities/sample_analyze_addon_query_fields.py) - Query fields from a document using this add-on capability.
 
-**[Custom model ](Custom_model)**
+**[Custom model ](Custom_model)**: Train your own models to extract data from structured and unstructured documents.
 >  [sample_analyze_custom_documents.py](Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was built on.  
 [sample_classify_document.py](Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.  
 [sample_compose_model.py](Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.  
@@ -86,7 +86,7 @@ pip install azure-ai-documentintelligence --pre
 [sample_manage_classifiers.py](Custom_model/sample_manage_classifiers.py) - Manage the classifiers on your account.  
 [sample_manage_models.py](Custom_model/sample_manage_models.py) - Manage the models on your account.
 
- **[ Others ](Others)**
+ **[ Additional samples ](Others)**
 > [sample_convert_to_dict.py](Others/sample_convert_to_dict.py) -  Convert a model returned from an analyze operation to a JSON serializable dictionary.
 
 
