@@ -44,10 +44,10 @@ pip install azure-ai-documentintelligence --pre
 3. Open the sample folder in Visual Studio Code or your IDE of choice.
 ## Create your Python application
 
-1. Create a new Python file called "sample_analyze_layout.py" in an editor or IDE.
-2. Open the "sample_analyze_layout.py" file and insert the provided code sample into your application.
+1. Create a new Python file called "sample_analyze_addon_barcodes.py" in an editor or IDE.
+2. Open the "sample_analyze_addon_barcodes.py" file and insert the provided code sample into your application.
 3. At a command prompt, use the following code to run the Python code: 
-       python sample_analyze_layout.py
+       python sample_analyze_addon_barcodes.py
 ## Running the samples
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
