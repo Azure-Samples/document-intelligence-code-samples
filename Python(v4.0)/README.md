@@ -3,7 +3,7 @@
 > [!NOTE]
 > Form Recognizer is now **Azure AI Document Intelligence**!
 
-- Code samples for each language's SDK are in the links below. The first step is to select to choose one (default **Python**).
+- Code samples for each language's SDK are in the links below. The first step is to choose one (default **Python**).
 
 |Python| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
