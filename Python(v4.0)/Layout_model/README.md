@@ -16,22 +16,22 @@ You can check all samples from [here][sample_path].
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 
 ## Set your environment variables
-    
-At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
-   ✔️ For Windows:
-       setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>
-       setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>
-       • You need to restart any running programs that read the environment variable.
-   ✔️ For macOS:
-       export key=<yourKey>
-       export endpoint=<yourEndpoint>
-       • This is a temporary environment variable setting method that only lasts until you close the terminal session. 
+At a command prompt, run the following commands, replacing ```<yourKey>``` and ```<yourEndpoint>``` with the values from your resource in the Azure portal.
+- For Windows:  
+```setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>```   
+```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
+   You need to restart any running programs that read the environment variable.
+- For macOS:  
+```export key=<yourKey>```  
+```export endpoint=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
-    ✔️ For Linux:
-       export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>
-       export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>
-       • This is a temporary environment variable setting method that only lasts until you close the terminal session. 
+- For Linux:  
+```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
+```export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>```  
+       • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-Linux
+
 
 ## Setup
 
