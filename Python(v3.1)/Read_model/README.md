@@ -14,7 +14,7 @@ All of these samples need the endpoint to your Document Intelligence resource ([
     You can use the free pricing tier (F0) to try the service and upgrade to a paid tier for production later.
 * [Get endpoint and keys](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0#get-endpoint-url-and-keys) to your Document Intelligence resource.
 ## Set your environment variables
-At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+At a command prompt, run the following commands, replacing ```<yourKey>``` and ```<yourEndpoint>``` with the values from your resource in the Azure portal.
 - For Windows:  
 ```setx DI_KEY <yourKey>```   
 ```setx DI_ENDPOINT <yourEndpoint>```   
