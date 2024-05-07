@@ -2,7 +2,7 @@
 
 > Note: Starting with version 2022-08-31, a new set of clients were introduced to leverage the newest features
 > of the Document Intelligence service. Please see the [Migration Guide][migration-guide] for detailed instructions on how to update application
-> code from client library version 3.1.X or lower to the latest version. Additionally, see the [Changelog](CHANGELOG.md) for more detailed information.
+> code from client library version 3.1.X or lower to the latest version. Additionally, see the [Changelog](../CHANGELOG.md) for more detailed information.
 - Code samples for each language's SDK are in the links below. The first step is to click to choose one (default **Python**).
 
 |Python| [.NET](../.NET(v3.1))|[Java](../Java(v3.1))| [JavaScript](../JavaScript(v3.1))|
