@@ -1,4 +1,4 @@
-# Azure Document Intelligence code samples repo
+# **Azure Document Intelligence code samples repo**
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 
@@ -9,8 +9,8 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 | --- | --- | --- | --- |
 
 
-- The contents of this folder default to the latest preview version: **v4.0 (2024-02-29-preview)** .
-- Select [**v3.1 (2023-07-31-GA)**](../v3.1(2023-07-31-GA))  to view earlier versions.
+- The contents of this floder default the version: ** v3.1 (2023-07-31-GA) **.  
+  You can select  **[v4.0 (2024-02-29-preview) )](../main)**  to view the latest version.
 
 ## Table of Contents
 - [Features](#features)
