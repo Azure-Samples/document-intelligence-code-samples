@@ -9,7 +9,7 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 | --- | --- | --- | --- |
 
 
-- The contents of this floder default the version: ** v3.1 (2023-07-31-GA) **.  
+- The contents of this floder default the version: **v3.1 (2023-07-31-GA)**.  
   You can select  **[v4.0 (2024-02-29-preview) )](../main)**  to view the latest version.
 
 ## Table of Contents
