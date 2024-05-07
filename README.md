@@ -1,27 +1,24 @@
-
-# **Azure AI Document Intelligence Code Samples**
+# Azure Document Intelligence code samples repo
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
 
 Welcome! Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. 
-
 - Code samples for each language's SDK are in the links below. The first step is to select to choose one (default **Python**).
 
-|Python| [.NET](.NET(v3.1))|[Java](Java(v3.1))| [JavaScript](JavaScript(v3.1))|
+|Python| [.NET](.NET(v4.0))|[Java](Java(v4.0))| [JavaScript](JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
 
-- The contents of this floder default the version: ** v3.1 (2023-07-31-GA) **.  
-  You can select  **[v4.0 (2024-02-29-preview) )](../main)**  to view the latest version.
+- The contents of this folder default to the latest preview version: **v4.0 (2024-02-29-preview)** .
+- Select [**v3.1 (2023-07-31-GA)**](../v3.1(2023-07-31-GA))  to view earlier versions.
 
 ## Table of Contents
-
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Running the samples](#running-the-samples)
 - [Next steps](#next-steps)
-
+- 
 ## **Features**
 Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn.microsoft.com/en-us/azure/ai-services/?view=doc-intel-3.1.0) that enables you to build intelligent document processing solutions. Massive amounts of data, spanning a wide variety of data types, are stored in forms and documents. Document Intelligence enables you to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
@@ -56,7 +53,7 @@ pip install azure-ai-formrecognizer==3.3.0
 Select the link of the model name to reach the corresponding topic page for more details.  Select **[v4.0 (2024-02-29-preview)](../main)** to view the latest version.  
 
 **[ Read model ](Python(v3.1)/Read_model)**: Extract printed and handwritten text.
-> [sample_analyze_read.py](Python(v3.1)/Read_model/sample_analyze_read.py/) 
+> [sample_analyze_read.py](Python(v3.1)/Read_model/sample_analyze_read.py) 
 
  **[ Layout mode ](Python(v3.1)/Layout_model)**: Extract and anlayze text, tables, and document structure.
 > [sample_analyze_layout.py](Python(v3.1)/Layout_model/sample_analyze_layout.py)  
@@ -127,3 +124,4 @@ Prebuilt models enable you to add intelligent document processing to your apps a
 ✔️ **ocr.font**
 ✔️ **ocr.barcode**
 ✔️ **languages**
+
