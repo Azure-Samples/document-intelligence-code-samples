@@ -16,7 +16,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 ## **Features**
@@ -73,7 +73,7 @@ const client = DocumentIntelligence(process.env["DOCUMENT_INTELLIGENCE_ENDPOINT"
 ```
 
 
-## **Running the samples**
+## **Run the samples**
 ### Analyze prebuilt-layout (urlSource)
 
 ```ts

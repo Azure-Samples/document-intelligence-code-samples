@@ -16,7 +16,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 
@@ -42,7 +42,7 @@ pip install azure-ai-documentintelligence --pre
 2. Clone or download this sample repository
 3. Open the sample folder in Visual Studio Code or your IDE of choice.
 
-## **Running the samples**
+## **Run the samples**
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
@@ -103,7 +103,7 @@ Sample RAG notebook using Azure AI Document Intelligence as document loader, Mar
 >**[sample_figure_understanding.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb)**  
 Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure Open AI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai).
 
->**[sample_identify_and_merge_cross_page_tables.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb)** and **[sample_identify_and_merge_cross_page_tables.py](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py)**  
+>**[sample_identify_and_merge_cross_page_tables.ipynb](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tables.ipynb)** and **[sample_identify_and_merge_cross_page_tables.py](Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tables.py)**  
 Sample postprocessing script to identify and merge cross-page tables based on business rules. 
 
 

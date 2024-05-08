@@ -13,7 +13,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup programming environment](#setup-programming-environment)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 ## **Features**
@@ -40,7 +40,7 @@ You can use the free pricing tier (F0) to try the service and upgrade to a paid 
 2. Download this sample code and fill the [app.config](Quickstarts/app.config) with the endpoint and key which got from previous steps.
 
 
-## **Running the samples**
+## **Run the samples**
 1. Below are some sample code guidelines so that you can choose the sample according to your needs. 
 2. Execute the "Build" command in [Visual Studio IDE](https://visualstudio.microsoft.com/vs/).
 2. After building successfully, click the "▶"(debug button) or press the F5 keyboard's shortcut to start up.  
