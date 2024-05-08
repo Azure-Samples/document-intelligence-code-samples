@@ -17,7 +17,7 @@ You can check all samples from [here][sample_path].
 
 ## Set your environment variables
     
-At a command prompt, run the following commands, replacing <yourKey> and <yourEndpoint> with the values from your resource in the Azure portal.
+At a command prompt, run the following commands, replacing ```<yourKey>``` and ```<yourEndpoint>``` with the values from your resource in the Azure portal.
 - For Windows:  
 ```setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>```   
 ```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
