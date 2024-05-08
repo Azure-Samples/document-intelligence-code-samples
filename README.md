@@ -5,7 +5,7 @@
 Welcome! Azure AI Document Intelligence is a cloud service that uses machine learning to analyze text and structured data from your documents. 
 - Code samples for each language's SDK are in the links below. The first step is to select to choose one (default **Python**).
 
-|Python| [.NET](.NET(v4.0))|[Java](Java(v4.0))| [JavaScript](JavaScript(v4.0))|
+|Python| [.NET](.NET(v3.1))|[Java](Java(v3.1))| [JavaScript](JavaScript(v3.1))|
 | --- | --- | --- | --- |
 
 
