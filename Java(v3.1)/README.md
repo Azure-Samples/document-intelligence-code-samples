@@ -16,7 +16,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 ## **Features**
@@ -33,7 +33,7 @@ using the client library. Each sample focuses on a specific scenario and can be 
 ## **Setup**
 [Authenticate the client](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/formrecognizer/azure-ai-formrecognizer#authenticate-the-client).
 
-## **Running the samples**
+## **Run the samples**
 The following sections provide code samples covering common scenario operations with the Azure Form Recognizer client library.
 
 All of these samples need the endpoint to your Form Recognizer resource ([instructions on how to get endpoint][get-endpoint-instructions]), and your Form Recognizer API key ([instructions on how to get key][get-key-instructions]).
