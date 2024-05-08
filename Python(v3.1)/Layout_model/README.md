@@ -48,7 +48,7 @@ pip install azure-ai-formrecognizer==3.3.0
 3. At a command prompt, use the following code to run the Python code: 
        python sample_analyze_layout.py
 
-## Running the samples
+## Run the samples
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
