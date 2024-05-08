@@ -18,7 +18,7 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 
