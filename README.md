@@ -18,7 +18,7 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 
@@ -86,7 +86,7 @@ pip install azure-ai-documentintelligence --pre
 > [sample_analyze_addon_languages.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_languages.py) - Detact language from documents using this add-on capability.  
 > [sample_analyze_addon_query_fields.py](Python(v4.0)/Add-on_capabilities/sample_analyze_addon_query_fields.py) - Specify and extract query fields from documents using this add-on capability.
 
-[**Custom model**](Custom_model): Train your own models to extract data from structured and unstructured documents.
+[**Custom model**](Python(v4.0)/Custom_model): Train your own models to extract data from structured and unstructured documents.
 
 > [sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was trained on.  
 > [sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.  
@@ -110,10 +110,10 @@ The Layout model provides various building blocks like tables, paragraphs, secti
 > [**sample_rag_langchain.ipynb**](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_rag_langchain.ipynb)  
 Sample RAG notebook using Azure AI Document Intelligence as document loader, MarkdownHeaderSplitter and Azure AI Search as retriever in Langchain.
 
-> [**sample_figure_understanding.ipynb**](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb)**  
+> [**sample_figure_understanding.ipynb**](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_figure_understanding.ipynb)  
 Sample notebook showcasing how to crop the figures and send figure content (with its caption) to Azure OpenAI GPT-4V model to understand the semantics. The figure description will be used to update the markdown output, which can be further used for [semantic chunking](https://aka.ms/doc-gen-ai).
 
-> [**sample_identify_and_merge_cross_page_tables.ipynb**](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.ipynb)** and **[sample_identify_and_merge_cross_page_tables.py](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tales.py)**  
+> [**sample_identify_and_merge_cross_page_tables.ipynb**](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tables.ipynb) and **[sample_identify_and_merge_cross_page_tables.py](Python(v4.0)/Retrieval_Augmented_Generation_(RAG)_samples/sample_identify_and_merge_cross_page_tables.py)**  
 Sample postprocessing script to identify and merge cross-page tables based on business rules. 
 
  
