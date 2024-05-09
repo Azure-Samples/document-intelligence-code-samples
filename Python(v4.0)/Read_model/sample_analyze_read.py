@@ -51,8 +51,8 @@ PREREQUISITES:
     pip install azure-ai-documentintelligence --pre
     
     ------Create your Python application------
-    1) Create a new Python file called "sample_analyze_layout.py" in an editor or IDE.
-    2) Open the "sample_analyze_layout.py" file and insert the provided code sample into your application.
+    1) Create a new Python file called "sample_analyze_read.py" in an editor or IDE.
+    2) Open the "sample_analyze_read.py" file and insert the provided code sample into your application.
     3) At a command prompt, use the following code to run the Python code: 
        python sample_analyze_read.py
 """
