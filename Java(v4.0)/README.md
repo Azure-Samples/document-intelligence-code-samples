@@ -15,7 +15,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-- [Running the samples](#running-the-samples)
+- [Run the samples](#run-the-samples)
 - [Next steps](#next-steps)
 
 ## **Features**
@@ -119,7 +119,7 @@ DocumentIntelligenceAsyncClient documentIntelligenceAsyncClient = new DocumentIn
     .buildAsyncClient();
 ```
 
-## **Running the samples**
+## **Run the samples**
 
 The following section provides several code snippets covering some of the most common Document Intelligence tasks, including:
 

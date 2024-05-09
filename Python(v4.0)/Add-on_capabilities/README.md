@@ -48,7 +48,7 @@ pip install azure-ai-documentintelligence --pre
 2. Open the "sample_analyze_addon_barcodes" file and insert the provided code sample into your application.
 3. At a command prompt, use the following code to run the Python code: 
        python sample_analyze_addon_barcodes
-## Running the samples
+## Run the samples
 
 1. Open a terminal window and `cd` to the directory that the samples are saved in.
 2. Set the environment variables specified in the sample file you wish to run.
