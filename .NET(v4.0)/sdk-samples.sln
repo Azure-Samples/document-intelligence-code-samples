@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickstarts", "Quickstarts\Quickstarts.csproj", "{2BEB99C4-115F-4DB2-BA1D-6EF33557E393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quickstarts", "Quickstarts\Quickstarts.csproj", "{2BEB99C4-115F-4DB2-BA1D-6EF33557E393}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample Code Snippet For Document Intelligence Studio", "Sample Code Snippet For Document Intelligence Studio", "{E9CBB1EB-6D19-4981-A5F2-EFEA3CF0F0A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSnippetForApiVer_2024-02-29_Preview", "CodeSnippetForApiVer_2024-02-29_Preview\CodeSnippetForApiVer_2024-02-29_Preview.csproj", "{EFCE60E7-6544-443C-8C68-53BFC9447B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetForApiVer_2023-10-31_Preview", "CodeSnippetForApiVer_2023-10-31_Preview\CodeSnippetForApiVer_2023-10-31_Preview.csproj", "{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{2BEB99C4-115F-4DB2-BA1D-6EF33557E393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BEB99C4-115F-4DB2-BA1D-6EF33557E393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BEB99C4-115F-4DB2-BA1D-6EF33557E393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCE60E7-6544-443C-8C68-53BFC9447B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCE60E7-6544-443C-8C68-53BFC9447B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCE60E7-6544-443C-8C68-53BFC9447B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCE60E7-6544-443C-8C68-53BFC9447B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFCE60E7-6544-443C-8C68-53BFC9447B51} = {E9CBB1EB-6D19-4981-A5F2-EFEA3CF0F0A7}
+		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231} = {E9CBB1EB-6D19-4981-A5F2-EFEA3CF0F0A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CBC567B-C775-4E10-BCB4-E019111881C4}
