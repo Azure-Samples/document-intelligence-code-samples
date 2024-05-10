@@ -14,7 +14,7 @@ products:
   - azure-form-recognizer
 name: Azure Document Intelligence code samples
 description: Code samples for the Azure.AI.DocumentIntelligence client library.
-urlFragment: ?products=azure&term=vision&terms="form%20recognizer"
+urlFragment: document-intelligence-samples
 ---
 
 # Azure Document Intelligence code samples repo
