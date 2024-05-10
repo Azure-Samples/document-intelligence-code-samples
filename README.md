@@ -12,7 +12,10 @@ products:
   - azure-cognitive-services
   - azure-document-intelligence
   - azure-form-recognizer
+name: Azure Document Intelligence code samples
+description: Code samples for the Azure.AI.DocumentIntelligence client library.
 ---
+
 # Azure Document Intelligence code samples repo
 
 > Note: on July 2023, the Azure Cognitive Services Form Recognizer service was renamed to Azure AI Document Intelligence. Any mentions of Form Recognizer or Document Intelligence in documentation refer to the same Azure service.
