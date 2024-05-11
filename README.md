@@ -1,3 +1,21 @@
+---
+page_type: sample
+languages:
+  - python
+  - csharp
+  - java
+  - javascript
+products:
+  - azure
+  - ai-services
+  - document-intelligence
+  - azure-cognitive-services
+  - azure-document-intelligence
+  - azure-form-recognizer
+name: Azure Document Intelligence code samples
+description: Code samples for the Azure.AI.DocumentIntelligence client library.
+urlFragment: document-intelligence-code-samples
+---
 
 # Azure Document Intelligence code samples repo
 
@@ -73,8 +91,8 @@ pip install azure-ai-documentintelligence --pre
   [**Prebuilt models**](Python(v4.0)/Prebuilt_model): Add intelligent document processing to your apps and flows without having to train and build your own models.
   
 > [sample_analyze_invoices.py](Python(v4.0)/Prebuilt_model/sample_analyze_invoices.py) — Extract and analyze customer and vendor details from invoice documents.  
-> [sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) — Extract and analyze identification and verification details identification documents. 
-> [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) — Extract and analyze sales transaction details from receipt documents.
+> [sample_analyze_identity_documents.py](Python(v4.0)/Prebuilt_model/sample_analyze_identity_documents.py) — Extract and analyze identification and verification details identification documents.   
+> [sample_analyze_receipts.py](Python(v4.0)/Prebuilt_model/sample_analyze_receipts.py) — Extract and analyze sales transaction details from receipt documents.  
 > [sample_analyze_tax_us_w2.py](Python(v4.0)/Prebuilt_model/sample_analyze_tax_us_w2.py) — Extract and analyze taxable compensation details from US tax W-2 forms.
 
   [**Add-on capabilities**](Python(v4.0)/Add-on_capabilities): Extend the extracted results from documents with add-on capabilities.
