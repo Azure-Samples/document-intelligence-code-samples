@@ -9,9 +9,6 @@ products:
   - azure
   - ai-services
   - document-intelligence
-  - azure-cognitive-services
-  - azure-document-intelligence
-  - azure-form-recognizer
 name: Azure Document Intelligence code samples
 description: Code samples for the Azure.AI.DocumentIntelligence client library.
 urlFragment: document-intelligence-code-samples
