@@ -11,10 +11,11 @@ FILE: sample_convert_html_to_pdf.py
 
 DESCRIPTION:
     This sample demonstrates how to convert a html file to the pdf file.
+PREREQUISITES:
     Before using this function, need to install following required component:
-        1.Install python-pdfkit:
+        1).Install python-pdfkit:
             "$ pip install pdfkit"
-        2.Install wkhtmltopdf:
+        2).Install wkhtmltopdf:
             -Debian/Ubuntu:
                 "$ sudo apt-get install wkhtmltopdf"
             -macOS:
