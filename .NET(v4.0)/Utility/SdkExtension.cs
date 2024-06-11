@@ -6,7 +6,7 @@
 // --------------------------------------------------------------------------
 using Azure.AI.DocumentIntelligence;
 
-namespace Quickstarts
+namespace Utility
 {
     public static class SdkExtension
     {
