@@ -9,7 +9,7 @@ Create a [single-service](https://aka.ms/single-service) or [multi-service](http
 For this process, it could reference the [doc section](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal) completely.
 
 ## Assign a role to the application
-1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Azure portal](https://portal.azure.com/) with administrator privileges.
 2. Select the Azure AI Service which created in previous steps.
 3. Select **Access control (IAM)**.
 4. Select **Add**, then select **Add role assignment**.
