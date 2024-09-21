@@ -7,6 +7,7 @@
 
 using Azure;
 using Azure.AI.DocumentIntelligence;
+using Utility;
 
 namespace Quickstarts
 {
