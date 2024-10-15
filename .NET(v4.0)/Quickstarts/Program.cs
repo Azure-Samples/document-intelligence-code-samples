@@ -84,7 +84,7 @@ namespace Quickstarts
                                     object? taskResult = null;
                                     if (commandArr.Length > 1)
                                     {
-                                        var paramKVP = commandArr[1].Split(" ");
+                                        var paramKVP = commandArr[1].Split(" ", 2);
                                         var paramName = paramKVP[0].ToLower();
                                         var paramValue = paramKVP[1].Trim('"').Trim('\'');
                                         if (paramName == "path")
