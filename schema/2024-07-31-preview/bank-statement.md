@@ -10,7 +10,7 @@
 
 ## Supported document fields
 
-### model id: **bankStatement.us**
+### Model Id: **bankStatement.us**
 
 | Field | Type | Description | Example |
 |:------|:-----|:------------|:--------|
