@@ -1,31 +1,16 @@
----
-title: Form Recognizer marriage certificate model
-description: Concepts related to data extraction and analysis using the prebuilt marriage certificate model
-ms.service: applied-ai-services
-ms.subservice: forms-recognizer
-ms.topic: conceptual
-ms.date: 10/07/2024
----
-<!-- markdownlint-disable MD033 -->
+# Document Intelligence - Marriage Certificate model
 
-# Form Recognizer - Marriage Certificate model
-
-
-
-## [2024-07-31-preview](#tab/2024-07-31-preview)
-
+## 2024-07-31-preview
 
 ### Supported languages and locales
-
-
 
 | Supported Languages | Details |
 |:--------------------|:-------:|
 |English|United States (`en-US`)|
 
-### Supported document fields
+## Supported document fields
 
-#### marriageCertificate.us
+### Model ID:  **marriageCertificate.us**
 
 | Field | Type | Description | Example |
 |:------|:-----|:------------|:--------|
