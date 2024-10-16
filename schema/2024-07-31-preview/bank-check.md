@@ -10,7 +10,7 @@
 
 #### Model ID
 
-**check.us**
+**prebuilt-check.us**
 
 ### Supported document fields
 
