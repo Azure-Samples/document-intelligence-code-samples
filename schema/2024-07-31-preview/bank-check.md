@@ -1,4 +1,4 @@
-# Document Intelligence Bank check model
+# Document Intelligence bank check model
 
 ## [2024-07-31-preview](#tab/2024-07-31-preview)
 
