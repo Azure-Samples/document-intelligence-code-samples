@@ -1,4 +1,4 @@
-# Document Intelligence - Marriage Certificate model
+# Document Intelligence marriage certificate model
 
 ## 2024-07-31-preview
 
@@ -10,7 +10,7 @@
 
 ### Model ID:  
 
-**marriageCertificate.us**
+**prebuilt-marriageCertificate.us**
 
 ## Supported document fields
 
