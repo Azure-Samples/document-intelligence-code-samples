@@ -8,9 +8,11 @@
 |:--------------------|:-------:|
 |English|United States (`en-US`)|
 
-## Supported document fields
+### Model Id: 
 
-### Model Id: **bankStatement.us**
+**bankStatement.us**
+
+## Supported document fields
 
 | Field | Type | Description | Example |
 |:------|:-----|:------------|:--------|
