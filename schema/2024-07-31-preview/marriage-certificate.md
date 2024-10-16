@@ -8,9 +8,11 @@
 |:--------------------|:-------:|
 |English|United States (`en-US`)|
 
-## Supported document fields
+### Model ID:  
 
-### Model ID:  **marriageCertificate.us**
+**marriageCertificate.us**
+
+## Supported document fields
 
 | Field | Type | Description | Example |
 |:------|:-----|:------------|:--------|
