@@ -1,4 +1,4 @@
-# Document Intelligence - Bank statement model
+# Document Intelligence bank statement model
 
 ## **2024-07-31-preview**
 
