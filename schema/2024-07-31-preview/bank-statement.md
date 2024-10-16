@@ -10,7 +10,7 @@
 
 ### Model Id: 
 
-**bankStatement.us**
+**prebuilt-bankStatement.us**
 
 ## Supported document fields
 
