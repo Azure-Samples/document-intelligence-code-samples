@@ -36,3 +36,4 @@
 |`Accounts.*.Transactions.*.CheckNumber`|`string`|Check number of the transaction|6609|
 |`Accounts.*.Transactions.*.DepositAmount`|`number`|Amount of deposit in the transaction|$1500.00|
 |`Accounts.*.Transactions.*.WithdrawalAmount`|`number`|Amount of withdrawal in the transaction|$1500.00|
+
