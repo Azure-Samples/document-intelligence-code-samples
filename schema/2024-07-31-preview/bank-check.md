@@ -28,3 +28,5 @@
 |`MICR.RoutingNumber`|`string`|Routing number of the bank|⑆123456789⑆|
 |`MICR.AccountNumber`|`string`|Account number|1001001234⑈|
 |`MICR.CheckNumber`|`string`|Check number|⑈0740⑈|
+|`PayerSignatures`|`array`|||
+|`PayerSignatures.*`|`string`|Payer's signature|Jane Doe|
