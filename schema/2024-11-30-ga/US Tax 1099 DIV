@@ -1,0 +1,59 @@
+# Document Intelligence US IRS Form 1099 DIV model
+
+## [2024-11-30 (GA)](#tab/2024-11-30)
+
+### Supported languages and locales
+
+| Supported Languages | Details |
+|:--------------------|:-------:|
+|English|United States (`en-US`)|
+
+#### Model ID
+
+**prebuilt-tax.us.1099DIV.2023**
+
+
+### Supported document fields
+| Field | Type | Description | Example |
+|:------|:-----|:------------|:--------|
+|`TaxYear`|`string`|Tax Year extracted from Form 1099-DIV.|2022|
+|`Payer`|`object`|||
+|`Payer.TIN`|`string`|Payer tax identification number.|123-45-6789|
+|`Payer.Name`|`string`|Payer full name as written on the form.|John Smith|
+|`Payer.Address`|`address`|Payer address.|123 Microsoft Way, Redmond WA 98052|
+|`Payer.PhoneNumber`|`phoneNumber`|Payer Phone Number.|+19876543210|
+|`Recipient`|`object`|||
+|`Recipient.TIN`|`string`|Recipient tax identification number.|123-45-6789|
+|`Recipient.Name`|`string`|Recipient full name as written on the form.|John Smith|
+|`Recipient.Address`|`address`|Recipient address.|123 Microsoft Way, Redmond WA 98052|
+|`Recipient.AccountNumber`|`string`|Recipient account number.|55123456789|
+|`Transactions`|`array`|List of transactions reported in the Form 1099-DIV||
+|`Transactions.*`|`object`|||
+|`Transactions.*.Box1a`|`number`|Box 1a extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box1b`|`number`|Box 1b extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2a`|`number`|Box 2a extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2b`|`number`|Box 2b extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2c`|`number`|Box 2c extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2d`|`number`|Box 2d extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2e`|`number`|Box 2e extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box2f`|`number`|Box 2f extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box3`|`number`|Box 3 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box4`|`number`|Box 4 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box5`|`number`|Box 5 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box6`|`number`|Box 6 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box7`|`number`|Box 7 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box8`|`string`|Box 8 extracted from Form 1099-DIV.|Foreign|
+|`Transactions.*.Box9`|`number`|Box 9 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box10`|`number`|Box 10 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box11`|`boolean`|Box 11 extracted from Form 1099-DIV.|:selected:|
+|`Transactions.*.Box12`|`number`|Box 12 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.Box13`|`number`|Box 13 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.StateTaxesWithheld`|`array`|State Taxes Withheld extracted from Form 1099-DIV||
+|`Transactions.*.StateTaxesWithheld.*`|`object`|||
+|`Transactions.*.StateTaxesWithheld.*.Box14`|`string`|Box 14 extracted from Form 1099-DIV.|WA|
+|`Transactions.*.StateTaxesWithheld.*.Box15`|`string`|Box 15 extracted from Form 1099-DIV.|12-3456789|
+|`Transactions.*.StateTaxesWithheld.*.Box16`|`number`|Box 16 extracted from Form 1099-DIV.|123456|
+|`Transactions.*.CompanyPaidFees`|`number`|Company Paid Fees extracted from Form 1099-DIV.|123456|
+|`Transactions.*.CompanyPaidServiceCharges`|`number`|Company Paid Service Charges extracted from Form 1099-DIV.|123456|
+|`Transactions.*.ReinvestmentDiscount`|`number`|Discount on Reinvestment extracted from Form 1099-DIV.|123456|
+|`IsCorrected`|`boolean`|Indicates whether form is a corrective filing.|:selected:|
