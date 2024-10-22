@@ -15,7 +15,7 @@
 
 ### Model ID
 
-**prebuilt-idDocument**
+**prebuilt-iddriverLicense**
 
 ### Supported document fields
 
