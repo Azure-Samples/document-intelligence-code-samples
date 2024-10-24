@@ -1,6 +1,6 @@
 # Document Intelligence contract model
 
-## 2024-07-31-preview
+## 2024-07-31-preview ; [2024-11-30 (GA)](#tab/2024-11-30)
 
 #### Model ID
 
