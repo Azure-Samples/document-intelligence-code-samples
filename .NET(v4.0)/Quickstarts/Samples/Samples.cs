@@ -4,6 +4,8 @@
 // Licensed under the MIT License. See License.txt in the project root for
 // license information.
 // --------------------------------------------------------------------------
+using Utility;
+
 namespace Quickstarts
 {
     internal partial class Samples(string docIntelligenceEndPoint, string docIntelligenceApiKey)

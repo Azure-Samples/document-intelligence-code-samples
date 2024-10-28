@@ -8,6 +8,7 @@
 using Azure;
 using Azure.AI.DocumentIntelligence;
 using ConsoleTables;
+using Utility;
 
 namespace Quickstarts
 {
