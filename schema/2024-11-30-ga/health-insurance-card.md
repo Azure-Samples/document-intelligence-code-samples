@@ -42,7 +42,7 @@
 |`Copays`|`array`|Array holding list of CoPay Benefits||
 |`Copays.*`|`object`|||
 |`Copays.*.Benefit`|`string`|Co-Pay Benefit name|Deductible|
-|`Copays.*.Amount`|`currency`|Co-Pay required amount|$1,500|
+|`Copays.*.Amount`|`number`|Co-Pay required amount|$1,500|
 |`Payer`|`object`|||
 |`Payer.Id`|`string`|Payer Id Number|89063|
 |`Payer.Address`|`address`|Payer address|123 Service St, Redmond WA, 98052|
