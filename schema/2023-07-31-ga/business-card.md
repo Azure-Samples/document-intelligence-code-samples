@@ -1,4 +1,4 @@
-# Document Intelligence business Card model
+# Document Intelligence business card model
 
 ## 2023-07-31 (GA)
 
