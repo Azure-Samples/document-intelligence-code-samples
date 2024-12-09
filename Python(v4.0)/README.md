@@ -37,6 +37,7 @@ Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn
 
 ```bash
 pip install azure-ai-documentintelligence --pre
+pip install python-dotenv
 ```
 
 2. Clone or download this sample repository
