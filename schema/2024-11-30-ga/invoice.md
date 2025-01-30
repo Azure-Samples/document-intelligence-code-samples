@@ -1,279 +1,82 @@
-# Document Intelligence receipt model
+# Document Intelligence invoice model
 
 ## 2024-11-30 (GA)
 
+### Model ID
+
+**prebuilt-invoice**
+
 ### Supported languages
 
-#### Thermal receipts (retail, meal, parking, etc.)
+| Supported Languages | Details |
+|:--------------------|:-------:|
+|English|United States (`en-US`), Australia (`en-AU`), Canada (`en-CA`), United Kingdom (`en-GB`), India (`en-IN`)|
+|Dutch|Netherlands (`nl-NL`)|
+|French|France (`fr-FR`)|
+|German|Germany (`de-DE`)|
+|Italian|Italy (`it-IT`)|
+|Portuguese|Portugal (`pt-PT`), Brazil (`pt-BR`)|
+|Spanish|Argentina (`es-AR`), Bolivia (`es-BO`), Chile (`es-CL`), Colombia (`es-CO`), Costa Rica (`es-CR`), Dominican Republic (`es-DO`), Ecuador (`es-EC`), Spain (`es-ES`), Guatemala (`es-GT`), Honduras (`es-HN`), Mexico (`es-MX`), Nicaragua (`es-NI`), Panama (`es-PA`), Peru (`es-PE`), Puerto Rico (`es-PR`), Paraguay (`es-PY`), El Salvador (`es-SV`), United States (`es-US`), Uruguay (`es-UY`), Venezuela (`es-VE`)|
 
-| Language name | Language code | Language name | Language code |
-|:--------------|:-------------:|:--------------|:-------------:|
-|English|``en``|Lithuanian|`lt`|
-|Afrikaans|``af``|Luxembourgish|`lb`|
-|Akan|``ak``|Macedonian|`mk`|
-|Albanian|``sq``|Malagasy|`mg`|
-|Arabic|``ar``|Malay|`ms`|
-|Azerbaijani|``az``|Maltese|`mt`|
-|Bamanankan|``bm``|Māori|`mi`|
-|Basque|``eu``|Marathi|`mr`|
-|Belarusian|``be``|Maya, Yucatán|`yua`|
-|Bhojpuri|``bho``|Mongolian|`mn`|
-|Bosnian|``bs``|Nepali|`ne`|
-|Bulgarian|``bg``|Norwegian|`no`|
-|Catalan|``ca``|Nyanja|`ny`|
-|Cebuano|``ceb``|Oromo|`om`|
-|Corsican|``co``|Pashto|`ps`|
-|Croatian|``hr``|Persian|`fa`|
-|Czech|``cs``|Persian (Dari)|`prs`|
-|Danish|``da``|Polish|`pl`|
-|Dutch|``nl``|Portuguese|`pt`|
-|Estonian|``et``|Punjabi|`pa`|
-|Faroese|``fo``|Quechua|`qu`|
-|Fijian|``fj``|Romanian|`ro`|
-|Filipino|``fil``|Russian|`ru`|
-|Finnish|``fi``|Samoan|`sm`|
-|French|``fr``|Sanskrit|`sa`|
-|Galician|``gl``|Scottish Gaelic|`gd`|
-|Ganda|``lg``|Serbian (Cyrillic)|`sr-cyrl`|
-|German|``de``|Serbian (Latin)|`sr-latn`|
-|Greek|``el``|Sesotho|`st`|
-|Guarani|``gn``|Sesotho sa Leboa|`nso`|
-|Haitian Creole|``ht``|Shona|`sn`|
-|Hawaiian|``haw``|Slovak|`sk`|
-|Hebrew|``he``|Slovenian|`sl`|
-|Hindi|``hi``|Somali (Latin)|`so-latn`|
-|Hmong Daw|``mww``|Spanish|`es`|
-|Hungarian|``hu``|Sundanese|`su`|
-|Icelandic|``is``|Swedish|`sv`|
-|Igbo|``ig``|Tahitian|`ty`|
-|Iloko|``ilo``|Tajik|`tg`|
-|Indonesian|``id``|Tamil|`ta`|
-|Irish|``ga``|Tatar|`tt`|
-|isiXhosa|``xh``|Tatar (Latin)|`tt-latn`|
-|isiZulu|``zu``|Thai|`th`|
-|Italian|``it``|Tongan|`to`|
-|Japanese|``ja``|Turkish|`tr`|
-|Javanese|``jv``|Turkmen|`tk`|
-|Kazakh|``kk``|Ukrainian|`uk`|
-|Kazakh (Latin)|``kk-latn``|Upper Sorbian|`hsb`|
-|Kinyarwanda|``rw``|Uyghur|`ug`|
-|Kiswahili|``sw``|Uyghur (Arabic)|`ug-arab`|
-|Korean|``ko``|Uzbek|`uz`|
-|Kurdish|``ku``|Uzbek (Latin)|`uz-latn`|
-|Kurdish (Latin)|``ku-latn``|Vietnamese|`vi`|
-|Kyrgyz|``ky``|Welsh|`cy`|
-|Latin|``la``|Western Frisian|`fy`|
-|Latvian|``lv``|Xitsonga|`ts`|
-|Lingala|``ln``|||
-
-#### Hotel receipts
-
-| Language name | Language code | Language name | Language code |
-|:--------------|:-------------:|:--------------|:-------------:|
-|English|``en``|Japanese|`ja`|
-|French|``fr``|Portuguese|`pt`|
-|German|``de``|Spanish|`es`|
-|Italian|``it``|||
 
 ### Supported document fields
 
-#### receipt
-
 | Field | Type | Description | Example |
 |:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`TransactionDate`|`date`|Date the receipt was issued|June 06, 2019|
-|`TransactionTime`|`time`|Time the receipt was issued|4:49 PM|
-|`Subtotal`|`currency`|Subtotal of receipt, often before taxes are applied|$12.34|
-|`TotalTax`|`currency`|Tax on receipt, often sales tax or equivalent|$2.00|
-|`Tip`|`currency`|Tip included by buyer|$1.00|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Surface Pro 6|
-|`Items.*.Quantity`|`number`|Quantity of each item|1|
-|`Items.*.Price`|`currency`|Individual price of each item unit|$999.00|
+|`CustomerName`|`string`|Customer being invoiced|Microsoft Corp|
+|`CustomerId`|`string`|Reference ID for the customer|CID-12345|
+|`PurchaseOrder`|`string`|A purchase order reference number|PO-3333|
+|`InvoiceId`|`string`|ID for this specific invoice (often 'Invoice Number')|INV-100|
+|`InvoiceDate`|`date`|Date the invoice was issued|11/15/2019|
+|`DueDate`|`date`|Date payment for this invoice is due|12/15/2019|
+|`VendorName`|`string`|Vendor who has created this invoice|CONTOSO LTD.|
+|`VendorAddress`|`address`|Mailing address for the Vendor|123 456th St, New York, NY 10001|
+|`VendorAddressRecipient`|`string`|Name associated with the VendorAddress|Contoso Headquarters|
+|`CustomerAddress`|`address`|Mailing address for the Customer|123 Other St, Redmond WA, 98052|
+|`CustomerAddressRecipient`|`string`|Name associated with the CustomerAddress|Microsoft Corp|
+|`BillingAddress`|`address`|Explicit billing address for the customer|123 Bill St, Redmond WA, 98052|
+|`BillingAddressRecipient`|`string`|Name associated with the BillingAddress|Microsoft Services|
+|`ShippingAddress`|`address`|Explicit shipping address for the customer|123 Ship St, Redmond WA, 98052|
+|`ShippingAddressRecipient`|`string`|Name associated with the ShippingAddress|Microsoft Delivery|
+|`SubTotal`|`currency`|Subtotal field identified on this invoice|$100.00|
+|`TotalDiscount`|`currency`|Total discount field identified on this invoice|$5.00|
+|`TotalTax`|`currency`|Total tax field identified on this invoice|$10.00|
+|`InvoiceTotal`|`currency`|Total new charges associated with this invoice|$110.00|
+|`AmountDue`|`currency`|Total Amount Due to the vendor|$610.00|
+|`PreviousUnpaidBalance`|`currency`|Explicit previously unpaid balance|$500.00|
+|`RemittanceAddress`|`address`|Explicit remittance or payment address for the customer|123 Remit St New York, NY, 10001|
+|`RemittanceAddressRecipient`|`string`|Name associated with the RemittanceAddress|Contoso Billing|
+|`ServiceAddress`|`address`|Explicit service address or property address for the customer|123 Service St, Redmond WA, 98052|
+|`ServiceAddressRecipient`|`string`|Name associated with the ServiceAddress|Microsoft Services|
+|`ServiceStartDate`|`date`|First date for the service period (for example, a utility bill service period)|10/14/2019|
+|`ServiceEndDate`|`date`|End date for the service period (for example, a utility bill service period)|11/14/2019|
+|`VendorTaxId`|`string`|The government ID number associated with the vendor|123456-7|
+|`CustomerTaxId`|`string`|The government ID number associated with the customer|765432-1|
+|`PaymentTerm`|`string`|The terms under which the payment is meant to be paid|Net90|
+|`KVKNumber`|`string`|A unique identifier for businesses registered in the Netherlands|12345678|
+|`PaymentDetails`|`array`|List of payment details||
+|`PaymentDetails.*`|`object`|A single payment detail||
+|`PaymentDetails.*.IBAN`|`string`|International bank account number|DE 94 700 700 100 029 49 00 00|
+|`PaymentDetails.*.SWIFT`|`string`|ISO9362, an international standard for Business Identifier Codes (BIC)|DEUTDEMMXXX|
+|`PaymentDetails.*.BankAccountNumber`|`string`|Bank account number, a unique identifier for a bank account|123456|
+|`PaymentDetails.*.BPayBillerCode`|`string`|Biller code for BPay, an alphanumeric identifier unique to a biller or their product/service|123456|
+|`PaymentDetails.*.BPayReference`|`string`|Reference number for BPay, a unique identifier for a specific customer's bill transaction|1234567|
+|`TaxDetails`|`array`|List of tax details||
+|`TaxDetails.*`|`object`|A single tax detail||
+|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|29,520.00|
+|`TaxDetails.*.Rate`|`string`|The rate of the tax detail|18 %|
+|`PaidInFourInstallements`|`array`|List of tax details||
+|`PaidInFourInstallements.*`|`object`|A single tax detail||
+|`PaidInFourInstallements.*.Amount`|`currency`|The installement amount due|29,520.00|
+|`PaidInFourInstallements.*.DueDate`|`date`|The installement due date|2024/01/01|
+|`Items`|`array`|List of line items||
+|`Items.*`|`object`|A single line item|3/4/2021<br>A123<br>Consulting Services<br>2 hours<br>$30.00<br>10%<br>$60.00|
+|`Items.*.Amount`|`currency`|The amount of the line item|$60.00|
+|`Items.*.Date`|`date`|Date corresponding to each line item. Often it is a date the line item was shipped|3/4/2021|
+|`Items.*.Description`|`string`|The text description for the invoice line item|Consulting service|
+|`Items.*.Quantity`|`number`|The quantity for this invoice line item|2|
 |`Items.*.ProductCode`|`string`|Product code, product number, or SKU associated with the specific line item|A123|
-|`Items.*.QuantityUnit`|`string`|Quantity unit of each item||
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Supplies|
-|`Payments`|`array`|||
-|`Payments.*`|`object`|Extracted payment|Cash $14.34|
-|`Payments.*.Method`|`string`|Method of payment|Cash|
-|`Payments.*.Amount`|`currency`|Amount of payment|$14.34|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-
-#### receipt.retailMeal
-
-| Field | Type | Description | Example |
-|:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`TransactionDate`|`date`|Date the receipt was issued|June 06, 2019|
-|`TransactionTime`|`time`|Time the receipt was issued|4:49 PM|
-|`Subtotal`|`currency`|Subtotal of receipt, often before taxes are applied|$12.34|
-|`TotalTax`|`currency`|Tax on receipt, often sales tax or equivalent|$2.00|
-|`Tip`|`currency`|Tip included by buyer|$1.00|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Surface Pro 6|
-|`Items.*.Quantity`|`number`|Quantity of each item|1|
-|`Items.*.Price`|`currency`|Individual price of each item unit|$999.00|
-|`Items.*.ProductCode`|`string`|Product code, product number, or SKU associated with the specific line item|A123|
-|`Items.*.QuantityUnit`|`string`|Quantity unit of each item||
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Meal|
-|`Payments`|`array`|||
-|`Payments.*`|`object`|Extracted payment|Cash $14.34|
-|`Payments.*.Method`|`string`|Method of payment|Cash|
-|`Payments.*.Amount`|`currency`|Amount of payment|$14.34|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-
-#### receipt.creditCard
-
-| Field | Type | Description | Example |
-|:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`TransactionDate`|`date`|Date the receipt was issued|June 06, 2019|
-|`TransactionTime`|`time`|Time the receipt was issued|4:49 PM|
-|`Subtotal`|`currency`|Subtotal of receipt, often before taxes are applied|$12.34|
-|`TotalTax`|`currency`|Tax on receipt, often sales tax or equivalent|$2.00|
-|`Tip`|`currency`|Tip included by buyer|$1.00|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Surface Pro 6|
-|`Items.*.Quantity`|`number`|Quantity of each item|1|
-|`Items.*.Price`|`currency`|Individual price of each item unit|$999.00|
-|`Items.*.ProductCode`|`string`|Product code, product number, or SKU associated with the specific line item|A123|
-|`Items.*.QuantityUnit`|`string`|Quantity unit of each item||
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Other|
-|`Payments`|`array`|||
-|`Payments.*`|`object`|Extracted payment|Cash $14.34|
-|`Payments.*.Method`|`string`|Method of payment|Cash|
-|`Payments.*.Amount`|`currency`|Amount of payment|$14.34|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-
-#### receipt.gas
-
-| Field | Type | Description | Example |
-|:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`TransactionDate`|`date`|Date the receipt was issued|June 06, 2019|
-|`TransactionTime`|`time`|Time the receipt was issued|4:49 PM|
-|`Subtotal`|`currency`|Subtotal of receipt, often before taxes are applied|$12.34|
-|`TotalTax`|`currency`|Tax on receipt, often sales tax or equivalent|$2.00|
-|`Tip`|`currency`|Tip included by buyer|$1.00|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Surface Pro 6|
-|`Items.*.Quantity`|`number`|Quantity of each item|1|
-|`Items.*.Price`|`currency`|Individual price of each item unit|$999.00|
-|`Items.*.ProductCode`|`string`|Product code, product number, or SKU associated with the specific line item|A123|
-|`Items.*.QuantityUnit`|`string`|Quantity unit of each item||
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Fuel&Energy.Gas|
-|`Payments`|`array`|||
-|`Payments.*`|`object`|Extracted payment|Cash $14.34|
-|`Payments.*.Method`|`string`|Method of payment|Cash|
-|`Payments.*.Amount`|`currency`|Amount of payment|$14.34|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-
-#### receipt.parking
-
-| Field | Type | Description | Example |
-|:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`TransactionDate`|`date`|Date the receipt was issued|June 06, 2019|
-|`TransactionTime`|`time`|Time the receipt was issued|4:49 PM|
-|`Subtotal`|`currency`|Subtotal of receipt, often before taxes are applied|$12.34|
-|`TotalTax`|`currency`|Tax on receipt, often sales tax or equivalent|$2.00|
-|`Tip`|`currency`|Tip included by buyer|$1.00|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Surface Pro 6|
-|`Items.*.Quantity`|`number`|Quantity of each item|1|
-|`Items.*.Price`|`currency`|Individual price of each item unit|$999.00|
-|`Items.*.ProductCode`|`string`|Product code, product number, or SKU associated with the specific line item|A123|
-|`Items.*.QuantityUnit`|`string`|Quantity unit of each item||
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Transportation.Parking|
-|`Payments`|`array`|||
-|`Payments.*`|`object`|Extracted payment|Cash $14.34|
-|`Payments.*.Method`|`string`|Method of payment|Cash|
-|`Payments.*.Amount`|`currency`|Amount of payment|$14.34|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-
-#### receipt.hotel
-
-| Field | Type | Description | Example |
-|:------|:-----|:------------|:--------|
-|`MerchantName`|`string`|Name of the merchant issuing the receipt|Contoso|
-|`MerchantPhoneNumber`|`phoneNumber`|Listed phone number of merchant|987-654-3210|
-|`MerchantAddress`|`address`|Listed address of merchant|123 Main St Redmond WA 98052|
-|`Total`|`currency`|Full transaction total of receipt|$14.34|
-|`Balance`|`currency`|Balance due on receipt|$0.00|
-|`ArrivalDate`|`date`|Date of arrival|27Mar21|
-|`DepartureDate`|`date`|Date of departure|28Mar21|
-|`MerchantAliases`|`array`|||
-|`MerchantAliases.*`|`string`|Alternative name of merchant|Contoso (R)|
-|`Items`|`array`|||
-|`Items.*`|`object`|Extracted line item|1<br>Surface Pro 6<br>$999.00<br>$999.00|
-|`Items.*.TotalPrice`|`currency`|Total price of line item|$999.00|
-|`Items.*.Description`|`string`|Item description|Room Charge|
-|`Items.*.Date`|`date`|Item date|27Mar21|
-|`Items.*.Category`|`string`|Item category|Room|
-|`CountryRegion`|`countryRegion`|Country or region where the receipt was issued|USA|
-|`ReceiptType`|`string`|Type of receipt|Hotel|
-|`TaxDetails`|`array`|List of tax details||
-|`TaxDetails.*`|`object`|A single tax detail|Sales Tax(10%) $10.00 $1.00 $11.00|
-|`TaxDetails.*.Amount`|`currency`|The amount of the tax detail|$1.00|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
-|`TaxDetails.*.Rate`|`number`|The rate of the tax detail|10%|
-|`TaxDetails.*.NetAmount`|`currency`|The net amount before tax.|$10.00|
-|`TaxDetails.*.Description`|`string`|The description of the tax detail|Sales Tax|
+|`Items.*.Tax`|`currency`|Tax associated with each line item. Possible values include tax amount, tax %, and tax Y/N|$6.00|
+|`Items.*.TaxRate`|`string`|Tax rate associated with each line item|18 %|
+|`Items.*.Unit`|`string`|The unit of the line item, e.g, kg, lb etc.|hours|
+|`Items.*.UnitPrice`|`currency`|The net or gross price (depending on the gross invoice setting of the invoice) of one unit of this item|$30.00|
