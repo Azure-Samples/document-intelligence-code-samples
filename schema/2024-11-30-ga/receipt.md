@@ -2,6 +2,10 @@
 
 ## 2024-11-30 (GA)
 
+### Model ID
+
+**prebuilt-receipt**
+
 ### Supported languages
 
 #### Thermal receipts (retail, meal, parking, etc.)
