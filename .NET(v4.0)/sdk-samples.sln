@@ -9,7 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample Code Snippet For Doc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSnippetForApiVer_2024-02-29_Preview", "CodeSnippetForApiVer_2024-02-29_Preview\CodeSnippetForApiVer_2024-02-29_Preview.csproj", "{EFCE60E7-6544-443C-8C68-53BFC9447B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetForApiVer_2023-10-31_Preview", "CodeSnippetForApiVer_2023-10-31_Preview\CodeSnippetForApiVer_2023-10-31_Preview.csproj", "{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSnippetForApiVer_2023-10-31_Preview", "CodeSnippetForApiVer_2023-10-31_Preview\CodeSnippetForApiVer_2023-10-31_Preview.csproj", "{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{A216036E-43B5-4ABD-B4D4-6B2C5E1B6E7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateWithServicePrincipal", "DocumentIntelligenceWithServicePrincipal\AuthenticateWithServicePrincipal.csproj", "{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common.Library", "Common.Library", "{50D0F7B2-DA35-4966-84EE-62B5002EA513}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.csproj", "{CB79733C-D8D1-4603-A58A-E3BF0F27FB38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticateWithUserAssignedManagedIdentity", "AuthenticateWithUserAssignedManagedIdentity\AuthenticateWithUserAssignedManagedIdentity.csproj", "{609B2281-6798-4D39-906D-51B29C0E3588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +39,18 @@ Global
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB79733C-D8D1-4603-A58A-E3BF0F27FB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB79733C-D8D1-4603-A58A-E3BF0F27FB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB79733C-D8D1-4603-A58A-E3BF0F27FB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB79733C-D8D1-4603-A58A-E3BF0F27FB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609B2281-6798-4D39-906D-51B29C0E3588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609B2281-6798-4D39-906D-51B29C0E3588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609B2281-6798-4D39-906D-51B29C0E3588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609B2281-6798-4D39-906D-51B29C0E3588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +58,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EFCE60E7-6544-443C-8C68-53BFC9447B51} = {E9CBB1EB-6D19-4981-A5F2-EFEA3CF0F0A7}
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231} = {E9CBB1EB-6D19-4981-A5F2-EFEA3CF0F0A7}
+		{4116A237-4981-4BF8-BE47-AC0A1CAB0EEC} = {A216036E-43B5-4ABD-B4D4-6B2C5E1B6E7B}
+		{CB79733C-D8D1-4603-A58A-E3BF0F27FB38} = {50D0F7B2-DA35-4966-84EE-62B5002EA513}
+		{609B2281-6798-4D39-906D-51B29C0E3588} = {A216036E-43B5-4ABD-B4D4-6B2C5E1B6E7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CBC567B-C775-4E10-BCB4-E019111881C4}

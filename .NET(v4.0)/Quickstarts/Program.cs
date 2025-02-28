@@ -8,6 +8,7 @@
 using ConsoleTables;
 using System.Configuration;
 using System.Diagnostics;
+using Utility;
 
 namespace Quickstarts
 {

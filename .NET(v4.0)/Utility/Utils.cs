@@ -4,10 +4,9 @@
 // Licensed under the MIT License. See License.txt in the project root for
 // license information.
 // --------------------------------------------------------------------------
-
 using Azure.AI.DocumentIntelligence;
 
-namespace Quickstarts
+namespace Utility
 {
     public class Utils
     {
