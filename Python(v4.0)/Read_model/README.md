@@ -38,7 +38,7 @@ At a command prompt, run the following commands, replacing ```<yourKey>``` and `
 1. Install the Azure Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-documentintelligence --pre
+pip install azure-ai-documentintelligence
 ```
 
 2. Clone or download this sample repository
