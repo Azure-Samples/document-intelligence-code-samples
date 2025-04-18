@@ -12,9 +12,7 @@ FILE: sample_analyze_custom_documents.py
 DESCRIPTION:
     This sample demonstrates how to analyze a document with a custom
     built model. The document must be of the same type as the documents the custom model
-    was built on. To learn how to build your own models, look at
-    sample_build_model.py.
-
+    was built on.
 USAGE:
     python sample_analyze_custom_documents.py
 
