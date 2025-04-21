@@ -27,7 +27,7 @@ if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(key) || string.IsNull
     return;
 }
 
-string documentUri = "https://t3.ftcdn.net/jpg/01/82/01/18/360_F_182011806_mxcDzt9ckBYbGpxAne8o73DbyDHpXOe9.jpg"; // Replace with the URI of the document you want to analyze
+string documentUri = "YOUR_FILE_URI"; // Replace with the URI of the document you want to analyze
 
 AzureKeyCredential credential = new AzureKeyCredential(key);
 DocumentIntelligenceClient client = new DocumentIntelligenceClient(new Uri(endpoint), credential);
