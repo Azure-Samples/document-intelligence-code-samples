@@ -30,29 +30,26 @@ USAGE:
 
 import os
 
-
-def classify_document(classifier_id):
-    path_to_sample_documents = os.path.abspath(
-        os.path.join(
-            os.path.abspath(__file__),
-            "..",
-            "./sample_forms/forms/IRS-1040.pdf",
-        )
-    )
-
+def classify_document():
     # [START classify_document]
     from azure.core.credentials import AzureKeyCredential
     from azure.ai.documentintelligence import DocumentIntelligenceClient
-    from azure.ai.documentintelligence.models import AnalyzeResult
+    from azure.ai.documentintelligence.models import ClassifyDocumentRequest, AnalyzeResult
 
     endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
     key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
-    classifier_id = os.getenv("CLASSIFIER_ID", classifier_id)
+    classifier_id = os.environ["CUSTOM_BUILT_CLASSIFIER_MODEL_ID"]
+    document_path = "YOUR_DOCUMENT_PATH"
 
-    document_intelligence_client = DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
-    with open(path_to_sample_documents, "rb") as f:
+    document_intelligence_client = DocumentIntelligenceClient(
+        endpoint=endpoint, credential=AzureKeyCredential(key)
+    )
+
+    # Make sure your document's type is included in the list of document types the custom model can analyze
+    with open(document_path, "rb") as fd:
+        document = fd.read()
         poller = document_intelligence_client.begin_classify_document(
-            classifier_id, classify_request=f, content_type="application/octet-stream"
+            classifier_id, ClassifyDocumentRequest(bytes_source=document)
         )
     result: AnalyzeResult = poller.result()
 
@@ -74,44 +71,7 @@ if __name__ == "__main__":
 
     try:
         load_dotenv(find_dotenv())
-        classifier_id = None
-        if os.getenv("DOCUMENTINTELLIGENCE_TRAINING_DATA_CLASSIFIER_SAS_URL") and not os.getenv("CLASSIFIER_ID"):
-            from azure.core.credentials import AzureKeyCredential
-            from azure.ai.documentintelligence import DocumentIntelligenceAdministrationClient
-            from azure.ai.documentintelligence.models import (
-                AzureBlobContentSource,
-                ClassifierDocumentTypeDetails,
-                BuildDocumentClassifierRequest,
-            )
-
-            endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
-            key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
-            blob_container_sas_url = os.environ["DOCUMENTINTELLIGENCE_TRAINING_DATA_CLASSIFIER_SAS_URL"]
-
-            document_intelligence_admin_client = DocumentIntelligenceAdministrationClient(
-                endpoint=endpoint, credential=AzureKeyCredential(key)
-            )
-
-            poller = document_intelligence_admin_client.begin_build_classifier(
-                BuildDocumentClassifierRequest(
-                    classifier_id=str(uuid.uuid4()),
-                    doc_types={
-                        "IRS-1040-A": ClassifierDocumentTypeDetails(
-                            azure_blob_source=AzureBlobContentSource(
-                                container_url=blob_container_sas_url, prefix="IRS-1040-A/train"
-                            )
-                        ),
-                        "IRS-1040-B": ClassifierDocumentTypeDetails(
-                            azure_blob_source=AzureBlobContentSource(
-                                container_url=blob_container_sas_url, prefix="IRS-1040-B/train"
-                            )
-                        ),
-                    },
-                )
-            )
-            classifier = poller.result()
-            classifier_id = classifier.classifier_id
-        classify_document(classifier_id)
+        classify_document()
     except HttpResponseError as error:
         # Examples of how to check an HttpResponseError
         # Check by error code:
