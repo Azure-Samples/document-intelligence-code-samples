@@ -10,8 +10,7 @@
 FILE: sample_manage_models.py
 
 DESCRIPTION:
-    This sample demonstrates how to manage the models on your account. To learn
-    how to build a model, look at sample_build_model.py.
+    This sample demonstrates how to manage the models on your account. 
 
 USAGE:
     python sample_manage_models.py
@@ -70,15 +69,15 @@ def sample_manage_models():
     # [END build_model]
 
     # [START get_resource_info]
-    account_details = document_intelligence_admin_client.get_resource_info()
+    account_details = document_intelligence_admin_client.get_resource_details()
     print(
         f"Our resource has {account_details.custom_document_models.count} custom models, "
         f"and we can have at most {account_details.custom_document_models.limit} custom models"
     )
-    neural_models = account_details.custom_neural_document_model_builds
+    neural_models = account_details["customNeuralDocumentModelBuilds"]
     print(
-        f"The quota limit for custom neural document models is {neural_models.quota} and the resource has"
-        f"used {neural_models.used}. The resource quota will reset on {neural_models.quota_reset_date_time}"
+        f"The quota limit for custom neural document models is {neural_models['quota']} and the resource has"
+        f"used {neural_models['used']}. The resource quota will reset on {neural_models['quotaResetDateTime']}"
     )
     # [END get_resource_info]
 
