@@ -49,16 +49,18 @@ load_dotenv(find_dotenv())
 endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
 key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
 model_id = os.environ["CUSTOM_BUILT_MODEL_ID"]
-formUrl = "YOUR_DOCUMENT_URL"
+document_path = "YOUR_DOCUMENT_PATH"
 
 document_intelligence_client  = DocumentIntelligenceClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
 )
 
 # Make sure your document's type is included in the list of document types the custom model can analyze
-poller = document_intelligence_client.begin_analyze_document(
-    model_id, AnalyzeDocumentRequest(url_source=formUrl)
-)
+with open(document_path, "rb") as fd:
+    document = fd.read()
+    poller = document_intelligence_client.begin_analyze_document(
+        model_id, AnalyzeDocumentRequest(bytes_source=document)
+    )
 result = poller.result()
 
 for idx, document in enumerate(result.documents):
