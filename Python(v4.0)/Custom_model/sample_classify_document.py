@@ -11,7 +11,7 @@ FILE: sample_classify_document.py
 
 DESCRIPTION:
     This sample demonstrates how to classify a document using a trained document classifier.
-    To learn how to build your custom classifier, see sample_build_classifier.py.
+    To learn how to build your custom classifier, see sample_manage_classifiers.py.
 
     More details on building a classifier and labeling your data can be found here:
     https://aka.ms/azsdk/documentintelligence/buildclassifiermodel
@@ -65,7 +65,6 @@ def classify_document():
 
 
 if __name__ == "__main__":
-    import uuid
     from azure.core.exceptions import HttpResponseError
     from dotenv import find_dotenv, load_dotenv
 
