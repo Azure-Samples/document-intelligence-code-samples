@@ -126,8 +126,10 @@ def analyze_read():
 
 if __name__ == "__main__":
     from azure.core.exceptions import HttpResponseError
+    from dotenv import find_dotenv, load_dotenv
 
     try:
+        load_dotenv(find_dotenv())
         analyze_read()
     except HttpResponseError as error:
         if error.error is not None:

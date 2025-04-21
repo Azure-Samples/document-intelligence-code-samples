@@ -17,12 +17,16 @@ https://learn.microsoft.com/azure/ai-services/document-intelligence/quickstarts/
 import os 
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.documentintelligence import DocumentIntelligenceClient
+from dotenv import find_dotenv, load_dotenv
 
 """
 Remember to remove the key from your code when you're done, and never post it publicly. For production, use
 secure methods to store and access your credentials. For more information, see 
 https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp#environment-variables-and-application-configuration
 """
+
+load_dotenv(find_dotenv())
+
 endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
 key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
 filepath = "YOUR_FILE_PATH"

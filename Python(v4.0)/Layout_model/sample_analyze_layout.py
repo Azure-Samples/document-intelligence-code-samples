@@ -114,8 +114,10 @@ def analyze_layout_from_url():
 
 if __name__ == "__main__":
     from azure.core.exceptions import HttpResponseError
+    from dotenv import find_dotenv, load_dotenv
 
     try:
+        load_dotenv(find_dotenv())
         analyze_layout_from_url()
     except HttpResponseError as error:
         # Examples of how to check an HttpResponseError
