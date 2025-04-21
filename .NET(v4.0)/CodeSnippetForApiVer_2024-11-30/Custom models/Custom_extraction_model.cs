@@ -1,4 +1,4 @@
-﻿//#define RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
+﻿// #define RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
 #if RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
 
 /*
@@ -27,12 +27,12 @@ if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(key) || string.IsNull
     return;
 }
 
-string fileUri = "YOUR_FILE_URI"; // Replace with the URI of the document you want to analyze
+string documentUri = "https://t3.ftcdn.net/jpg/01/82/01/18/360_F_182011806_mxcDzt9ckBYbGpxAne8o73DbyDHpXOe9.jpg"; // Replace with the URI of the document you want to analyze
 
 AzureKeyCredential credential = new AzureKeyCredential(key);
 DocumentIntelligenceClient client = new DocumentIntelligenceClient(new Uri(endpoint), credential);
 
-Uri fileUri = new Uri(fileUri);
+Uri fileUri = new Uri(documentUri);
 Operation<AnalyzeResult> operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, modelId, fileUri);
 
 AnalyzeResult result = operation.Value;
