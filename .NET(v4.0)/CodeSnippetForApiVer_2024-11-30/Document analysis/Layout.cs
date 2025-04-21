@@ -17,8 +17,13 @@ using Azure.AI.DocumentIntelligence;
   https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp#environment-variables-and-application-configuration
 */
 
-string endpoint = Environment.GetEnvironmentVariable("DOCUMENTINTELLIGENCE_ENDPOINT");
-string key = Environment.GetEnvironmentVariable("DOCUMENTINTELLIGENCE_API_KEY");
+string endpoint = Environment.GetEnvironmentVariable("DOCUMENTINTELLIGENCE_ENDPOINT") ?? string.Empty;
+string key = Environment.GetEnvironmentVariable("DOCUMENTINTELLIGENCE_API_KEY") ?? string.Empty;
+if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(key))
+{
+    Console.WriteLine("Please set the environment variables for the endpoint and key.");
+    return;
+}
 
 AzureKeyCredential credential = new AzureKeyCredential(key);
 DocumentIntelligenceClient client = new DocumentIntelligenceClient(new Uri(endpoint), credential);
@@ -90,3 +95,5 @@ for (int i = 0; i < result.Tables.Count; i++)
         Console.WriteLine($"    Cell ({cell.RowIndex}, {cell.ColumnIndex}) has kind '{cell.Kind}' and content: '{cell.Content}'.");
     }
 }
+
+#endif
