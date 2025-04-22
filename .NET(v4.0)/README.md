@@ -6,7 +6,7 @@
 |[Python](../Python(v4.0))| .NET|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
--  The contents of this folder apply to the latest version: **v4.0 (2024-02-29-preview)** . 
+-  The contents of this folder apply to the latest version: **v4.0 GA** .
 - You can click  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA)/.NET(v3.1))**  to view earlier versions.
 ## **Table of Contents**
 
