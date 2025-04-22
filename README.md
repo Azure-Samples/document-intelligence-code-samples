@@ -171,19 +171,22 @@ Prebuilt models enable you to add intelligent document processing to your apps a
 * **Invoice** — Extract customer and vendor details.
 * **Receipt** — Extract sales transaction details.
 * **Identity** — Extract identification and verification details.
-* **US Mortgage 1003** — Extract mortgage loan application details.
-* **US Mortgage 1008** — Extract mortgage loan transmittal details.
-* **US Mortgage closing disclosure** — Extract final mortgage loan terms.
-* **Health Insurance card** — Extract health insurance and coverage details.
 * **Contract** — Extract agreement and party details.
+* **Pay stubs** — Extract payment and employee details.
+* **Checks** — Extract US check details including amount, date, payee, MICR, and payer info..
 * **Credit/Debit card** — Extract payment card information.
 * **Marriage certificate** — Extract information from certified marriage documents.
+* **Health Insurance card** — Extract health insurance and coverage details.
+* **US Mortgage 1003** — Extract mortgage loan application details.
+* **US Mortgage 1004** — Extract mortgage property appraisal report details.
+* **US Mortgage 1005** — Extract mortgage employment verification details.
+* **US Mortgage 1008** — Extract mortgage loan transmittal details.
+* **US Mortgage closing disclosure** — Extract final mortgage loan terms.
 * **US Tax W-2** — Extract taxable compensation details.
-* **US Tax 1098** — Extract mortgage interest details.
-* **US Tax 1098-E** — Extract student loan interest details.
-* **US Tax 1098-T** — Extract qualified tuition details.
-* **US Tax 1099** — Extract information from 1099 form variations.
 * **US Tax 1040** — Extract information from 1040 form variations.
+* **US Tax 1095** — Extract information from 1095 form variations.
+* **US Tax 1098** — Extract information from 1098 form variations.
+* **US Tax 1099** — Extract information from 1099 form variations.
 
 ### Current custom models
 
