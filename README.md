@@ -25,7 +25,7 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 | --- | --- | --- | --- |
 
 
-- The contents of this folder default to the latest preview version: **v4.0 (2024-02-29-preview)** .
+- The contents of this folder default to the latest preview version: **v4.0 GA** .
 - Select [**v3.1 (2023-07-31-GA)**](../v3.1(2023-07-31-GA))  to view earlier versions.
 
 ## Table of Contents
@@ -55,7 +55,7 @@ Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn
 1. Open a terminal window in your local environment and install the Azure AI Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-documentintelligence --pre
+pip install azure-ai-documentintelligence
 ```
 
 2. Clone or download this sample repository
@@ -106,7 +106,6 @@ pip install azure-ai-documentintelligence --pre
 > [sample_analyze_custom_documents.py](Python(v4.0)/Custom_model/sample_analyze_custom_documents.py) - Analyze a document with a custom built model. The document must be of the same type as the documents the custom model was trained on.  
 > [sample_classify_document.py](Python(v4.0)/Custom_model/sample_classify_document.py) - Classify a document using a trained document classifier.  
 > [sample_compose_model.py](Python(v4.0)/Custom_model/sample_compose_model.py) - This is useful when you have built different models and want to aggregate a group of them into a single model that you (or a user) could use to analyze a document.  
-> [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Form Recognizer resource to a target Form Recognizer resource.  
 > [sample_copy_model_to.py](Python(v4.0)/Custom_model/sample_copy_model_to.py) - Copy a custom model from a source Document Intelligence resource to a target Document Intelligence resource.  
 > [sample_manage_classifiers.py](Python(v4.0)/Custom_model/sample_manage_classifiers.py) - Manage the classifiers on your account.  
 > [sample_manage_models.py](Python(v4.0)/Custom_model/sample_manage_models.py) - Manage the models on your account.
