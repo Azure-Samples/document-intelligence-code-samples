@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSnippetForApiVer_2024-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetForApiVer_2023-10-31_Preview", "CodeSnippetForApiVer_2023-10-31_Preview\CodeSnippetForApiVer_2023-10-31_Preview.csproj", "{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSnippetForApiVer_2024-11-30", "CodeSnippetForApiVer_2024-11-30\CodeSnippetForApiVer_2024-11-30.csproj", "{FC388C8C-E137-4B8D-A0D7-EFE031C72968}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2D5C4C-C70E-4FB1-AD1E-1505F97FF231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC388C8C-E137-4B8D-A0D7-EFE031C72968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC388C8C-E137-4B8D-A0D7-EFE031C72968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC388C8C-E137-4B8D-A0D7-EFE031C72968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC388C8C-E137-4B8D-A0D7-EFE031C72968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
