@@ -3,7 +3,8 @@
 - The C# compiler only allows one compilation unit to have top-level statements. So use the preprocessor symbol to control the code scope to facilitate debugging.
 
 - The default sample is "Document analysis\Read.cs", if want to debug other sample, just uncomment the RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT symbol in the file which want to enable, like below:
-				      #define RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
+
+      #define RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
       #if RUN_AS_ENTRY_OF_TOP_LEVEL_STATEMENT
 
       *C# sample code with top-level statement*
