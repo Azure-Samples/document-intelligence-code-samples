@@ -40,7 +40,7 @@ PREREQUISITES:
         setx DOCUMENTINTELLIGENCE_API_KEY <yourKey>
 
     ------Install the Document Intelligence library------
-    pip install azure-ai-documentintelligence --pre
+    pip install azure-ai-documentintelligence
 
     ------Run this Python sample------
     Save the file as "sample_analyze_layout_v2.py" and run:
