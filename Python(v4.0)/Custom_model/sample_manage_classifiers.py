@@ -51,10 +51,10 @@ def sample_manage_classifiers():
             classifier_id=str(uuid.uuid4()),
             doc_types={
                 "IRS-1040-A": ClassifierDocumentTypeDetails(
-                    azure_blob_source=AzureBlobContentSource(container_url=container_sas_url, prefix="IRS-1040-A/train")
+                    azure_blob_source=AzureBlobContentSource(container_url=container_sas_url, prefix="IRS-1040-A/train/")
                 ),
                 "IRS-1040-D": ClassifierDocumentTypeDetails(
-                    azure_blob_source=AzureBlobContentSource(container_url=container_sas_url, prefix="IRS-1040-D/train")
+                    azure_blob_source=AzureBlobContentSource(container_url=container_sas_url, prefix="IRS-1040-D/train/")
                 ),
             },
             description="IRS document classifier",

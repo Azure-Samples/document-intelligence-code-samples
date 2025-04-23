@@ -8,7 +8,7 @@
 |Python| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
-- The contents of this floder default the latest version: **v4.0 (2024-02-29-preview)** .
+- The contents of this floder default the latest version: **v4.0 GA (2024-11-30)** .
 - You can select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA)/Python(v3.1))**  to view earlier versions.
 
 ## **Table of Contents**
@@ -36,7 +36,7 @@ Azure AI Document Intelligence is a cloud-based [Azure AI service](https://learn
 1. Open a terminal window in your local environment and install the Azure AI Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-documentintelligence --pre
+pip install azure-ai-documentintelligence
 ```
 
 2. Clone or download this sample repository
@@ -58,7 +58,7 @@ pip install azure-ai-documentintelligence --pre
  Select the link of the model name to reach the corresponding topic page for more details.  Select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA))** to view earlier versions.
 
 **[ Read model ](Read_model)** : Extract printed and handwritten text.
-> [sample_analyze_read.py](Read_model/sample_analyze_read.py/) 
+> [sample_analyze_read.py](Read_model/sample_analyze_read.py/)
 
  **[ Layout mode ](Layout_model)**: Extract and anlayze text, tables, and document structure.
 > [sample_analyze_layout.py](Layout_model/sample_analyze_layout.py) 

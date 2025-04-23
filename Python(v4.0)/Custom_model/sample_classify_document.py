@@ -11,7 +11,7 @@ FILE: sample_classify_document.py
 
 DESCRIPTION:
     This sample demonstrates how to classify a document using a trained document classifier.
-    To learn how to build your custom classifier, see sample_build_classifier.py.
+    To learn how to build your custom classifier, see sample_manage_classifiers.py.
 
     More details on building a classifier and labeling your data can be found here:
     https://aka.ms/azsdk/documentintelligence/buildclassifiermodel
@@ -30,29 +30,26 @@ USAGE:
 
 import os
 
-
 def classify_document(classifier_id):
-    path_to_sample_documents = os.path.abspath(
-        os.path.join(
-            os.path.abspath(__file__),
-            "..",
-            "./sample_forms/forms/IRS-1040.pdf",
-        )
-    )
-
     # [START classify_document]
     from azure.core.credentials import AzureKeyCredential
     from azure.ai.documentintelligence import DocumentIntelligenceClient
-    from azure.ai.documentintelligence.models import AnalyzeResult
+    from azure.ai.documentintelligence.models import ClassifyDocumentRequest, AnalyzeResult
 
     endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
     key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
     classifier_id = os.getenv("CLASSIFIER_ID", classifier_id)
+    path_to_test_document = "YOUR_TEST_DOCUMENT_PATH"
 
-    document_intelligence_client = DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
-    with open(path_to_sample_documents, "rb") as f:
+    document_intelligence_client = DocumentIntelligenceClient(
+        endpoint=endpoint, credential=AzureKeyCredential(key)
+    )
+
+    # Make sure your document's type is included in the list of document types the custom model can analyze
+    with open(path_to_test_document, "rb") as fd:
+        document = fd.read()
         poller = document_intelligence_client.begin_classify_document(
-            classifier_id, classify_request=f, content_type="application/octet-stream"
+            classifier_id, ClassifyDocumentRequest(bytes_source=document)
         )
     result: AnalyzeResult = poller.result()
 

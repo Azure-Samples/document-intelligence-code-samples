@@ -21,8 +21,8 @@ At a command prompt, run the following commands, replacing``` <yourKey> ```and `
 ```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
    You need to restart any running programs that read the environment variable.
 - For macOS:  
-```export key=<yourKey>```  
-```export endpoint=<yourEndpoint>```  
+```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
+```export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>```  
        • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
 - For Linux:  
@@ -34,7 +34,7 @@ At a command prompt, run the following commands, replacing``` <yourKey> ```and `
 1. Install the Azure Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-documentintelligence --pre
+pip install azure-ai-documentintelligence
 ```
 
 2. Clone or download this sample repository

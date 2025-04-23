@@ -23,8 +23,8 @@ At a command prompt, run the following commands, replacing ```<yourKey>``` and `
 ```setx DOCUMENTINTELLIGENCE_ENDPOINT <yourEndpoint>```   
    You need to restart any running programs that read the environment variable.
 - For macOS:  
-```export key=<yourKey>```  
-```export endpoint=<yourEndpoint>```  
+```export DOCUMENTINTELLIGENCE_API_KEY=<yourKey>```  
+```export DOCUMENTINTELLIGENCE_ENDPOINT=<yourEndpoint>```  
        • This is a temporary environment variable setting method that only lasts until you close the terminal session.   
        • To set an environment variable permanently, visit: https://aka.ms/set-environment-variables-for-macOS
 - For Linux:  
@@ -38,7 +38,7 @@ At a command prompt, run the following commands, replacing ```<yourKey>``` and `
 1. Install the Azure Document Intelligence client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-ai-documentintelligence --pre
+pip install azure-ai-documentintelligence
 ```
 
 2. Clone or download this sample repository
@@ -59,10 +59,24 @@ pip install azure-ai-documentintelligence --pre
 
 |File Name|**Usage scenarios**|
 |----------------|-------------|
+|[sample_analyze_bank_statement.py](sample_analyze_bank_statement.py) |Analyze document text and pre-trained fields and values pertaining to bank statements using a prebuilt model|
+|[sample_analyze_check_us.py](sample_analyze_check_us.py) |Analyze check images and extract check fields using a prebuilt model|
+|[sample_analyze_contracts.py](sample_analyze_contracts.py) |Analyze document text and key fields in legal contracts using a prebuilt model|
+|[sample_analyze_credit_cards.py](sample_analyze_credit_cards.py) |Analyze document text and key information on credit cards using a prebuilt model|
+|[sample_analyze_health_insurance_cards.py](sample_analyze_health_insurance_cards.py) |Analyze document text and pre-trained fields on US health insurance cards using a prebuilt model|
+|[sample_analyze_identity_documents.py](sample_analyze_identity_documents.py) |Analyze document text and pre-trained fields and values pertaining to ID documents using a prebuilt model|
 |[sample_analyze_invoices.py](sample_analyze_invoices.py) |Analyze document text, selection marks, tables, and pre-trained fields and values pertaining to English invoices using a prebuilt model|
-|[sample_analyze_identity_documents.py](sample_analyze_identity_documents.py) |Analyze document text and pre-trained fields and values pertaining to US driver licenses and international passports using a prebuilt model|
-|[sample_analyze_receipts.py](sample_analyze_receipts.py) |Analyze document text and pre-trained fields and values pertaining to English sales receipts using a prebuilt model|
-|[sample_analyze_tax_us_w2.py](sample_analyze_tax_us_w2.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model|
+|[sample_analyze_marriage_certificates.py](sample_analyze_marriage_certificates.py) |Analyze document text and fields in US marriage certificates using a prebuilt model|
+|[sample_analyze_mortgage_1003.py](sample_analyze_mortgage_1003.py) |Analyze fields and values in the US Mortgage 1003 using a prebuilt model|
+|[sample_analyze_mortgage_1004.py](sample_analyze_mortgage_1004.py) |Analyze fields and values in the US Mortgage 1004 using a prebuilt model|
+|[sample_analyze_mortgage_1005.py](sample_analyze_mortgage_1005.py) |Analyze fields and values in the US Mortgage 1005 using a prebuilt model|
+|[sample_analyze_mortgage_1008.py](sample_analyze_mortgage_1008.py) |Analyze fields and values in the US Mortgage 1008 using a prebuilt model|
+|[sample_analyze_mortgage_closing_disclosure.py](sample_analyze_mortgage_closing_disclosure.py) |Analyze fields and values in the US Mortgage Closing Disclosure using a prebuilt model|
+|[sample_analyze_pay_stub.py](sample_analyze_pay_stub.py) |Analyze document text and structured information on pay stubs using a prebuilt model|
+|[sample_analyze_receipts.py](sample_analyze_receipts.py) |Analyze document text and pre-trained fields and values pertaining to receipts using a prebuilt model|
+|[sample_analyze_tax_us_w2.py](sample_analyze_tax_us_w2.py)  |Analyze document text and pre-trained fields and values pertaining to US tax W-2 forms using a prebuilt model.<br>Below are US tax forms supported by the model:<br>**US personal tax**<br>**US tax W-2**<br>**US tax W-4**<br>**US tax 1040**<br>**US tax 1095**<br>**US tax 1098**<br>**US tax 1099**<br>|
+
+
 
 ## Next steps
 
