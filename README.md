@@ -25,7 +25,7 @@ Welcome! Azure AI Document Intelligence is a cloud service that uses machine lea
 | --- | --- | --- | --- |
 
 
-- The contents of this folder default to the latest version: **v4.0 GA** .
+- The contents of this folder default to the latest version: **v4.0 GA (2024-11-30)** .
 - Select [**v3.1 (2023-07-31-GA)**](../v3.1(2023-07-31-GA))  to view earlier versions.
 
 ## Table of Contents

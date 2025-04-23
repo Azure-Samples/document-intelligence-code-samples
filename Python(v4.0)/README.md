@@ -8,7 +8,7 @@
 |Python| [.NET](../.NET(v4.0))|[Java](../Java(v4.0))| [JavaScript](../JavaScript(v4.0))|
 | --- | --- | --- | --- |
 
-- The contents of this floder default the latest version: **v4.0 GA** .
+- The contents of this floder default the latest version: **v4.0 GA (2024-11-30)** .
 - You can select  **[v3.1 (2023-07-31-GA)](../../v3.1(2023-07-31-GA)/Python(v3.1))**  to view earlier versions.
 
 ## **Table of Contents**
