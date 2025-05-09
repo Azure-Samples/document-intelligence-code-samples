@@ -5,13 +5,18 @@
 ### Supported document types
 
 | Region | Document Types |
+
 |--------|----------------|
 |Worldwide|Passport Book, Passport Card|
 |United States|Driver License, Identification Card, Residency Permit (Green card), Social Security Card, Military ID|
+|North America|Driver License, Identification Card, Residency Permit|
+|South America|Driver License, Identification Card, Residency Permit|
 |Europe|Driver License, Identification Card, Residency Permit|
+|Southeast Asia|Driver License, Identification Card, Residency Permit|
 |India|Driver License, PAN Card, Aadhaar Card|
-|Canada|Driver License, Identification Card, Residency Permit (Maple Card)|
 |Australia|Driver License, Photo Card, Key-pass ID (including digital version)|
+|New Zealand|Driver License, Identification Card, Residency Permit|
+
 
 ### Model ID
 
