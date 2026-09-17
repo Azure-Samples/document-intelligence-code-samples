@@ -1,0 +1,32 @@
+{
+  "fieldSchema": {
+    "fields": {
+      "Parties": {
+        "type": "string",
+        "method": "generate",
+        "description": "List the legal names of the contracting parties and their roles. Use only information in the contract."
+      },
+      "EffectiveDate": {
+        "type": "date",
+        "method": "generate",
+        "description": "Return the date the contract takes effect. Distinguish it from signature dates. Return null if the effective date cannot be determined from the contract."
+      },
+      "TerminationNoticeDays": {
+        "type": "number",
+        "method": "generate",
+        "description": "Return the number of calendar days of notice required for termination without cause. Return null if the contract does not specify one unambiguous calendar-day notice period."
+      },
+      "RenewalSummary": {
+        "type": "string",
+        "method": "generate",
+        "description": "Summarize the renewal terms, including whether renewal is automatic, the renewal period, and any notice deadline. If renewal terms are not stated, say so."
+      },
+      "ObligationsSummary": {
+        "type": "string",
+        "method": "generate",
+        "description": "Summarize each party's main obligations, combining relevant clauses across the contract. Include stated deadlines and conditions. Do not infer obligations that are not stated."
+      }
+    },
+    "definitions": {}
+  }
+}
